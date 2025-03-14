@@ -9,9 +9,13 @@ All endpoints that have a list as a response return 50 objects by default. You c
 
 The following objects will be returned in all paginated responses:
 
-`"pagination": {  
+```json
+"pagination": {  
     "total": 135,  
-    "hasMore": true,
+    "hasMore": true,  
     "offset": 0,
     "nextSkip": 50
   }`
+```
+
+To get the next page, you can get the `nextSkip` value from the response and pass it as the `skip` param in the following request.
