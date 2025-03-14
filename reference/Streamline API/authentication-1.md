@@ -5,6 +5,6 @@ hidden: false
 metadata:
   robots: index
 ---
-// TODO
+Our API uses an API Key to access all endpoints. You can get your API key in your [API settings](https://www.streamlinehq.com/profile?tab=api_keys).
 
-Our API uses Bearer Authentication for access to all endpoints. You can get yout API key found in your API settings.
+This key grants full access to the API. Handle it with care. Do not share your API key with others or expose it in the browser or other client-side code.
