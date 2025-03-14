@@ -32,7 +32,7 @@ A new modal will appear showing some extra instructions that you need to read ca
 
 After that, you API Key will appear and you'll be able to copy it. Remember to save it in a safe place, as it'll never be shown again for safety purposes.
 
-> ❗️ Important to always remember: Do not share your API key with others or expose it in the browser or other client-side code.
+> ❗️ Do not share your API key with others or expose it in the browser or other client-side code.
 
 ## Start using the API
 
