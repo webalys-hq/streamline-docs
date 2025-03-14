@@ -12,6 +12,6 @@ Downloading your first icon using the Streamline API requires four steps!
 * Step 2. Create a Personal API Key
 * Step 3. Start using the API
 
-[link](doc:linking-to-pages###create-a-streamline-account)
+[link](doc:quick-start-guide###create-a-streamline-account)
 
 ## Create a Streamline Account
