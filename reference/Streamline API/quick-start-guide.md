@@ -18,17 +18,29 @@ Downloading your first icon using the Streamline API requires just three steps!
 
 ## Create a Streamline Account
 
-First of all, you'll have to create a Streamline account in case you don't have one. If you already have an account, you can skip to [Step 2](quick-start-guide#create-a-personal-api-key).
+First of all, you'll have to create a Streamline account if you don't have one. If you already have a Streamline account, you can skip to [Step 2](quick-start-guide#create-a-personal-api-key).
 
 To create an account, go to [https://www.streamlinehq.com/?auth=sign-up](https://www.streamlinehq.com/?auth=sign-up) and fill it with your email and password.
 
 ## Create a Personal API Key
 
-Now that you already have an account, it's time to create your API Key, to do that, just go to [https://www.streamlinehq.com/profile?tab=api\_keys](https://www.streamlinehq.com/profile?tab=api_keys) and then click on the "Generate your secret API Key" a new modal will appear showing some extra instructions that you need to read carefully and then click on "Generate Key" button. After that, you'll see you can copy the API Key. Remember to save it in a safe place, as it'll never be shown again.
+Now that you already have an account, it's time to create your API Key. To do that, just go to Click on Account in the top right corner and then click on Profile, and then click on Streamline API(Or you can just go to [https://www.streamlinehq.com/profile?tab=api\_keys](https://www.streamlinehq.com/profile?tab=api_keys) ). Once you're on that page, click on the "Generate your secret API Key" button.
+
+![](https://files.readme.io/22673b6ac65e45528106a16689c2a55ae4104f24b79a4f057708650f6bfd4a9f-image.png)
+
+A new modal will appear showing some extra instructions that you need to read carefully and then click on "Generate Key" button.
+
+![](https://files.readme.io/9a460612626fe85d90e36a521c6decd33c442c42cd22eb2de1f41bc8f8bb1eb8-image.png)
+
+After that, you API Key will appear and you'll be able to copy it. Remember to save it in a safe place, as it'll never be shown again for safety purposes.
+
+> ❗️ Important to always remember: Do not share your API key with others or expose it in the browser or other client-side code.
 
 ## Start using the API
 
-Now that you have your API Key, you can start using the API. To illustrate that, let's use the Global search endpoint to search for 'home' icons:
+Now that you have your API Key, you can start using the API.
+
+To illustrate that, let's use the Global search endpoint to search for 'home' icons:
 
 ```node node
 const url = 'https://public-api-staging.streamlinehq.com/search/global?productType=icons&query=home';
@@ -52,10 +64,77 @@ curl --request GET \
      --header 'accept: application/json'
 ```
 
-*Examples for more languages and more details can be seen here:[Global search](doc:globalsearch)*
+*Examples for more languages and more parameter details can be seen here:[Global search](doc:globalsearch)*
 
-/
+If you did everything right, you'll get a 200 response with the first page of icon results!
 
-> 📘 Examples for more languages and more details can be seen [here](doc:globalsearch)
+```json 200 OK
+{
+  "query": "home",
+  "results": [
+    {
+      "hash": "ico_VgC1LXreoNRxANay",
+      "name": "Home 2",
+      "imagePreviewUrl": "icons/common-icons/home-2-vqpcd601vmikz9f3zzemzd.png/home-2-xuqkrmr56x43m3v6dkbwr",
+      "isFree": true,
+      "familySlug": "core-line-free",
+      "familyName": "Core Line - Free",
+      "categorySlug": "common-icons",
+      "categoryName": "Common icons",
+      "subcategorySlug": "common-icons",
+      "subcategoryName": "Common icons"
+    },
+    {
+      "hash": "ico_wEi0Iwv5LpEW0Pxk",
+      "name": "Home 1",
+      "imagePreviewUrl": "icons/places/home-1-e5zyd25fdm7ihkk8wq9pm.png/home-1-996o8ls1sfnvuxdevf4jt9",
+      "isFree": false,
+      "familySlug": "cyber-duotone",
+      "familyName": "Cyber Duotone",
+      "categorySlug": "category",
+      "categoryName": "Category",
+      "subcategorySlug": "places",
+      "subcategoryName": "Places"
+    },
+    {
+      "hash": "ico_S0kd83eAm77fuTuP",
+      "name": "Home 2",
+      "imagePreviewUrl": "icons/places/home-2-v5aqejpjz4u7eee8a2gu.png/home-2-dqcwi0rikbh77hreu31gvm",
+      "isFree": false,
+      "familySlug": "cyber-duotone",
+      "familyName": "Cyber Duotone",
+      "categorySlug": "category",
+      "categoryName": "Category",
+      "subcategorySlug": "places",
+      "subcategoryName": "Places"
+    },
+    {
+      "hash": "ico_1ZgCLpi574tbN7nj",
+      "name": "Home 1",
+      "imagePreviewUrl": "icons/common-icons/home-1-5l1lx9056ixu7o4fllh31h.png/home-1-5cciq59kiq2wrcwtcu3oh",
+      "isFree": true,
+      "familySlug": "core-line-free",
+      "familyName": "Core Line - Free",
+      "categorySlug": "common-icons",
+      "categoryName": "Common icons",
+      "subcategorySlug": "common-icons",
+      "subcategoryName": "Common icons"
+    },
+   [...more results will appear here]
+  ],
+  "pagination": {
+    "total": 1350,
+    "hasMore": true,
+    "offset": 0,
+    "nextSkip": 50
+  }
+}
+```
 
-If you did everything right, you'll get a 200 response with your new plan details!
+From here, we can get the icon hash property for any of the results and use it in the other available endpoints:
+
+* [Download icon as PNG](doc:downloadiconaspng)
+* [Download icon as SVG](doc:downloadiconassvg)
+* [Get icon by hash](doc:geticonbyhash)
+
+And that's it! You're now able to integrate our icons into your application!
