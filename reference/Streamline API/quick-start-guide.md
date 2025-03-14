@@ -52,8 +52,10 @@ curl --request GET \
      --header 'accept: application/json'
 ```
 
-Examples for more languages and more details can be seen here:[Global search](doc:globalsearch)
+*Examples for more languages and more details can be seen here:[Global search](doc:globalsearch)*
 
-home
+/
+
+> 📘 Examples for more languages and more details can be seen [here](doc:globalsearch)
 
 If you did everything right, you'll get a 200 response with your new plan details!
