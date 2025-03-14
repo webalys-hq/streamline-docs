@@ -14,8 +14,6 @@ Downloading your first icon using the Streamline API requires just three steps!
 
 <br />
 
-<br />
-
 ## Create a Streamline Account
 
 First of all, you'll have to create a Streamline account if you don't have one. If you already have a Streamline account, you can skip to [Step 2](quick-start-guide#create-a-personal-api-key).
