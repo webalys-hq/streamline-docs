@@ -5,6 +5,6 @@ excerpt: >-
   returns the PNG.
 api:
   file: public-api-stagingstreamlinehqcom-public-api-docs-json.json
-  operationId: IconsController_downloadIconAsPNG
+  operationId: downloadIconAsPNG
 hidden: false
 ---

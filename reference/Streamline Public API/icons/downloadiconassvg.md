@@ -5,6 +5,6 @@ excerpt: >-
   returns the SVG.
 api:
   file: public-api-stagingstreamlinehqcom-public-api-docs-json.json
-  operationId: IconsController_downloadIconAsSVG
+  operationId: downloadIconAsSVG
 hidden: false
 ---

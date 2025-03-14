@@ -5,6 +5,6 @@ excerpt: >-
   users with premium access.
 api:
   file: public-api-stagingstreamlinehqcom-public-api-docs-json.json
-  operationId: IconsController_getIconByHash
+  operationId: getIconByHash
 hidden: false
 ---
