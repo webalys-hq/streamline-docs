@@ -28,8 +28,28 @@ Now that you already have an account, it's time to create your API Key, to do th
 
 ## Start using the API
 
-Now that you have the API Key, you can start using the API. To illustrate that, let's use the Global search endpoint to search for something:
+Now that you have your API Key, you can start using the API. To illustrate that, let's use the Global search endpoint to search for something:
 
-<HTMLBlock>{`
-Test
-`}</HTMLBlock>
+```node node
+const url = 'https://public-api-staging.streamlinehq.com/search/global?productType=icons';
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: PASTE_YOUR_API_KEY_HERE
+  }
+};
+
+fetch(url, options)
+  .then(res => res.json())
+  .then(json => console.log(json))
+  .catch(err => console.error(err));
+```
+```shell shell
+curl --request GET \
+     --url 'https://public-api-staging.streamlinehq.com/search/global?productType=icons' \
+     --header 'Authorization: PASTE_YOUR_API_KEY_HERE' \
+     --header 'accept: application/json'
+```
+
+Example for more languages can be seen here:
