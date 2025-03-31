@@ -41,7 +41,7 @@ Now that you have your API Key, you can start using the API.
 To illustrate that, let's use the Global search endpoint to search for 'home' icons:
 
 ```node node
-const url = 'https://public-api-staging.streamlinehq.com/search/global?productType=icons&query=home';
+const url = 'https://public-api.streamlinehq.com/search/global?productType=icons&query=home';
 const options = {
   method: 'GET',
   headers: {
