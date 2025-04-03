@@ -50,10 +50,7 @@ To illustrate that, let's use the Global search endpoint to search for 'home' ic
 const url = 'https://public-api.streamlinehq.com/v1/search/global?productType=icons&query=home';
 const options = {
   method: 'GET',
-  headers: {
-    accept: 'application/json',
-    'x-api-key': PASTE_YOUR_API_KEY_HERE
-  }
+  headers: {accept: 'application/json', 'x-api-key': 'PASTE_YOUR_API_KEY_HERE'}
 };
 
 fetch(url, options)
@@ -63,9 +60,9 @@ fetch(url, options)
 ```
 ```shell shell
 curl --request GET \
-     --url 'https://public-api-staging.streamlinehq.com/v1/search/global?productType=icons&query=home' \
-     --header 'x-api-key: PASTE_YOUR_API_KEY_HERE' \
-     --header 'accept: application/json'
+     --url 'https://public-api.streamlinehq.com/v1/search/global?productType=icons&query=home' \
+     --header 'accept: application/json' \
+     --header 'x-api-key: PASTE_YOUR_API_KEY_HERE'
 ```
 
 *Examples for more languages and more parameter details can be seen here:[Global search](doc:globalsearch)*
