@@ -52,7 +52,7 @@ const options = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: PASTE_YOUR_API_KEY_HERE
+    'x-api-key': PASTE_YOUR_API_KEY_HERE
   }
 };
 
@@ -64,7 +64,7 @@ fetch(url, options)
 ```shell shell
 curl --request GET \
      --url 'https://public-api-staging.streamlinehq.com/search/global?productType=icons' \
-     --header 'Authorization: PASTE_YOUR_API_KEY_HERE' \
+     --header 'x-api-key: PASTE_YOUR_API_KEY_HERE' \
      --header 'accept: application/json'
 ```
 
