@@ -22,15 +22,21 @@ To create an account, go to [https://www.streamlinehq.com/?auth=sign-up](https:/
 
 ## Create a Personal API Key
 
-Now that you already have an account, it's time to create your API Key. To do that, just go to Click on Account in the top right corner and then click on Profile, and then click on Streamline API(Or you can just go to [https://www.streamlinehq.com/profile?tab=api\_keys](https://www.streamlinehq.com/profile?tab=api_keys) ). Once you're on that page, click on the "Generate your secret API Key" button.
+As we're still in beta, you first have to request access to the Streamline API filling this form: [https://tally.so/r/mBekgN](https://tally.so/r/mBekgN)
 
-![](https://files.readme.io/22673b6ac65e45528106a16689c2a55ae4104f24b79a4f057708650f6bfd4a9f-image.png)
+Once we approve it, it's time to create your API Key. To do that, just go to Click on Account in the top right corner and then click on Profile, and then click on API Key(Or you can just go to [https://www.streamlinehq.com/profile?tab=api\_keys](https://www.streamlinehq.com/profile?tab=api_keys) ). Once you're on that page, click on the "Generate your API Key" button.
+
+![](https://files.readme.io/9b46fc90ab4d320e039687d579f1d02ccf4abab627a93b9363bfac68dcf9488e-image.png)
+
+<br />
 
 A new modal will appear showing some extra instructions that you need to read carefully and then click on "Generate Key" button.
 
-![](https://files.readme.io/9a460612626fe85d90e36a521c6decd33c442c42cd22eb2de1f41bc8f8bb1eb8-image.png)
+![](https://files.readme.io/ae52e763cd2a543e117945c09d784a5b5c4d58296d9ca0553db651eb91a71d2d-image.png)
 
-After that, you API Key will appear and you'll be able to copy it. Remember to save it in a safe place, as it'll never be shown again for safety purposes.
+<br />
+
+After that, your API Key will appear, and you'll be able to copy it.
 
 > ❗️ Do not share your API key with others or expose it in the browser or other client-side code.
 
