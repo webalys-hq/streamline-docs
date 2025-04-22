@@ -8,9 +8,11 @@ metadata:
 ---
 Downloading your first icon using the Streamline API requires just three steps!
 
-* [Step 1. Create a Streamline Account](quick-start-guide#create-a-streamline-account)
-* [Step 2. Create a Personal API Key](quick-start-guide#create-a-personal-api-key)
-* [Step 3. Start using the API](quick-start-guide#start-using-the-api)
+[Create a Streamline Account](quick-start-guide#create-a-streamline-account)
+
+[Create a Personal API Key](quick-start-guide#create-a-personal-api-key)
+
+[Start using the API](quick-start-guide#start-using-the-api)
 
 <br />
 
