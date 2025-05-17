@@ -136,8 +136,8 @@ If you did everything right, you'll get a 200 response with the first page of ic
 
 From here, we can get the icon hash property for any of the results and use it in the other available endpoints:
 
-* [Download icon as PNG](doc:downloadiconaspng)
-* [Download icon as SVG](doc:downloadiconassvg)
-* [Get icon by hash](doc:geticonbyhash)
+* [Download icon as PNG](https://streamline-api.readme.io/reference/downloadiconaspng#/)
+* [Download icon as SVG](https://streamline-api.readme.io/reference/downloadiconassvg#/)
+* [Get icon by hash](https://streamline-api.readme.io/reference/geticonbyhash#/)
 
 And that's it! You're now able to integrate our icons into your application!
