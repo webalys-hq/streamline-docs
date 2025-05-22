@@ -24,8 +24,6 @@ To create an account, go to [https://www.streamlinehq.com/?auth=sign-up](https:/
 
 ## Create a Personal API Key
 
-As we're still in beta, you first have to request access to the Streamline API filling this form: [https://tally.so/r/mBekgN](https://tally.so/r/mBekgN)
-
 Once we approve it, it's time to create your API Key. To do that, just go to Click on Account in the top right corner and then click on Profile, and then click on API Key(Or you can just go to [https://www.streamlinehq.com/profile?tab=api\_keys](https://www.streamlinehq.com/profile?tab=api_keys) ). Once you're on that page, click on the "Generate your API Key" button.
 
 ![](https://files.readme.io/9b46fc90ab4d320e039687d579f1d02ccf4abab627a93b9363bfac68dcf9488e-image.png)
