@@ -7,7 +7,7 @@ metadata:
 ---
 The Streamline Icons Public API is the ultimate way to integrate the world’s most comprehensive and beautifully designed icon library into your projects.
 
-At Streamline, we already offer [web](https://www.streamlinehq.com/) and [desktop](https://home.streamlinehq.com/plugins/download) versions, along with powerful plugins for [Figma](https://www.figma.com/community/plugin/852192486284901337/streamline-icons-illustrations-and-emoji-a-ui-ux-icon-library-with-svg-and-png), [Framer](https://www.framer.com/@streamlinehq/), and [Lucid](https://help.lucid.co/hc/en-us/articles/12137972603796-Integrate-Lucid-with-Streamline) to streamline your workflow. But if you need even more flexibility, our Public API gives you full programmatic access to our vast collection of icons.
+At Streamline, we already offer [web](https://www.streamlinehq.com/) <a href="https://www.streamlinehq.com/" target="_blank">web</a> and <a href="https://home.streamlinehq.com/plugins/download" target="_blank">desktop</a> [desktop](https://home.streamlinehq.com/plugins/download) versions, along with powerful plugins for [Figma](https://www.figma.com/community/plugin/852192486284901337/streamline-icons-illustrations-and-emoji-a-ui-ux-icon-library-with-svg-and-png), [Framer](https://www.framer.com/@streamlinehq/), and [Lucid](https://help.lucid.co/hc/en-us/articles/12137972603796-Integrate-Lucid-with-Streamline) to streamline your workflow. But if you need even more flexibility, our Public API gives you full programmatic access to our vast collection of icons.
 
 ## Why use the Streamline API?
 
