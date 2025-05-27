@@ -65,7 +65,7 @@ curl --request GET \
      --header 'x-api-key: PASTE_YOUR_API_KEY_HERE'
 ```
 
-*Examples for more languages and more parameter details can be seen here:[Global search](doc:globalsearch)*
+*Examples for more languages and more parameter details can be seen here:[Global search](https://streamline-api.readme.io/reference/globalsearch)*
 
 If you did everything right, you'll get a 200 response with the first page of icon results!
 
