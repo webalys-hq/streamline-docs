@@ -6,10 +6,9 @@ api:
   operationId: getIconByHash
 hidden: false
 ---
-If the API token belongs to a user with a (Streamline Pro subscription)\[[https://home.streamlinehq.com/pricing](https://home.streamlinehq.com/pricing)] or license, the response will include the icon’s `svg`.```
-```
+If the API token belongs to a user with a [Streamline Pro subcription](https://home.streamlinehq.com/pricing) or license, the response will include the icon’s `svg`.\`\`\`
 
-```Text json
+```
 {
 	...
 	// Other icon properties
