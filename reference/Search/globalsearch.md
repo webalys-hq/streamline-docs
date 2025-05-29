@@ -24,3 +24,5 @@ You can filter the results using your preferred style of assets
 ### Pagination
 
 By default we returned 50 icons but you can modify the pagination to request for more results in a single request
+
+For more details about how pagination works, go to [Pagination section](https://streamline-api.readme.io/reference/pagination#/)
