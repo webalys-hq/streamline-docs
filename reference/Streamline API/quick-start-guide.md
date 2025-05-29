@@ -97,30 +97,6 @@ If you did everything right, you'll get a 200 response with the first page of ic
       "subcategorySlug": "places",
       "subcategoryName": "Places"
     },
-    {
-      "hash": "ico_S0kd83eAm77fuTuP",
-      "name": "Home 2",
-      "imagePreviewUrl": "icons/places/home-2-v5aqejpjz4u7eee8a2gu.png/home-2-dqcwi0rikbh77hreu31gvm",
-      "isFree": false,
-      "familySlug": "cyber-duotone",
-      "familyName": "Cyber Duotone",
-      "categorySlug": "category",
-      "categoryName": "Category",
-      "subcategorySlug": "places",
-      "subcategoryName": "Places"
-    },
-    {
-      "hash": "ico_1ZgCLpi574tbN7nj",
-      "name": "Home 1",
-      "imagePreviewUrl": "icons/common-icons/home-1-5l1lx9056ixu7o4fllh31h.png/home-1-5cciq59kiq2wrcwtcu3oh",
-      "isFree": true,
-      "familySlug": "core-line-free",
-      "familyName": "Core Line - Free",
-      "categorySlug": "common-icons",
-      "categoryName": "Common icons",
-      "subcategorySlug": "common-icons",
-      "subcategoryName": "Common icons"
-    },
    [...more results will appear here]
   ],
   "pagination": {
