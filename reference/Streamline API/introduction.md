@@ -16,5 +16,3 @@ At Streamline, we already offer <a href="https://www.streamlinehq.com/" target="
 * Optimized for developers – retrieve icons in SVG, PNG, or other formats with simple API calls.
 
 Whether you're building a design tool, automating workflows, or embedding icons in your app, the Streamline API gives you the power to customize and scale like never before. 🚀
-
-[https://marketplace.visualstudio.com/items?itemName=streamline.streamline-icons](https://marketplace.visualstudio.com/items?itemName=streamline.streamline-icons)
