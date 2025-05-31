@@ -1,5 +1,5 @@
 ---
-title: Download icon as SVG
+title: Download icon as SVG.
 excerpt: >-
   Apply the required modifications to the asset such as size as color and
   returns the SVG.

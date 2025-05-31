@@ -1,5 +1,5 @@
 ---
-title: Download icon as PNG
+title: Download icon as PNG.
 excerpt: >-
   Apply the required modifications to the asset such as size as color and
   returns the PNG.
