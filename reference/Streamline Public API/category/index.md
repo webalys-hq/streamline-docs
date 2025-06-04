@@ -1,4 +1,4 @@
 ---
 title: Category
-hidden: false
+hidden: true
 ---
