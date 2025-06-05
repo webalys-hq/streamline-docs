@@ -1,7 +1,7 @@
 ---
-title: Get icon by hash.
+title: Get Icon Information
 excerpt: >-
-  Retrieves detailed information about the requested icon, including the SVG for
+  Retrieves detailed information about an individial icon, including the SVG for
   users with premium access.
 api:
   file: public-api-stagingstreamlinehqcom-public-api-docs-json.json
