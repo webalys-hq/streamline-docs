@@ -18,4 +18,4 @@ If you're experiencing any issues with the Streamline API, please follow these s
 
    <Image align="center" src="https://files.readme.io/70d4fef3f0ae4f2cf70c701a7a4be39f1b59f84853bbfff76c9f8e0f9a9e5e93-image.png" />
 6. Still need help?\
-   If everything looks normal on the status page but you're still having trouble, reach out to us via our [Help Center](). We're here to help!
+   Reach out to us via our dedicated email [dev@streamlinehq.com](mailto:dev@streamlinehq.com). We're here to help!
