@@ -1,4 +1,0 @@
----
-title: Subcategory
-hidden: true
----
