@@ -2,6 +2,7 @@
 - geticons
 - getsubcategories
 - geticonsbycategory
+- geticonbysubcategory
 - category
 - subcategory
 - familygroup
