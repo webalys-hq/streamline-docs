@@ -1,6 +1,7 @@
 - getcategories
 - geticons
 - getsubcategories
+- geticonsbycategory
 - category
 - subcategory
 - familygroup
