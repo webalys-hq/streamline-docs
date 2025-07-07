@@ -24,7 +24,7 @@ To create an account, go to <a href="https://www.streamlinehq.com/?auth=sign-up"
 
 ## Create a Personal API Key
 
-Click on the Account in the top right corner and then click on Profile, and then click on API Key(Or you can just go to the <a href="https://www.streamlinehq.com/profile?tab=api_keys" target="_blank">api page</a>. Once you're on that page, click on the "Generate your API Key" button.
+Click on the Account in the top right corner and then click on Profile, and then click on API Key (or you can just go to the <a href="https://www.streamlinehq.com/profile?tab=api_keys" target="_blank">api page</a>. Once you're on that page, click on the "Generate your API Key" button.
 
 ![](https://files.readme.io/9b46fc90ab4d320e039687d579f1d02ccf4abab627a93b9363bfac68dcf9488e-image.png)
 
