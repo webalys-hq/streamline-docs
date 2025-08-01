@@ -1,1 +1,1552 @@
-{"openapi":"3.0.0","paths":{"/v1/families/{familyHash}/categories":{"get":{"operationId":"getCategories","parameters":[{"name":"familyHash","required":true,"in":"path","schema":{"type":"string"}}],"responses":{"200":{"description":"Categories from the family.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/CategoryResponse"},"example":{"hash":"ico_iOeCDDSjKBKhKo","slug":"voro","name":"eyeliner"}}}},"401":{"description":"An Unauthorized response is returned when the api key is not passed or is not valid.","content":{"application/json":{"example":{"message":"Api key is required","error":"Unauthorized","statusCode":401}}}}},"security":[{"api-key":[]}],"summary":"Get all categories from a family.","tags":["Family"]}},"/v1/families/{familyHash}/icons":{"get":{"operationId":"getIcons","parameters":[{"name":"familyHash","required":true,"in":"path","schema":{"type":"string"}},{"name":"offset","required":false,"in":"query","schema":{"default":0,"type":"number"}},{"name":"limit","required":false,"in":"query","schema":{"maximum":100,"default":50,"type":"number"}}],"responses":{"200":{"description":"Icons from a family.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/IconListResponse"},"example":{"icons":[{"hash":"ico_PkiSGIwuUbgFMH","name":"honesty","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/conventus-accusantium-apto.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"denego","familyName":"bump","categorySlug":"xiphias","categoryName":"gerbil","subcategorySlug":"commodo","subcategoryName":"publication"},{"hash":"ico_tZMOJxnQawllnc","name":"warming","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/bellum-minus-magni.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"tumultus","familyName":"march","categorySlug":"veritas","categoryName":"roadway","subcategorySlug":"custodia","subcategoryName":"comparison"},{"hash":"ico_jOLYrpLQsbIOZa","name":"tabletop","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/tego-virgo-spero.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"coniecto","familyName":"discourse","categorySlug":"subiungo","categoryName":"testing","subcategorySlug":"capillus","subcategoryName":"tomb"},{"hash":"ico_bVPHHnTjsJLruL","name":"tribe","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/curriculum-capto-thesaurus.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"terra","familyName":"peninsula","categorySlug":"tondeo","categoryName":"typewriter","subcategorySlug":"clarus","subcategoryName":"thyme"}],"pagination":{"hasMore":true,"total":10,"offset":0,"nextOffset":5}}}}},"401":{"description":"An Unauthorized response is returned when the api key is not passed or is not valid.","content":{"application/json":{"example":{"message":"Api key is required","error":"Unauthorized","statusCode":401}}}}},"security":[{"api-key":[]}],"summary":"Get all icons from a family.","tags":["Family"]}},"/v1/categories/{categoryHash}/subcategories":{"get":{"operationId":"getSubcategories","parameters":[{"name":"categoryHash","required":true,"in":"path","schema":{"type":"string"}}],"responses":{"200":{"description":"Subcategories from a category.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/SubcategoryResponse"},"example":{"hash":"ico_XhyxhVtHlHYVpn","slug":"cetera","name":"hyena"}}}},"401":{"description":"An Unauthorized response is returned when the api key is not passed or is not valid.","content":{"application/json":{"example":{"message":"Api key is required","error":"Unauthorized","statusCode":401}}}}},"security":[{"api-key":[]}],"summary":"Get all subcategories from a category.","tags":["Category"]}},"/v1/categories/{categoryHash}/icons":{"get":{"operationId":"getIconsByCategory","parameters":[{"name":"categoryHash","required":true,"in":"path","schema":{"type":"string"}},{"name":"offset","required":false,"in":"query","schema":{"default":0,"type":"number"}},{"name":"limit","required":false,"in":"query","schema":{"maximum":100,"default":50,"type":"number"}}],"responses":{"200":{"description":"Icons from a category.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/IconListResponse"},"example":{"icons":[{"hash":"ico_WaHoZglxqpWVeI","name":"babushka","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/curiositas-commodi-ab.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"vae","familyName":"fraudster","categorySlug":"depulso","categoryName":"strait","subcategorySlug":"crapula","subcategoryName":"thongs"},{"hash":"ico_dVpPznFcPZzIwl","name":"shoulder","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/sol-volva-pauper.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"eaque","familyName":"finger","categorySlug":"ademptio","categoryName":"typewriter","subcategorySlug":"xiphias","subcategoryName":"priesthood"},{"hash":"ico_QeEWkUsiduwzXT","name":"moment","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/arbustum-acervus-desino.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"atavus","familyName":"skeleton","categorySlug":"terreo","categoryName":"hundred","subcategorySlug":"tamisium","subcategoryName":"possession"},{"hash":"ico_rQePoRXlPBEkzl","name":"mentor","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/pauper-depopulo-paulatim.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"crur","familyName":"scrap","categorySlug":"clementia","categoryName":"sideboard","subcategorySlug":"cum","subcategoryName":"event"}],"pagination":{"hasMore":true,"total":10,"offset":0,"nextOffset":5}}}}},"401":{"description":"An Unauthorized response is returned when the api key is not passed or is not valid.","content":{"application/json":{"example":{"message":"Api key is required","error":"Unauthorized","statusCode":401}}}}},"security":[{"api-key":[]}],"summary":"Get all icons from a category.","tags":["Category"]}},"/v1/subcategories/{subcategoryHash}/icons":{"get":{"operationId":"getIconBySubcategory","parameters":[{"name":"subcategoryHash","required":true,"in":"path","schema":{"type":"string"}},{"name":"offset","required":false,"in":"query","schema":{"default":0,"type":"number"}},{"name":"limit","required":false,"in":"query","schema":{"maximum":100,"default":50,"type":"number"}}],"responses":{"200":{"description":"Icons from a subcategory.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/IconListResponse"},"example":{"icons":[{"hash":"ico_ZUPOapqLTXOiyz","name":"singing","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/corona-abutor-cum.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"stillicidium","familyName":"disclosure","categorySlug":"magni","categoryName":"consistency","subcategorySlug":"benevolentia","subcategoryName":"subexpression"},{"hash":"ico_UIgayjaEzrIwUw","name":"tool","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/crapula-sufficio-una.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"baiulus","familyName":"procurement","categorySlug":"concido","categoryName":"mathematics","subcategorySlug":"comparo","subcategoryName":"smog"},{"hash":"ico_mDXPRxkDGKqKgB","name":"scaffold","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/talus-contigo-trepide.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"constans","familyName":"amendment","categorySlug":"tergum","categoryName":"tuber","subcategorySlug":"denique","subcategoryName":"stitcher"},{"hash":"ico_hyPvzbgluRXCYG","name":"pillbox","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/virgo-audio-coma.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"vestrum","familyName":"flint","categorySlug":"terror","categoryName":"cappelletti","subcategorySlug":"ulciscor","subcategoryName":"agreement"}],"pagination":{"hasMore":true,"total":10,"offset":0,"nextOffset":5}}}}},"401":{"description":"An Unauthorized response is returned when the api key is not passed or is not valid.","content":{"application/json":{"example":{"message":"Api key is required","error":"Unauthorized","statusCode":401}}}}},"security":[{"api-key":[]}],"summary":"Get all icons from a subcategory.","tags":["Subcategory"]}},"/v1/icons/{hash}":{"get":{"description":"Retrieves detailed information about the requested icon, including the SVG for users with premium access.","operationId":"getIconByHash","parameters":[{"name":"hash","required":true,"in":"path","description":"This is the icon ID, you can obtain the icon hash from a global search response","schema":{"example":"ico_XjMYRy9v4t96OdUn","type":"string"}}],"responses":{"200":{"description":"Premium SVGs are included only for premium users.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/IconResponse"},"example":{"hash":"ico_WprGcGGMthNFXe","name":"invite","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/unus-auxilium-collum.png?_a=DATAdtUqZAA0","colors":[],"isFree":false,"familySlug":"cubicularis","familyName":"fit","categorySlug":"usque","categoryName":"cross-contamination","subcategorySlug":"natus","subcategoryName":"papa"}}}},"401":{"description":"An Unauthorized response is returned when the api key is not passed or is not valid.","content":{"application/json":{"example":{"message":"Api key is required","error":"Unauthorized","statusCode":401}}}},"404":{"description":"A Not Found response is returned when a user requests a resource that does not exist.","content":{"application/json":{"example":{"message":"Resource not found","error":"Not Found","statusCode":404}}}}},"security":[{"api-key":[]}],"summary":"Get icon by hash.","tags":["Icons"]}},"/v1/icons/{hash}/download/svg":{"get":{"description":"Apply the required modifications to the asset such as size as color and returns the SVG.","operationId":"downloadIconAsSVG","parameters":[{"name":"hash","required":true,"in":"path","description":"This is the icon ID, you can obtain the icon hash from a global search response","schema":{"example":"ico_XjMYRy9v4t96OdUn","type":"string"}},{"name":"colors","required":false,"in":"query","description":"Comma-separated list of HEX or CSS named colors to use when exporting the asset. Each color must be a valid HEX code (3–8 digits) or a standard CSS color name.","schema":{"default":[],"example":"#000000, #CDFF71, red, blue","type":"string"}},{"name":"backgroundColor","required":false,"in":"query","description":"Apply a filled color background to an image. The default color is transparent.","schema":{"default":"#ffffff00","example":"#ffffff00","type":"string"}},{"name":"strokeWidth","required":false,"in":"query","description":"Allows increasing or decreasing the thickness of the vector paths.","schema":{"example":1.5,"type":"number"}},{"name":"size","required":true,"in":"query","description":"Image size in pixels (square): Enter one number — e.g., 100 = 100px × 100px.","schema":{"minimum":1,"maximum":4096,"default":48,"example":48,"type":"number"}},{"name":"responsive","required":true,"in":"query","description":"Generates an SVG that scales with its container using viewBox and no fixed size. If true, width and height attributes will be removed from the SVG tag.","schema":{"default":false,"type":"boolean"}}],"responses":{"200":{"description":"Successfully returns the icon as an SVG image.","content":{"image/svg+xml":{"example":"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"#000000\" aria-hidden=\"true\" id=\"Home--Streamline-Heroicons-Outline\">\n        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m2.25 12 8.954 -8.955c0.44 -0.439 1.152 -0.439 1.591 0L21.75 12M4.5 9.75v10.125c0 0.621 0.504 1.125 1.125 1.125H9.75v-4.875c0 -0.621 0.504 -1.125 1.125 -1.125h2.25c0.621 0 1.125 0.504 1.125 1.125V21h4.125c0.621 0 1.125 -0.504 1.125 -1.125V9.75M8.25 21h8.25\" stroke-width=\"1\"></path>\n      </svg>"}}},"400":{"description":"A Bad Request is returned when required fields are missing or when an invalid value is provided.","content":{"application/json":{"example":{"message":"Required fields are missing or invalid","error":"Bad Request","statusCode":400}}}},"401":{"description":"An Unauthorized response is returned when the api key is not passed or is not valid.","content":{"application/json":{"example":{"message":"Api key is required","error":"Unauthorized","statusCode":401}}}},"403":{"description":"A Forbidden response is returned when a user attempts to access a resource they don’t have permission for.","content":{"application/json":{"example":{"message":"'You don't have access to this resource.'","error":"Forbidden Request","statusCode":403}}}},"404":{"description":"A Not Found response is returned when a user requests a resource that does not exist.","content":{"application/json":{"example":{"message":"Resource not found","error":"Not Found","statusCode":404}}}}},"security":[{"api-key":[]}],"summary":"Download icon as SVG.","tags":["Icons"]}},"/v1/icons/{hash}/download/png":{"get":{"description":"Apply the required modifications to the asset such as size as color and returns the PNG.","operationId":"downloadIconAsPNG","parameters":[{"name":"hash","required":true,"in":"path","description":"This is the icon ID, you can obtain the icon hash from a global search response","schema":{"example":"ico_XjMYRy9v4t96OdUn","type":"string"}},{"name":"colors","required":false,"in":"query","description":"Comma-separated list of HEX or CSS named colors to use when exporting the asset. Each color must be a valid HEX code (3–8 digits) or a standard CSS color name.","schema":{"default":[],"example":"#000000, #CDFF71, red, blue","type":"string"}},{"name":"backgroundColor","required":false,"in":"query","description":"Apply a filled color background to an image. The default color is transparent.","schema":{"default":"#ffffff00","example":"#ffffff00","type":"string"}},{"name":"strokeWidth","required":false,"in":"query","description":"Allows increasing or decreasing the thickness of the vector paths.","schema":{"example":1.5,"type":"number"}},{"name":"size","required":true,"in":"query","description":"Image size in pixels (square): Enter one number — e.g., 100 = 100px × 100px.","schema":{"minimum":1,"maximum":4096,"default":48,"example":48,"type":"number"}}],"responses":{"200":{"description":"Successfully returns the icon as an PNG image.","content":{"image/png":{}}},"400":{"description":"A Bad Request is returned when required fields are missing or when an invalid value is provided.","content":{"application/json":{"example":{"message":"Required fields are missing or invalid","error":"Bad Request","statusCode":400}}}},"401":{"description":"An Unauthorized response is returned when the api key is not passed or is not valid.","content":{"application/json":{"example":{"message":"Api key is required","error":"Unauthorized","statusCode":401}}}},"403":{"description":"A Forbidden response is returned when a user attempts to access a resource they don’t have permission for.","content":{"application/json":{"example":{"message":"'You don't have access to this resource.'","error":"Forbidden Request","statusCode":403}}}},"404":{"description":"A Not Found response is returned when a user requests a resource that does not exist.","content":{"application/json":{"example":{"message":"Resource not found","error":"Not Found","statusCode":404}}}}},"security":[{"api-key":[]}],"summary":"Download icon as PNG.","tags":["Icons"]}},"/v1/search/global":{"get":{"description":"Search for icons, illustrations, emojis or elements from all families.","operationId":"globalSearch","parameters":[{"name":"productType","required":true,"in":"query","description":"Product type for the search.","schema":{"type":"string","enum":["icons","illustrations","emojis","elements"]}},{"name":"query","required":true,"in":"query","description":"Search term to find icons.","schema":{"example":"home","type":"string"}},{"name":"offset","required":false,"in":"query","description":"Specifies the number of items to skip before starting to return results.","schema":{"default":0,"type":"number"}},{"name":"limit","required":false,"in":"query","description":"Specifies the maximum number of items to return in the response.","schema":{"maximum":100,"default":50,"type":"number"}},{"name":"productTier","required":false,"in":"query","description":"Filter for the price tier of the products. E.g., If \"free\", results will only be from free sets","schema":{"default":"all","type":"string","enum":["all","free","premium"]}},{"name":"style","required":false,"in":"query","description":"Filter for the style of the sets.","schema":{"type":"string","enum":["line","solid","flat","duo","handrawn","creative","gradient","remix","neon","pop"]}}],"responses":{"200":{"description":"Successful response.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/SearchResponse"},"example":{"query":"bracelet","results":[{"hash":"ico_lNFsbXimfXnQeC","name":"bracelet","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/viridis-coniecto-adstringo.png?_a=DATAdtUqZAA0","isFree":false,"familySlug":"pecus","familyName":"ghost","categorySlug":"iure","categoryName":"sushi","subcategorySlug":"tumultus","subcategoryName":"schedule"},{"hash":"ico_BODCfqjCpRdYUu","name":"bracelet","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/aequus-cibus-cohaero.png?_a=DATAdtUqZAA0","isFree":false,"familySlug":"argumentum","familyName":"final","categorySlug":"acer","categoryName":"fraudster","subcategorySlug":"vulgivagus","subcategoryName":"bourgeoisie"}],"pagination":{"total":10,"hasMore":true,"offset":0,"nextOffset":2}}}}},"400":{"description":"A Bad Request is returned when required fields are missing or when an invalid value is provided.","content":{"application/json":{"example":{"message":"Required fields are missing or invalid","error":"Bad Request","statusCode":400}}}},"401":{"description":"An Unauthorized response is returned when the api key is not passed or is not valid.","content":{"application/json":{"example":{"message":"Api key is required","error":"Unauthorized","statusCode":401}}}}},"security":[{"api-key":[]}],"summary":"Global search.","tags":["Search"]}},"/v1/search/family/{familySlug}":{"get":{"description":"Search for icons, illustrations, emojis or elements from a specific family.","operationId":"familySearch","parameters":[{"name":"familySlug","required":true,"in":"path","schema":{"type":"string"}},{"name":"query","required":true,"in":"query","description":"Search term to find icons.","schema":{"example":"home","type":"string"}},{"name":"offset","required":false,"in":"query","schema":{"default":0,"type":"number"}},{"name":"limit","required":false,"in":"query","schema":{"maximum":100,"default":50,"type":"number"}}],"responses":{"200":{"description":"Successful response.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/SearchResponse"},"example":{"query":"other","results":[{"hash":"ico_ESSaZZPkeovFmz","name":"other","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/catena-comedo-conculco.png?_a=DATAdtUqZAA0","isFree":false,"familySlug":"coast","familyName":"intervention","categorySlug":"coepi","categoryName":"status","subcategorySlug":"usus","subcategoryName":"filter"},{"hash":"ico_DZcaqokbBgCOkD","name":"other","imagePreviewUrl":"https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/coaegresco-deludo-porro.png?_a=DATAdtUqZAA0","isFree":false,"familySlug":"coast","familyName":"intervention","categorySlug":"tabula","categoryName":"ghost","subcategorySlug":"turpis","subcategoryName":"forgery"}],"pagination":{"total":10,"hasMore":true,"offset":0,"nextOffset":2}}}}},"400":{"description":"A Bad Request is returned when required fields are missing or when an invalid value is provided.","content":{"application/json":{"example":{"message":"Required fields are missing or invalid","error":"Bad Request","statusCode":400}}}},"401":{"description":"An Unauthorized response is returned when the api key is not passed or is not valid.","content":{"application/json":{"example":{"message":"Api key is required","error":"Unauthorized","statusCode":401}}}}},"security":[{"api-key":[]}],"summary":"Family search.","tags":["Search"]}},"/v1/family-groups":{"get":{"operationId":"getAll","parameters":[],"responses":{"200":{"description":"Family groups/bundles available.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/FamilyGroupResponse"},"example":{"hash":"ico_mjjMVtAgtGvwdh","slug":"patruus","name":"marimba","description":"Aspernatur stillicidium spargo degero subnecto admoveo theca paens studio conservo."}}}},"401":{"description":"An Unauthorized response is returned when the api key is not passed or is not valid.","content":{"application/json":{"example":{"message":"Api key is required","error":"Unauthorized","statusCode":401}}}}},"security":[{"api-key":[]}],"summary":"Get all family groups/bundles available.","tags":["FamilyGroup"]}},"/v1/family-groups/{familyGroupHash}/families":{"get":{"operationId":"getFamilies","parameters":[{"name":"familyGroupHash","required":true,"in":"path","schema":{"type":"string"}}],"responses":{"200":{"description":"Families from a family group/bundle.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/FamilyResponse"},"example":{"hash":"ico_EHbiQwhXsNrqOo","slug":"ancilla","productType":"icons","name":"intervention","isFree":false}}}},"401":{"description":"An Unauthorized response is returned when the api key is not passed or is not valid.","content":{"application/json":{"example":{"message":"Api key is required","error":"Unauthorized","statusCode":401}}}}},"security":[{"api-key":[]}],"summary":"Get all families from a family group/bundle.","tags":["FamilyGroup"]}}},"info":{"title":"Streamline Public API","description":"Use your generated key or create a new one at [www.streamlinehq.com/profile?tab=api_keys](https://www.streamlinehq.com/profile?tab=api_keys) to access the API.","version":"1.0","contact":{}},"tags":[],"servers":[{"url":"https://public-api.streamlinehq.com"}],"components":{"securitySchemes":{"api-key":{"type":"apiKey","in":"header","name":"x-api-key","description":"Use your generated key or create a new one at [www.streamlinehq.com](https://www.streamlinehq.com/profile?tab=api_keys)."}},"schemas":{"CategoryResponse":{"type":"object","properties":{"hash":{"type":"string"},"slug":{"type":"string"},"name":{"type":"string"}},"required":["hash","slug","name"]},"IconResponse":{"type":"object","properties":{"hash":{"type":"string"},"name":{"type":"string"},"imagePreviewUrl":{"type":"string"},"colors":{"type":"array","items":{"type":"string"}},"isFree":{"type":"boolean"},"familySlug":{"type":"string"},"familyName":{"type":"string"},"categorySlug":{"type":"string"},"categoryName":{"type":"string"},"subcategorySlug":{"type":"string"},"subcategoryName":{"type":"string"}},"required":["hash","name","imagePreviewUrl","colors","isFree","familySlug","familyName","categorySlug","categoryName","subcategorySlug","subcategoryName"]},"Pagination":{"type":"object","properties":{"total":{"type":"number"},"hasMore":{"type":"boolean"},"offset":{"type":"number"},"nextOffset":{"type":"number"}},"required":["total","hasMore","offset","nextOffset"]},"IconListResponse":{"type":"object","properties":{"icons":{"type":"array","items":{"$ref":"#/components/schemas/IconResponse"}},"pagination":{"$ref":"#/components/schemas/Pagination"}},"required":["icons","pagination"]},"SubcategoryResponse":{"type":"object","properties":{"hash":{"type":"string"},"slug":{"type":"string"},"name":{"type":"string"}},"required":["hash","slug","name"]},"SearchIcon":{"type":"object","properties":{"hash":{"type":"string"},"name":{"type":"string"},"imagePreviewUrl":{"type":"string"},"isFree":{"type":"boolean"},"familySlug":{"type":"string"},"familyName":{"type":"string"},"categorySlug":{"type":"string"},"categoryName":{"type":"string"},"subcategorySlug":{"type":"string"},"subcategoryName":{"type":"string"}},"required":["hash","name","imagePreviewUrl","isFree","familySlug","familyName","categorySlug","categoryName","subcategorySlug","subcategoryName"]},"SearchResponse":{"type":"object","properties":{"query":{"type":"string","description":"The search query string used by the user."},"results":{"description":"List of icons matching the search query.","type":"array","items":{"$ref":"#/components/schemas/SearchIcon"}},"pagination":{"description":"Pagination information for the results.","allOf":[{"$ref":"#/components/schemas/Pagination"}]}},"required":["query","results","pagination"]},"FamilyGroupResponse":{"type":"object","properties":{"hash":{"type":"string"},"slug":{"type":"string"},"name":{"type":"string"},"description":{"type":"string"}},"required":["hash","slug","name","description"]},"FamilyResponse":{"type":"object","properties":{"hash":{"type":"string"},"slug":{"type":"string"},"productType":{"type":"string","enum":["icons","illustrations","emojis","elements"]},"name":{"type":"string"},"isFree":{"type":"boolean"}},"required":["hash","slug","productType","name","isFree"]}}},"x-samples-languages":["shell","node","ruby","php","python"]}
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/v1/families/{familyHash}/categories": {
+      "get": {
+        "operationId": "getCategories",
+        "parameters": [
+          {
+            "name": "familyHash",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Categories from the family.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CategoryResponse"
+                },
+                "example": {
+                  "hash": "ico_zQkDZPpYzFbNYb",
+                  "slug": "aestivus",
+                  "name": "babushka"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Get all categories from a family.",
+        "tags": [
+          "Family"
+        ]
+      }
+    },
+    "/v1/families/{familyHash}/icons": {
+      "get": {
+        "operationId": "getIcons",
+        "parameters": [
+          {
+            "name": "familyHash",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "offset",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "default": 0,
+              "type": "number"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "maximum": 100,
+              "default": 50,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Icons from a family.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IconListResponse"
+                },
+                "example": {
+                  "icons": [
+                    {
+                      "hash": "ico_LqbxXrtHwqZnzB",
+                      "name": "bid",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/apostolus-sum-armarium.png?_a=DATAg1UqZAA0",
+                      "colors": [],
+                      "isFree": false,
+                      "familySlug": "debilito",
+                      "familyName": "packaging",
+                      "categorySlug": "tempus",
+                      "categoryName": "abacus",
+                      "subcategorySlug": "admitto",
+                      "subcategoryName": "poppy"
+                    },
+                    {
+                      "hash": "ico_SFJqQpyQodAFaX",
+                      "name": "strategy",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/taedium-video-crux.png?_a=DATAg1UqZAA0",
+                      "colors": [],
+                      "isFree": false,
+                      "familySlug": "arma",
+                      "familyName": "doubter",
+                      "categorySlug": "thermae",
+                      "categoryName": "bell",
+                      "subcategorySlug": "cuppedia",
+                      "subcategoryName": "citizen"
+                    },
+                    {
+                      "hash": "ico_obxGoZskdvNCrV",
+                      "name": "wear",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/timor-confero-vado.png?_a=DATAg1UqZAA0",
+                      "colors": [],
+                      "isFree": false,
+                      "familySlug": "currus",
+                      "familyName": "license",
+                      "categorySlug": "vapulus",
+                      "categoryName": "blowgun",
+                      "subcategorySlug": "amaritudo",
+                      "subcategoryName": "minister"
+                    },
+                    {
+                      "hash": "ico_seUKWaVikDwZdO",
+                      "name": "decongestant",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/tenetur-subvenio-delicate.png?_a=DATAg1UqZAA0",
+                      "colors": [],
+                      "isFree": false,
+                      "familySlug": "acer",
+                      "familyName": "soliloquy",
+                      "categorySlug": "vicissitudo",
+                      "categoryName": "swanling",
+                      "subcategorySlug": "custodia",
+                      "subcategoryName": "cheetah"
+                    }
+                  ],
+                  "pagination": {
+                    "hasMore": true,
+                    "total": 10,
+                    "offset": 0,
+                    "nextOffset": 5
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Get all icons from a family.",
+        "tags": [
+          "Family"
+        ]
+      }
+    },
+    "/v1/categories/{categoryHash}/subcategories": {
+      "get": {
+        "operationId": "getSubcategories",
+        "parameters": [
+          {
+            "name": "categoryHash",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Subcategories from a category.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubcategoryResponse"
+                },
+                "example": {
+                  "hash": "ico_RqucJLziPpvlWT",
+                  "slug": "sortitus",
+                  "name": "giant"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Get all subcategories from a category.",
+        "tags": [
+          "Category"
+        ]
+      }
+    },
+    "/v1/categories/{categoryHash}/icons": {
+      "get": {
+        "operationId": "getIconsByCategory",
+        "parameters": [
+          {
+            "name": "categoryHash",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "offset",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "default": 0,
+              "type": "number"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "maximum": 100,
+              "default": 50,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Icons from a category.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IconListResponse"
+                },
+                "example": {
+                  "icons": [
+                    {
+                      "hash": "ico_nwIpkJwVYbDlQS",
+                      "name": "suspension",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/dolorem-desparatus-ambitus.png?_a=DATAg1UqZAA0",
+                      "colors": [],
+                      "isFree": false,
+                      "familySlug": "claro",
+                      "familyName": "release",
+                      "categorySlug": "clibanus",
+                      "categoryName": "devastation",
+                      "subcategorySlug": "solus",
+                      "subcategoryName": "granny"
+                    },
+                    {
+                      "hash": "ico_vDEqFkoateFjeu",
+                      "name": "edge",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/censura-dolor-nihil.png?_a=DATAg1UqZAA0",
+                      "colors": [],
+                      "isFree": false,
+                      "familySlug": "teneo",
+                      "familyName": "substitution",
+                      "categorySlug": "aut",
+                      "categoryName": "goat",
+                      "subcategorySlug": "victoria",
+                      "subcategoryName": "corporation"
+                    },
+                    {
+                      "hash": "ico_upUyBObTDPmLXJ",
+                      "name": "haircut",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/nemo-attonbitus-curvo.png?_a=DATAg1UqZAA0",
+                      "colors": [],
+                      "isFree": false,
+                      "familySlug": "conatus",
+                      "familyName": "going",
+                      "categorySlug": "architecto",
+                      "categoryName": "planula",
+                      "subcategorySlug": "adimpleo",
+                      "subcategoryName": "accountability"
+                    },
+                    {
+                      "hash": "ico_QvCJNccIRYDdfj",
+                      "name": "import",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/socius-bonus-in.png?_a=DATAg1UqZAA0",
+                      "colors": [],
+                      "isFree": false,
+                      "familySlug": "timor",
+                      "familyName": "sandbar",
+                      "categorySlug": "explicabo",
+                      "categoryName": "vol",
+                      "subcategorySlug": "minus",
+                      "subcategoryName": "plain"
+                    }
+                  ],
+                  "pagination": {
+                    "hasMore": true,
+                    "total": 10,
+                    "offset": 0,
+                    "nextOffset": 5
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Get all icons from a category.",
+        "tags": [
+          "Category"
+        ]
+      }
+    },
+    "/v1/subcategories/{subcategoryHash}/icons": {
+      "get": {
+        "operationId": "getIconBySubcategory",
+        "parameters": [
+          {
+            "name": "subcategoryHash",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "offset",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "default": 0,
+              "type": "number"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "maximum": 100,
+              "default": 50,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Icons from a subcategory.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IconListResponse"
+                },
+                "example": {
+                  "icons": [
+                    {
+                      "hash": "ico_RjsnswxrrEDOVQ",
+                      "name": "fold",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/aliquam-attonbitus-urbs.png?_a=DATAg1UqZAA0",
+                      "colors": [],
+                      "isFree": false,
+                      "familySlug": "capillus",
+                      "familyName": "swath",
+                      "categorySlug": "attero",
+                      "categoryName": "polyester",
+                      "subcategorySlug": "viduo",
+                      "subcategoryName": "adviser"
+                    },
+                    {
+                      "hash": "ico_LxHTKgEFMZiAse",
+                      "name": "valley",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/antea-strenuus-labore.png?_a=DATAg1UqZAA0",
+                      "colors": [],
+                      "isFree": false,
+                      "familySlug": "voluntarius",
+                      "familyName": "mantua",
+                      "categorySlug": "aiunt",
+                      "categoryName": "seagull",
+                      "subcategorySlug": "aequus",
+                      "subcategoryName": "marksman"
+                    },
+                    {
+                      "hash": "ico_ixpvIxkmLdHEcR",
+                      "name": "king",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/trucido-thesis-suffoco.png?_a=DATAg1UqZAA0",
+                      "colors": [],
+                      "isFree": false,
+                      "familySlug": "somnus",
+                      "familyName": "lyre",
+                      "categorySlug": "debitis",
+                      "categoryName": "commodity",
+                      "subcategorySlug": "patria",
+                      "subcategoryName": "humor"
+                    },
+                    {
+                      "hash": "ico_XncPjvbzvVIQRg",
+                      "name": "illusion",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/inventore-audacia-adsidue.png?_a=DATAg1UqZAA0",
+                      "colors": [],
+                      "isFree": false,
+                      "familySlug": "vulpes",
+                      "familyName": "tuxedo",
+                      "categorySlug": "curto",
+                      "categoryName": "pacemaker",
+                      "subcategorySlug": "taceo",
+                      "subcategoryName": "secret"
+                    }
+                  ],
+                  "pagination": {
+                    "hasMore": true,
+                    "total": 10,
+                    "offset": 0,
+                    "nextOffset": 5
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Get all icons from a subcategory.",
+        "tags": [
+          "Subcategory"
+        ]
+      }
+    },
+    "/v1/icons/{hash}": {
+      "get": {
+        "description": "Retrieves detailed information about the requested icon, including the SVG for users with premium access.",
+        "operationId": "getIconByHash",
+        "parameters": [
+          {
+            "name": "hash",
+            "required": true,
+            "in": "path",
+            "description": "This is the icon ID, you can obtain the icon hash from a global search response",
+            "schema": {
+              "example": "ico_XjMYRy9v4t96OdUn",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Premium SVGs are included only for premium users.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IconResponse"
+                },
+                "example": {
+                  "hash": "ico_ITIjprNayvReTm",
+                  "name": "mechanic",
+                  "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/angustus-ter-sapiente.png?_a=DATAg1UqZAA0",
+                  "colors": [],
+                  "isFree": false,
+                  "familySlug": "consuasor",
+                  "familyName": "dish",
+                  "categorySlug": "audacia",
+                  "categoryName": "scenario",
+                  "subcategorySlug": "vetus",
+                  "subcategoryName": "polarisation"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "A Not Found response is returned when a user requests a resource that does not exist.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Resource not found",
+                  "error": "Not Found",
+                  "statusCode": 404
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Get icon by hash.",
+        "tags": [
+          "Icons"
+        ]
+      }
+    },
+    "/v1/icons/{hash}/download/svg": {
+      "get": {
+        "description": "Apply the required modifications to the asset such as size as color and returns the SVG.",
+        "operationId": "downloadIconAsSVG",
+        "parameters": [
+          {
+            "name": "hash",
+            "required": true,
+            "in": "path",
+            "description": "This is the icon ID, you can obtain the icon hash from a global search response",
+            "schema": {
+              "example": "ico_XjMYRy9v4t96OdUn",
+              "type": "string"
+            }
+          },
+          {
+            "name": "colors",
+            "required": false,
+            "in": "query",
+            "description": "Comma-separated list of HEX or CSS named colors to use when exporting the asset. Each color must be a valid HEX code (3–8 digits) or a standard CSS color name.",
+            "schema": {
+              "default": [],
+              "example": "#000000, #CDFF71, red, blue",
+              "type": "string"
+            }
+          },
+          {
+            "name": "backgroundColor",
+            "required": false,
+            "in": "query",
+            "description": "Apply a filled color background to an image. The default color is transparent.",
+            "schema": {
+              "default": "#ffffff00",
+              "example": "#ffffff00",
+              "type": "string"
+            }
+          },
+          {
+            "name": "strokeWidth",
+            "required": false,
+            "in": "query",
+            "description": "Allows increasing or decreasing the thickness of the vector paths.",
+            "schema": {
+              "example": 1.5,
+              "type": "number"
+            }
+          },
+          {
+            "name": "size",
+            "required": true,
+            "in": "query",
+            "description": "Image size in pixels (square): Enter one number — e.g., 100 = 100px × 100px.",
+            "schema": {
+              "minimum": 1,
+              "maximum": 4096,
+              "default": 48,
+              "example": 48,
+              "type": "number"
+            }
+          },
+          {
+            "name": "responsive",
+            "required": true,
+            "in": "query",
+            "description": "Generates an SVG that scales with its container using viewBox and no fixed size. If true, width and height attributes will be removed from the SVG tag.",
+            "schema": {
+              "default": false,
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "strokeToFill",
+            "required": true,
+            "in": "query",
+            "description": "When true, SVG strokes will be converted to fills.",
+            "schema": {
+              "default": false,
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully returns the icon as an SVG image.",
+            "content": {
+              "image/svg+xml": {
+                "example": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"#000000\" aria-hidden=\"true\" id=\"Home--Streamline-Heroicons-Outline\">\n        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m2.25 12 8.954 -8.955c0.44 -0.439 1.152 -0.439 1.591 0L21.75 12M4.5 9.75v10.125c0 0.621 0.504 1.125 1.125 1.125H9.75v-4.875c0 -0.621 0.504 -1.125 1.125 -1.125h2.25c0.621 0 1.125 0.504 1.125 1.125V21h4.125c0.621 0 1.125 -0.504 1.125 -1.125V9.75M8.25 21h8.25\" stroke-width=\"1\"></path>\n      </svg>"
+              }
+            }
+          },
+          "400": {
+            "description": "A Bad Request is returned when required fields are missing or when an invalid value is provided.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Required fields are missing or invalid",
+                  "error": "Bad Request",
+                  "statusCode": 400
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "A Forbidden response is returned when a user attempts to access a resource they don’t have permission for.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "'You don't have access to this resource.'",
+                  "error": "Forbidden Request",
+                  "statusCode": 403
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "A Not Found response is returned when a user requests a resource that does not exist.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Resource not found",
+                  "error": "Not Found",
+                  "statusCode": 404
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Download icon as SVG.",
+        "tags": [
+          "Icons"
+        ]
+      }
+    },
+    "/v1/icons/{hash}/download/png": {
+      "get": {
+        "description": "Apply the required modifications to the asset such as size as color and returns the PNG.",
+        "operationId": "downloadIconAsPNG",
+        "parameters": [
+          {
+            "name": "hash",
+            "required": true,
+            "in": "path",
+            "description": "This is the icon ID, you can obtain the icon hash from a global search response",
+            "schema": {
+              "example": "ico_XjMYRy9v4t96OdUn",
+              "type": "string"
+            }
+          },
+          {
+            "name": "colors",
+            "required": false,
+            "in": "query",
+            "description": "Comma-separated list of HEX or CSS named colors to use when exporting the asset. Each color must be a valid HEX code (3–8 digits) or a standard CSS color name.",
+            "schema": {
+              "default": [],
+              "example": "#000000, #CDFF71, red, blue",
+              "type": "string"
+            }
+          },
+          {
+            "name": "backgroundColor",
+            "required": false,
+            "in": "query",
+            "description": "Apply a filled color background to an image. The default color is transparent.",
+            "schema": {
+              "default": "#ffffff00",
+              "example": "#ffffff00",
+              "type": "string"
+            }
+          },
+          {
+            "name": "strokeWidth",
+            "required": false,
+            "in": "query",
+            "description": "Allows increasing or decreasing the thickness of the vector paths.",
+            "schema": {
+              "example": 1.5,
+              "type": "number"
+            }
+          },
+          {
+            "name": "size",
+            "required": true,
+            "in": "query",
+            "description": "Image size in pixels (square): Enter one number — e.g., 100 = 100px × 100px.",
+            "schema": {
+              "minimum": 1,
+              "maximum": 4096,
+              "default": 48,
+              "example": 48,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully returns the icon as an PNG image.",
+            "content": {
+              "image/png": {}
+            }
+          },
+          "400": {
+            "description": "A Bad Request is returned when required fields are missing or when an invalid value is provided.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Required fields are missing or invalid",
+                  "error": "Bad Request",
+                  "statusCode": 400
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "A Forbidden response is returned when a user attempts to access a resource they don’t have permission for.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "'You don't have access to this resource.'",
+                  "error": "Forbidden Request",
+                  "statusCode": 403
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "A Not Found response is returned when a user requests a resource that does not exist.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Resource not found",
+                  "error": "Not Found",
+                  "statusCode": 404
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Download icon as PNG.",
+        "tags": [
+          "Icons"
+        ]
+      }
+    },
+    "/v1/search/global": {
+      "get": {
+        "description": "Search for icons, illustrations, emojis or elements from all families.",
+        "operationId": "globalSearch",
+        "parameters": [
+          {
+            "name": "productType",
+            "required": true,
+            "in": "query",
+            "description": "Product type for the search.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "icons",
+                "illustrations",
+                "emojis",
+                "elements"
+              ]
+            }
+          },
+          {
+            "name": "query",
+            "required": true,
+            "in": "query",
+            "description": "Search term to find icons.",
+            "schema": {
+              "example": "home",
+              "type": "string"
+            }
+          },
+          {
+            "name": "offset",
+            "required": false,
+            "in": "query",
+            "description": "Specifies the number of items to skip before starting to return results.",
+            "schema": {
+              "default": 0,
+              "type": "number"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "description": "Specifies the maximum number of items to return in the response.",
+            "schema": {
+              "maximum": 100,
+              "default": 50,
+              "type": "number"
+            }
+          },
+          {
+            "name": "productTier",
+            "required": false,
+            "in": "query",
+            "description": "Filter for the price tier of the products. E.g., If \"free\", results will only be from free sets",
+            "schema": {
+              "default": "all",
+              "type": "string",
+              "enum": [
+                "all",
+                "free",
+                "premium"
+              ]
+            }
+          },
+          {
+            "name": "style",
+            "required": false,
+            "in": "query",
+            "description": "Filter for the style of the sets.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "line",
+                "solid",
+                "flat",
+                "duo",
+                "handrawn",
+                "creative",
+                "gradient",
+                "remix",
+                "neon",
+                "pop",
+                "light",
+                "glyph",
+                "minimal",
+                "outlined",
+                "geometric",
+                "bold",
+                "stroke",
+                "wireframe",
+                "filled"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchResponse"
+                },
+                "example": {
+                  "query": "retention",
+                  "results": [
+                    {
+                      "hash": "ico_aIbHpUHbGjrULF",
+                      "name": "retention",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/dens-catena-delectus.png?_a=DATAg1UqZAA0",
+                      "isFree": false,
+                      "familySlug": "vere",
+                      "familyName": "obligation",
+                      "categorySlug": "sollers",
+                      "categoryName": "folklore",
+                      "subcategorySlug": "speculum",
+                      "subcategoryName": "mainstream"
+                    },
+                    {
+                      "hash": "ico_PEcxlKhwfjcKbR",
+                      "name": "retention",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/crapula-et-cenaculum.png?_a=DATAg1UqZAA0",
+                      "isFree": false,
+                      "familySlug": "cruciamentum",
+                      "familyName": "commodity",
+                      "categorySlug": "undique",
+                      "categoryName": "minister",
+                      "subcategorySlug": "deputo",
+                      "subcategoryName": "saw"
+                    }
+                  ],
+                  "pagination": {
+                    "total": 10,
+                    "hasMore": true,
+                    "offset": 0,
+                    "nextOffset": 2
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "A Bad Request is returned when required fields are missing or when an invalid value is provided.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Required fields are missing or invalid",
+                  "error": "Bad Request",
+                  "statusCode": 400
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Global search.",
+        "tags": [
+          "Search"
+        ]
+      }
+    },
+    "/v1/search/family/{familySlug}": {
+      "get": {
+        "description": "Search for icons, illustrations, emojis or elements from a specific family.",
+        "operationId": "familySearch",
+        "parameters": [
+          {
+            "name": "familySlug",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "query",
+            "required": true,
+            "in": "query",
+            "description": "Search term to find icons.",
+            "schema": {
+              "example": "home",
+              "type": "string"
+            }
+          },
+          {
+            "name": "offset",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "default": 0,
+              "type": "number"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "maximum": 100,
+              "default": 50,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchResponse"
+                },
+                "example": {
+                  "query": "gray",
+                  "results": [
+                    {
+                      "hash": "ico_XdJIUKhDAtSRLX",
+                      "name": "gray",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/sperno-undique-crudelis.png?_a=DATAg1UqZAA0",
+                      "isFree": false,
+                      "familySlug": "fibre",
+                      "familyName": "saloon",
+                      "categorySlug": "quas",
+                      "categoryName": "embossing",
+                      "subcategorySlug": "speciosus",
+                      "subcategoryName": "phrase"
+                    },
+                    {
+                      "hash": "ico_YmgnNCVfuJhlGS",
+                      "name": "gray",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/tametsi-caveo-aegrus.png?_a=DATAg1UqZAA0",
+                      "isFree": false,
+                      "familySlug": "fibre",
+                      "familyName": "saloon",
+                      "categorySlug": "capto",
+                      "categoryName": "petticoat",
+                      "subcategorySlug": "aedificium",
+                      "subcategoryName": "pendant"
+                    }
+                  ],
+                  "pagination": {
+                    "total": 10,
+                    "hasMore": true,
+                    "offset": 0,
+                    "nextOffset": 2
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "A Bad Request is returned when required fields are missing or when an invalid value is provided.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Required fields are missing or invalid",
+                  "error": "Bad Request",
+                  "statusCode": 400
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Family search.",
+        "tags": [
+          "Search"
+        ]
+      }
+    },
+    "/v1/family-groups": {
+      "get": {
+        "operationId": "getAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Family groups/bundles available.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FamilyGroupResponse"
+                },
+                "example": {
+                  "hash": "ico_RdRQkBzoRxMOfg",
+                  "slug": "vitae",
+                  "name": "deduction",
+                  "description": "Sint urbanus thesis charisma. Strues amoveo admoneo. Dolores testimonium cognomen aliqua culpa vicinus usus crastinus.\nVestrum articulus curso ipsam. Vulgaris maiores volup magni triumphus veritatis valetudo. Acies suscipit complectus dolorum vere thesaurus.\nCogito officiis acer tollo cornu suus. Quod triumphus adhaero decimus sustineo tabernus. Delibero decet capio amicitia suadeo sunt autem thalassinus virga."
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Get all family groups/bundles available.",
+        "tags": [
+          "FamilyGroup"
+        ]
+      }
+    },
+    "/v1/family-groups/{familyGroupHash}/families": {
+      "get": {
+        "operationId": "getFamilies",
+        "parameters": [
+          {
+            "name": "familyGroupHash",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Families from a family group/bundle.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FamilyResponse"
+                },
+                "example": {
+                  "hash": "ico_DDqAigBHRmmjMT",
+                  "slug": "defendo",
+                  "productType": "icons",
+                  "name": "meander",
+                  "isFree": false
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Get all families from a family group/bundle.",
+        "tags": [
+          "FamilyGroup"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "Streamline Public API",
+    "description": "Use your generated key or create a new one at [www.streamlinehq.com/profile?tab=api_keys](https://www.streamlinehq.com/profile?tab=api_keys) to access the API.",
+    "version": "1.0",
+    "contact": {}
+  },
+  "tags": [],
+  "servers": [
+    {
+      "url": "https://public-api.streamlinehq.com"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "api-key": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-api-key",
+        "description": "Use your generated key or create a new one at [www.streamlinehq.com](https://www.streamlinehq.com/profile?tab=api_keys)."
+      }
+    },
+    "schemas": {
+      "CategoryResponse": {
+        "type": "object",
+        "properties": {
+          "hash": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "hash",
+          "slug",
+          "name"
+        ]
+      },
+      "IconResponse": {
+        "type": "object",
+        "properties": {
+          "hash": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "imagePreviewUrl": {
+            "type": "string"
+          },
+          "colors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "isFree": {
+            "type": "boolean"
+          },
+          "familySlug": {
+            "type": "string"
+          },
+          "familyName": {
+            "type": "string"
+          },
+          "categorySlug": {
+            "type": "string"
+          },
+          "categoryName": {
+            "type": "string"
+          },
+          "subcategorySlug": {
+            "type": "string"
+          },
+          "subcategoryName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "hash",
+          "name",
+          "imagePreviewUrl",
+          "colors",
+          "isFree",
+          "familySlug",
+          "familyName",
+          "categorySlug",
+          "categoryName",
+          "subcategorySlug",
+          "subcategoryName"
+        ]
+      },
+      "Pagination": {
+        "type": "object",
+        "properties": {
+          "total": {
+            "type": "number"
+          },
+          "hasMore": {
+            "type": "boolean"
+          },
+          "offset": {
+            "type": "number"
+          },
+          "nextOffset": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "total",
+          "hasMore",
+          "offset",
+          "nextOffset"
+        ]
+      },
+      "IconListResponse": {
+        "type": "object",
+        "properties": {
+          "icons": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IconResponse"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/Pagination"
+          }
+        },
+        "required": [
+          "icons",
+          "pagination"
+        ]
+      },
+      "SubcategoryResponse": {
+        "type": "object",
+        "properties": {
+          "hash": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "hash",
+          "slug",
+          "name"
+        ]
+      },
+      "SearchIcon": {
+        "type": "object",
+        "properties": {
+          "hash": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "imagePreviewUrl": {
+            "type": "string"
+          },
+          "isFree": {
+            "type": "boolean"
+          },
+          "familySlug": {
+            "type": "string"
+          },
+          "familyName": {
+            "type": "string"
+          },
+          "categorySlug": {
+            "type": "string"
+          },
+          "categoryName": {
+            "type": "string"
+          },
+          "subcategorySlug": {
+            "type": "string"
+          },
+          "subcategoryName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "hash",
+          "name",
+          "imagePreviewUrl",
+          "isFree",
+          "familySlug",
+          "familyName",
+          "categorySlug",
+          "categoryName",
+          "subcategorySlug",
+          "subcategoryName"
+        ]
+      },
+      "SearchResponse": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "The search query string used by the user."
+          },
+          "results": {
+            "description": "List of icons matching the search query.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchIcon"
+            }
+          },
+          "pagination": {
+            "description": "Pagination information for the results.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Pagination"
+              }
+            ]
+          }
+        },
+        "required": [
+          "query",
+          "results",
+          "pagination"
+        ]
+      },
+      "FamilyGroupResponse": {
+        "type": "object",
+        "properties": {
+          "hash": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "hash",
+          "slug",
+          "name",
+          "description"
+        ]
+      },
+      "FamilyResponse": {
+        "type": "object",
+        "properties": {
+          "hash": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "productType": {
+            "type": "string",
+            "enum": [
+              "icons",
+              "illustrations",
+              "emojis",
+              "elements"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "isFree": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "hash",
+          "slug",
+          "productType",
+          "name",
+          "isFree"
+        ]
+      }
+    }
+  },
+  "x-samples-languages": [
+    "shell",
+    "node",
+    "ruby",
+    "php",
+    "python"
+  ]
+}
