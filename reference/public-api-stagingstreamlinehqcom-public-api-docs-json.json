@@ -642,12 +642,12 @@
           },
           {
             "name": "strokeToFill",
-            "required": true,
             "in": "query",
+            "required": false,
             "description": "When true, SVG strokes will be converted to fills.",
             "schema": {
-              "default": false,
-              "type": "boolean"
+              "type": "boolean",
+              "default": ""
             }
           }
         ],
