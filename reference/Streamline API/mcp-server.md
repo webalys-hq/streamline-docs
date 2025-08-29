@@ -50,6 +50,28 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
 
 ## Tools
 
+<Tabs>
+  <Tab title="Search icons">
+    Search for icons, illustrations, emojis or elements from all families.
+  </Tab>
+
+  <Tab title="Family search">
+    Search for icons, illustrations, emojis or elements from a specific family.
+  </Tab>
+
+  <Tab title="Get icon by hash">
+    Retrieves detailed information about the requested icon.
+  </Tab>
+
+  <Tab title="Download icon as PNG">
+    Apply the required modifications to the asset such as size as color and returns the PNG.
+  </Tab>
+
+  <Tab title="Download icon as SVG">
+    Apply the required modifications to the asset such as size as color and returns the SVG.
+  </Tab>
+</Tabs>
+
 ## FAQ
 
 **Which clients can use Streamline MCP Server?**
