@@ -95,6 +95,32 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
 
 <Accordion title="family_search" icon="fa-magnifying-glass">
   Search for icons, illustrations, emojis, or elements from a specific family.
+
+  <div>
+    <strong>familySlug\*</strong>\
+    Description: Family slug obtained from a global search or family group.\
+    Type: string
+  </div>
+
+  <div>
+    <strong>query\*</strong>\
+    Description: Search term to find icons.\
+    Type: string
+  </div>
+
+  <div>
+    <strong>offset</strong>\
+    Description: Number of items to skip before returning results.\
+    Type: number\
+    Default value: 0
+  </div>
+
+  <div>
+    <strong>limit</strong>\
+    Description: Maximum number of items to return.\
+    Type: number\
+    Default value: 10 (max 50)
+  </div>
 </Accordion>
 
 <Accordion title="get_icon_by_hash" icon="fa-hashtag">
