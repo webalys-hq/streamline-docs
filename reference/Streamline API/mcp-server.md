@@ -55,8 +55,8 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
 
   <div>
     <strong>productType\*</strong>\
-    Description: Product type for the search.\
-    Type: icons | illustrations | emojis | elements
+    <strong>Description:</strong> Product type for the search.\
+    <strong>Type:</strong> icons | illustrations | emojis | elements
   </div>
 
   <div>
