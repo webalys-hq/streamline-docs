@@ -60,7 +60,7 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   </div>
 
   <div>
-    <strong>query\*</strong>\
+    <strong>query<span style={{color: 'red'}}>\*</span></strong>\
     Description: Search term to find icons.\
     Type: string
   </div>
@@ -97,13 +97,13 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   Search for icons, illustrations, emojis, or elements from a specific family.
 
   <div>
-    <strong>familySlug\*</strong>\
+    <strong>familySlug<span style={{color: 'red'}}>\*</span></strong>\
     Description: Family slug obtained from a global search or family group.\
     Type: string
   </div>
 
   <div>
-    <strong>query\*</strong>\
+    <strong>query<span style={{color: 'red'}}>\*</span></strong>\
     Description: Search term to find icons.\
     Type: string
   </div>
@@ -127,7 +127,7 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   Retrieves detailed information about a specific icon.
 
   <div>
-    <strong>iconHash\*</strong>\
+    <strong>iconHash<span style={{color: 'red'}}>\*</span></strong>\
     Description: Icon hash obtained from a global search response.\
     Type: string
   </div>
@@ -137,13 +137,13 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   Apply modifications (size, colors, background, stroke) and download the icon as PNG.
 
   <div>
-    <strong>iconHash\*</strong>\
+    <strong>iconHash<span style={{color: 'red'}}>\*</span></strong>\
     Description: Icon hash obtained from a global search response.\
     Type: string
   </div>
 
   <div>
-    <strong>size\*</strong>\
+    <strong>size<span style={{color: 'red'}}>\*</span></strong>\
     Description: Image size in pixels (square).\
     Type: number
   </div>
@@ -172,13 +172,13 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   Apply modifications (size, colors, background, stroke, responsive, stroke-to-fill) and download the icon as SVG.
 
   <div>
-    <strong>iconHash\*</strong>\
+    <strong>iconHash<span style={{color: 'red'}}>\*</span></strong>\
     Description: Icon hash obtained from a global search response.\
     Type: string
   </div>
 
   <div>
-    <strong>size\*</strong>\
+    <strong>size<span style={{color: 'red'}}>\*</span></strong>\
     Description: Image size in pixels (square).\
     Type: number
   </div>
