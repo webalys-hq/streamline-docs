@@ -50,19 +50,14 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
 
 ## Tools
 
-<Tabs>
-  <Tab title="Search icons">
-    Search for icons, illustrations, emojis or elements from all families.
+<Accordion title="global_search" icon="fa-info-circle">
+  Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Ut enim
+  ad minim veniam, quis nostrud exercitation ullamco. Excepteur sint
+  occaecat cupidatat non proident!
+</Accordion>
 
-    | Parameter     | Type                                                                                                                                                                                                                          | Description                                                | Default     | Required |
-    | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ----------- | -------- |
-    | `productType` | `icons` \| `illustrations` \| `emojis` \| `elements`                                                                                                                                                                          | Product type for the search.                               | —           | ✅        |
-    | `query`       | string                                                                                                                                                                                                                        | Search term to find icons.                                 | —           | ✅        |
-    | `offset`      | number                                                                                                                                                                                                                        | Number of items to skip before returning results.          | 0           | ❌        |
-    | `limit`       | number                                                                                                                                                                                                                        | Maximum number of items to return.                         | 10 (max 50) | ❌        |
-    | `productTier` | `all` \| `free` \| `premium`                                                                                                                                                                                                  | Filter by price tier. E.g., `free` returns only free sets. | `all`       | ❌        |
-    | `style`       | `line` \| `solid` \| `flat` \| `duo` \| `handrawn` \| `creative` \| `gradient` \| `remix` \| `neon` \| `pop` \| `light` \| `glyph` \| `minimal` \| `outlined` \| `geometric` \| `bold` \| `stroke` \| `wireframe` \| `filled` | Filter for the style of the sets.                          | —           | ❌        |
-  </Tab>
+<Tabs>
+  <Tab title="Search icons" />
 
   <Tab title="Family search">
     Search for icons, illustrations, emojis or elements from a specific family.
