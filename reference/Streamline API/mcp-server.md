@@ -12,11 +12,23 @@ Streamline MCP Server is a Model Context Protocol server that provides access to
 
 ## How to Connect
 
-Use the HTTP JSON-RPC endpoint:
+Add the following configuration to your MCP-compatible client (e.g., Cursor or Claude Desktop) to connect to Streamline MCP Server:
 
-<br />
+```
+{
+  "mcpServers": {
+    "streamlineMCPServer": {
+      "name": "Streamline MCP Server",
+      "description": "Streamline MCP server exposing tools and resources via HTTP JSON-RPC",
+      "url": "http://localhost:8085/mcp",
+      "headers": {
+        "X-API-Key": "YOUR_API_KEY_HERE"
+      }
+    }
+  }
+}
 
-<br />
+```
 
 Connect via MCP-compatible clients like Cursor or Claude Desktop.
 
