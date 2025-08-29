@@ -26,8 +26,7 @@ Call the available MCP tools such as `global_search`, family_search, get_icon_by
 
 ## Key Features
 
-Search icons, illustrations, emojis, and other assets globally or by family.
-
+* Search icons, illustrations, emojis, and other assets globally or by family.
 * Retrieve detailed information about specific icons.
 * Download assets in PNG or SVG format with customization options (size, colors, background, stroke).
 * Fully compatible with MCP protocol clients.
