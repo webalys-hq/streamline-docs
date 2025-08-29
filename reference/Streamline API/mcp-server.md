@@ -54,7 +54,7 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   Search for icons, illustrations, emojis, or elements from all families.
 
   <div>
-    <strong>productType\*</strong>\
+    <strong>productType<span style={{clor: 'red'}}>\*</span></strong>\
     Description: Product type for the search.\
     Type: icons | illustrations | emojis | elements
   </div>
