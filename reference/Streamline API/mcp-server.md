@@ -22,7 +22,7 @@ Connect via MCP-compatible clients like Cursor or Claude Desktop by sending JSON
 
 ## How to Use
 
-Call the available MCP tools such as `global_search`, `family_search`, `get_icon_by_hash`, `download_png`, and `download_svg` to search, retrieve, or download assets.
+To use Streamline MCP Server, connect an MCP-compatible client such as Cursor or Claude Desktop to the server endpoint. Once connected, you can access tools like `global_search` `family_search`, `get_icon_by_hash`, `download_png`, and` `download_svg` directly through the client.
 
 ## Key Features
 
