@@ -18,7 +18,7 @@ Use the HTTP JSON-RPC endpoint:
 
 <br />
 
-Connect via MCP-compatible clients like Cursor or Claude Desktop by sending JSON-RPC requests to this endpoint.
+Connect via MCP-compatible clients like Cursor or Claude Desktop.
 
 ## How to Use
 
