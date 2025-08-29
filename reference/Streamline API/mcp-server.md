@@ -22,7 +22,7 @@ Connect via MCP-compatible clients like Cursor or Claude Desktop by sending JSON
 
 ## How to Use
 
-Call the available MCP tools such as global_search, family_search, get_icon_by_hash, download_png, and download_svg to search, retrieve, or download assets.
+Call the available MCP tools such as `global_search`, family_search, get_icon_by_hash, download_png, and download_svg to search, retrieve, or download assets.
 
 ## Key Features
 
