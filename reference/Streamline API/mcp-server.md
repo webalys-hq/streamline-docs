@@ -24,7 +24,7 @@ Connect via MCP-compatible clients like Cursor or Claude Desktop by sending JSON
 
 To use Streamline MCP Server, connect an MCP-compatible client such as Cursor or Claude Desktop to the server endpoint. Once connected, you can access tools like `global_search` `family_search`, `get_icon_by_hash`, `download_png`, and` `download_svg` directly through the client.
 
-Example: You can experiment by asking the AI chat in your client to **search for dog icons**. The client will handle calling the appropriate MCP tool and returning the results.
+**Example:** You can experiment by asking the AI chat in your client to **search for dog icons**. The client will handle calling the appropriate MCP tool and returning the results.
 
 ## Key Features
 
