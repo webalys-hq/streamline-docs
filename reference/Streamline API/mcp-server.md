@@ -54,7 +54,7 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   Search for icons, illustrations, emojis, or elements from all families.
 </Accordion>
 
-<Accordion title="family_search" icon="fa-sitemap">
+<Accordion title="family_search" icon="fa-magnifying-glass">
   Search for icons, illustrations, emojis, or elements from a specific family.
 </Accordion>
 
@@ -64,8 +64,7 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   <div>
     <strong>iconHash\*</strong>\
     Description: Icon hash obtained from a global search response.\
-    Type: string\
-    Default value: —
+    Type: string
   </div>
 </Accordion>
 
