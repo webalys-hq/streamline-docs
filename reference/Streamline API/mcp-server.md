@@ -50,27 +50,37 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
 
 ## Tools
 
-<Tabs>
-  <Tab title="Search icons">
-    Search for icons, illustrations, emojis or elements from all families.
-  </Tab>
+\<Tabs>
+&#x20; \<Tab title="Search icons">
+&#x20;   Search for icons, illustrations, emojis or elements from all families.
 
-  <Tab title="Family search">
-    Search for icons, illustrations, emojis or elements from a specific family.
-  </Tab>
+| Parameter     | Type                     | Description                                                | Default     |
+| ------------- | ------------------------ | ---------------------------------------------------------- | ----------- |
+| `productType` | enum (`ProductTypeEnum`) | Product type for the search.                               | —           |
+| `query`       | string                   | Search term to find icons.                                 | —           |
+| `offset`      | number                   | Number of items to skip before returning results.          | 0           |
+| `limit`       | number                   | Maximum number of items to return.                         | 10 (max 50) |
+| `productTier` | enum (`PriceFilterEnum`) | Filter by price tier. E.g., `free` returns only free sets. | `ALL`       |
+| `style`       | enum (`StyleFilterEnum`) | Filter for the style of the sets.                          | —           |
 
-  <Tab title="Get icon by hash">
-    Retrieves detailed information about the requested icon.
-  </Tab>
+&#x20; \</Tab>
 
-  <Tab title="Download icon as PNG">
-    Apply the required modifications to the asset such as size as color and returns the PNG.
-  </Tab>
+&#x20; \<Tab title="Family search">
+&#x20;   Search for icons, illustrations, emojis or elements from a specific family.
+&#x20; \</Tab>
 
-  <Tab title="Download icon as SVG">
-    Apply the required modifications to the asset such as size as color and returns the SVG.
-  </Tab>
-</Tabs>
+&#x20; \<Tab title="Get icon by hash">
+&#x20;   Retrieves detailed information about the requested icon.
+&#x20; \</Tab>
+
+&#x20; \<Tab title="Download icon as PNG">
+&#x20;   Apply the required modifications to the asset such as size as color and returns the PNG.
+&#x20; \</Tab>
+
+&#x20; \<Tab title="Download icon as SVG">
+&#x20;   Apply the required modifications to the asset such as size as color and returns the SVG.
+&#x20; \</Tab>
+\</Tabs>
 
 ## FAQ
 
