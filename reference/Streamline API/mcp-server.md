@@ -54,6 +54,21 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   Search for icons, illustrations, emojis, or elements from all families.
 </Accordion>
 
+<Accordion title="family_search" icon="fa-sitemap">
+  Search for icons, illustrations, emojis, or elements from a specific family.
+</Accordion>
+
+<Accordion title="get_icon_by_hash" icon="fa-hashtag">
+  Retrieves detailed information about a specific icon.
+
+  <div>
+    <strong>iconHash\*</strong>\
+    Description: Icon hash obtained from a global search response.\
+    Type: string\
+    Default value: —
+  </div>
+</Accordion>
+
 ## FAQ
 
 **Which clients can use Streamline MCP Server?**
