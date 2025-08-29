@@ -53,6 +53,15 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
 <Tabs>
   <Tab title="Search icons">
     Search for icons, illustrations, emojis or elements from all families.
+
+    | Parameter     | Type                     | Description                                                | Default     |
+    | ------------- | ------------------------ | ---------------------------------------------------------- | ----------- |
+    | `productType` | enum (`ProductTypeEnum`) | Product type for the search.                               | —           |
+    | `query`       | string                   | Search term to find icons.                                 | —           |
+    | `offset`      | number                   | Number of items to skip before returning results.          | 0           |
+    | `limit`       | number                   | Maximum number of items to return.                         | 10 (max 50) |
+    | `productTier` | enum (`PriceFilterEnum`) | Filter by price tier. E.g., `free` returns only free sets. | `ALL`       |
+    | `style`       | enum (`StyleFilterEnum`) | Filter for the style of the sets.                          | —           |
   </Tab>
 
   <Tab title="Family search">
