@@ -51,16 +51,24 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
 ## Tools
 
 <Tabs>
-  <Tab title="First Tab">
-    Welcome to the content that you can only see inside the first Tab.
+  <Tab title="Search icons">
+    Search for icons, illustrations, emojis or elements from all families.
   </Tab>
 
-  <Tab title="Second Tab">
-    Here's content that's only inside the second Tab.
+  <Tab title="Family search">
+    Search for icons, illustrations, emojis or elements from a specific family.
   </Tab>
 
-  <Tab title="Third Tab">
-    Here's content that's only inside the third Tab.
+  <Tab title="Get icon by hash">
+    Retrieves detailed information about the requested icon.
+  </Tab>
+
+  <Tab title="Download icon as PNG">
+    Apply the required modifications to the asset such as size as color and returns the PNG.
+  </Tab>
+
+  <Tab title="Download icon as SVG">
+    Apply the required modifications to the asset such as size as color and returns the SVG.
   </Tab>
 </Tabs>
 
