@@ -56,8 +56,7 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   <div>
     <strong>productType\*</strong>\
     Description: Product type for the search.\
-    Type: icons | illustrations | emojis | elements\
-    Default value: —
+    Type: icons | illustrations | emojis | elements\\
   </div>
 
   <div>
