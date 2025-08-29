@@ -51,7 +51,8 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
 ## FAQ
 
 **Which clients can use Streamline MCP Server?**
-Any MCP-compatible client (e.g., Cursor, Claude Desktop) can connect via the JSON-RPC endpoint.
+
+> Any MCP-compatible client (e.g., Cursor, Claude Desktop) can connect via the JSON-RPC endpoint.
 
 **Can I download icons in multiple formats?**
 Yes, PNG and SVG are both supported, with options for customization.
