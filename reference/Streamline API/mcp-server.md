@@ -33,11 +33,9 @@ Call the available MCP tools such as `global_search`, `family_search`, `get_icon
 
 ## Use Cases
 
-Finding icons for web or mobile projects.
-
-Retrieving and customizing specific assets for design workflows.
-
-Automating icon-related tasks in applications or scripts.
+* Finding icons for web or mobile projects.
+* Retrieving and customizing specific assets for design workflows.
+* Automating icon-related tasks in applications or scripts.
 
 ## FAQ
 
