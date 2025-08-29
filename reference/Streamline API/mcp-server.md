@@ -33,19 +33,19 @@ Call the available MCP tools such as `global_search`, `family_search`, `get_icon
 
 ## Use Cases
 
-* Finding icons for web or mobile projects.
-* Retrieving and customizing specific assets for design workflows.
-* Automating icon-related tasks in applications or scripts.
+Finding icons for web or mobile projects.
+
+Retrieving and customizing specific assets for design workflows.
+
+Automating icon-related tasks in applications or scripts.
 
 ## FAQ
 
-Which clients can use Streamline MCP Server?
-Any MCP-compatible client (e.g., Cursor, Claude Desktop) can connect via the JSON-RPC endpoint.
-
-Can I download icons in multiple formats?
-Yes, PNG and SVG are both supported, with options for customization.
-
-Do I need authentication?
-Yes, see the Authentication section in the docs for API key usage.
+* Which clients can use Streamline MCP Server?
+  Any MCP-compatible client (e.g., Cursor, Claude Desktop) can connect via the JSON-RPC endpoint.
+* Can I download icons in multiple formats?
+  Yes, PNG and SVG are both supported, with options for customization.
+* Do I need authentication?
+  Yes, see the Authentication section in the docs for API key usage.
 
 <br />
