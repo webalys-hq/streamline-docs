@@ -50,31 +50,49 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
 
 ## Tools
 
-<Accordion title="global_search" icon="fa-info-circle">
-  Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Ut enim
-  ad minim veniam, quis nostrud exercitation ullamco. Excepteur sint
-  occaecat cupidatat non proident!
+<Accordion title="global_search" icon="fa-magnifying-glass">
+  Search for icons, illustrations, emojis, or elements from all families.
+
+  <div>
+    <strong>productType\*</strong>\
+    Description: Product type for the search.\
+    Type: icons | illustrations | emojis | elements\
+    Default value: —
+  </div>
+
+  <div>
+    <strong>query\*</strong>\
+    Description: Search term to find icons.\
+    Type: string
+  </div>
+
+  <div>
+    <strong>offset</strong>\
+    Description: Number of items to skip before returning results.\
+    Type: number\
+    Default value: 0
+  </div>
+
+  <div>
+    <strong>limit</strong>\
+    Description: Maximum number of items to return.\
+    Type: number\
+    Default value: 10 (max 50)
+  </div>
+
+  <div>
+    <strong>productTier</strong>\
+    Description: Filter by price tier (free, premium, all).\
+    Type: all | free | premium\
+    Default value: all
+  </div>
+
+  <div>
+    <strong>style</strong>\
+    Description: Filter for the style of the sets.\
+    Type: line | solid | flat | duo | handrawn | creative | gradient | remix | neon | pop | light | glyph | minimal | outlined | geometric | bold | stroke | wireframe | filled
+  </div>
 </Accordion>
-
-<Tabs>
-  <Tab title="Search icons" />
-
-  <Tab title="Family search">
-    Search for icons, illustrations, emojis or elements from a specific family.
-  </Tab>
-
-  <Tab title="Get icon by hash">
-    Retrieves detailed information about the requested icon.
-  </Tab>
-
-  <Tab title="Download icon as PNG">
-    Apply the required modifications to the asset such as size as color and returns the PNG.
-  </Tab>
-
-  <Tab title="Download icon as SVG">
-    Apply the required modifications to the asset such as size as color and returns the SVG.
-  </Tab>
-</Tabs>
 
 ## FAQ
 
