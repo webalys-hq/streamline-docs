@@ -139,22 +139,19 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   <div>
     <strong>iconHash\*</strong>\
     Description: Icon hash obtained from a global search response.\
-    Type: string\
-    Default value: —
+    Type: string
   </div>
 
   <div>
     <strong>size\*</strong>\
     Description: Image size in pixels (square).\
-    Type: number\
-    Default value: —
+    Type: number
   </div>
 
   <div>
     <strong>colors</strong>\
     Description: List of HEX or named colors for export.\
-    Type: array of strings\
-    Default value: \[]
+    Type: array of strings
   </div>
 
   <div>
@@ -167,8 +164,7 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   <div>
     <strong>strokeWidth</strong>\
     Description: Adjusts vector path thickness.\
-    Type: number\
-    Default value: —
+    Type: number
   </div>
 </Accordion>
 
@@ -178,22 +174,19 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   <div>
     <strong>iconHash\*</strong>\
     Description: Icon hash obtained from a global search response.\
-    Type: string\
-    Default value: —
+    Type: string
   </div>
 
   <div>
     <strong>size\*</strong>\
     Description: Image size in pixels (square).\
-    Type: number\
-    Default value: —
+    Type: number
   </div>
 
   <div>
     <strong>colors</strong>\
     Description: List of HEX or named colors for export.\
-    Type: array of strings\
-    Default value: \[]
+    Type: array of strings
   </div>
 
   <div>
@@ -213,8 +206,7 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   <div>
     <strong>strokeWidth</strong>\
     Description: Adjusts vector path thickness.\
-    Type: number\
-    Default value: —
+    Type: number
   </div>
 
   <div>
@@ -227,8 +219,7 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   <div>
     <strong>base64</strong>\
     Description: Return SVG as base64 string instead of raw data.\
-    Type: boolean\
-    Default value: —
+    Type: boolean
   </div>
 </Accordion>
 
