@@ -14,7 +14,7 @@ Streamline MCP Server is a Model Context Protocol server that provides access to
 
 Add the following configuration to your MCP-compatible client (e.g., Cursor or Claude Desktop) to connect to Streamline MCP Server:
 
-```
+```json
 {
   "mcpServers": {
     "streamlineMCPServer": {
