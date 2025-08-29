@@ -19,8 +19,7 @@ Add the following configuration to your MCP-compatible client (e.g., Cursor or C
   "mcpServers": {
     "streamlineMCPServer": {
       "name": "Streamline MCP Server",
-      "description": "Streamline MCP server exposing tools and resources via HTTP JSON-RPC",
-      "url": "http://localhost:8085/mcp",
+      "url": "https://public-api.streamlinehq.com/mcp",
       "headers": {
         "X-API-Key": "YOUR_API_KEY_HERE"
       }
