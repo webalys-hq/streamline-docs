@@ -123,7 +123,7 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   </div>
 </Accordion>
 
-<Accordion title="get_icon_by_hash" icon="fa-file-lines">
+<Accordion title="get_icon_by_hash" icon="fa-info-circle">
   Retrieves detailed information about a specific icon.
 
   <div>
