@@ -52,13 +52,6 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
 
 <Accordion title="global_search" icon="fa-magnifying-glass">
   Search for icons, illustrations, emojis, or elements from all families.
-
-  <div>
-    <strong>productType\*</strong>
-    <p>Description: Product type for the search.</p>
-    <p>Type: icons | illustrations | emojis | elements</p>
-    <p>Description: Product type for the search.</p>
-  </div>
 </Accordion>
 
 ## FAQ
