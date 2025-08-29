@@ -133,6 +133,105 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
   </div>
 </Accordion>
 
+<Accordion title="download_png" icon="fa-file-image">
+  Apply modifications (size, colors, background, stroke) and download the icon as PNG.
+
+  <div>
+    <strong>iconHash\*</strong>\
+    Description: Icon hash obtained from a global search response.\
+    Type: string\
+    Default value: —
+  </div>
+
+  <div>
+    <strong>size\*</strong>\
+    Description: Image size in pixels (square).\
+    Type: number\
+    Default value: —
+  </div>
+
+  <div>
+    <strong>colors</strong>\
+    Description: List of HEX or named colors for export.\
+    Type: array of strings\
+    Default value: \[]
+  </div>
+
+  <div>
+    <strong>backgroundColor</strong>\
+    Description: Background color in HEX or named color.\
+    Type: string\
+    Default value: #ffffff00
+  </div>
+
+  <div>
+    <strong>strokeWidth</strong>\
+    Description: Adjusts vector path thickness.\
+    Type: number\
+    Default value: —
+  </div>
+</Accordion>
+
+<Accordion title="download_svg" icon="fa-file-code">
+  Apply modifications (size, colors, background, stroke, responsive, stroke-to-fill) and download the icon as SVG.
+
+  <div>
+    <strong>iconHash\*</strong>\
+    Description: Icon hash obtained from a global search response.\
+    Type: string\
+    Default value: —
+  </div>
+
+  <div>
+    <strong>size\*</strong>\
+    Description: Image size in pixels (square).\
+    Type: number\
+    Default value: —
+  </div>
+
+  <div>
+    <strong>colors</strong>\
+    Description: List of HEX or named colors for export.\
+    Type: array of strings\
+    Default value: \[]
+  </div>
+
+  <div>
+    <strong>backgroundColor</strong>\
+    Description: Background color in HEX or named color.\
+    Type: string\
+    Default value: #ffffff00
+  </div>
+
+  <div>
+    <strong>responsive</strong>\
+    Description: Scales SVG with container; removes width/height.\
+    Type: boolean\
+    Default value: false
+  </div>
+
+  <div>
+    <strong>strokeWidth</strong>\
+    Description: Adjusts vector path thickness.\
+    Type: number\
+    Default value: —
+  </div>
+
+  <div>
+    <strong>strokeToFill</strong>\
+    Description: Converts strokes to fills; strokeWidth ignored if true.\
+    Type: boolean\
+    Default value: false
+  </div>
+
+  <div>
+    <strong>base64</strong>\
+    Description: Return SVG as base64 string instead of raw data.\
+    Type: boolean\
+    Default value: —
+  </div>
+</Accordion>
+
 ## FAQ
 
 **Which clients can use Streamline MCP Server?**
