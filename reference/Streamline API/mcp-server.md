@@ -50,7 +50,7 @@ Once connected, you can access tools like `global_search` `family_search`, `get_
 
 ## Tools
 
-<Accordion title="global_search" icon="fa-magnifying-glass">
+<Accordion title="search" icon="fa-magnifying-glass">
   Search for icons, illustrations, emojis, or elements from all families.
 
   <div>
