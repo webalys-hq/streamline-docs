@@ -8,7 +8,7 @@ metadata:
 ---
 ## What is MCP?
 
-[Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) MCP is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude Desktop) can connect to external applications, use their tools, and retrieve data seamlessly.
+[Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude Desktop) can connect to external applications, use their tools, and retrieve data seamlessly.
 
 ## Overview
 
