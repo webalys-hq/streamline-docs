@@ -54,9 +54,9 @@ Once connected, you can access tools like [`search`](#search) `family_search`, `
 
 ## Tools
 
-### search
-
 <Accordion title="search" icon="fa-magnifying-glass">
+  ### search
+
   Search for icons, illustrations, emojis, or elements from all families.
 
   <div>
