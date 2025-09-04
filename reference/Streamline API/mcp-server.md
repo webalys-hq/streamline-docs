@@ -14,7 +14,7 @@ The Streamline MCP Server provides tools to access icons, illustrations, emojis,
 
 ## How to Connect
 
-Before trying to connect make sure you got your API key to be able to authenticate.
+Before trying to connect make sure you got your API key to be able to authenticate. Refer to the [Authentication section](https://streamline-api.readme.io/reference/authentication-1#/)
 
 Add the following configuration to your MCP-compatible client (e.g., Cursor or Claude Desktop) to connect to Streamline MCP Server:
 
