@@ -35,7 +35,7 @@ Add the following configuration to your MCP-compatible client (e.g., Cursor or C
 
 ## How to Use
 
-Once connected, you can access tools like `search` `family_search`, `get_icon_by_hash`, `download_png`, and `download_svg` [`download_svg`](#download_svg) directly through the client AI Chat.
+Once connected, you can access tools like [`search`](#search) `family_search`, `get_icon_by_hash`, `download_png`, and `download_svg` [`download_svg`](#download_svg) directly through the client AI Chat.
 
 **Example:** You can experiment by asking the AI chat in your client to **search for dog icons**. The client will handle calling the appropriate MCP tool and returning the results.
 
