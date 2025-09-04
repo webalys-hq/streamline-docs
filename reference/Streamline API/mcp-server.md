@@ -35,7 +35,7 @@ Add the following configuration to your MCP-compatible client (e.g., Cursor or C
 
 ## How to Use
 
-Once connected, you can access tools like [`search`](#search) `family_search`, `get_icon_by_hash`, `download_png`, and `download_svg` [`download_svg`](#download_svg) directly through the client AI Chat.
+Once connected, you can access tools like [`search`](#search) , [`family_search`](#family_search),  [`get_icon_by_hash`](#get_icon_by_hash), [`download_png`](#download_png), and [`download_svg`](#download_svg) directly through the client AI Chat.
 
 **Example:** You can experiment by asking the AI chat in your client to **search for dog icons**. The client will handle calling the appropriate MCP tool and returning the results.
 
@@ -55,7 +55,9 @@ Once connected, you can access tools like [`search`](#search) `family_search`, `
 ## Tools
 
 <Accordion title="search" icon="fa-magnifying-glass">
-  ### Search for icons, illustrations, emojis, or elements from all families.
+  ### search
+
+  Search for icons, illustrations, emojis, or elements from all families.
 
   <div>
     <strong>productType<span style={{color: 'red'}}>\*</span></strong>\
@@ -98,6 +100,8 @@ Once connected, you can access tools like [`search`](#search) `family_search`, `
 </Accordion>
 
 <Accordion title="family_search" icon="fa-magnifying-glass">
+  ### family\_search
+
   Search for icons, illustrations, emojis, or elements from a specific family.
 
   <div>
@@ -128,6 +132,8 @@ Once connected, you can access tools like [`search`](#search) `family_search`, `
 </Accordion>
 
 <Accordion title="get_icon_by_hash" icon="fa-info-circle">
+  ### get\_icon\_by\_hash
+
   Retrieves detailed information about a specific icon.
 
   <div>
@@ -138,6 +144,8 @@ Once connected, you can access tools like [`search`](#search) `family_search`, `
 </Accordion>
 
 <Accordion title="download_png" icon="fa-file-image">
+  ### download\_png
+
   Apply modifications (size, colors, background, stroke) and download the icon as PNG.
 
   <div>
@@ -173,6 +181,8 @@ Once connected, you can access tools like [`search`](#search) `family_search`, `
 </Accordion>
 
 <Accordion title="download_svg" icon="fa-file-code">
+  ### download\_svg
+
   Apply modifications (size, colors, background, stroke, responsive, stroke-to-fill) and download the icon as SVG.
 
   <div>
