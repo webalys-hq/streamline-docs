@@ -8,15 +8,15 @@ metadata:
 ---
 ## Overview
 
-[Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude Desktop) can connect to external applications, use their tools, and retrieve data seamlessly.
+<Anchor label="Model Context Protocol (MCP)" target="_blank" href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</Anchor> is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude Desktop) can connect to external applications, use their tools, and retrieve data seamlessly.
 
 The Streamline MCP Server provides tools to access icons, illustrations, emojis, and other design assets. It allows MCP-compatible clients to search, retrieve, and download assets in PNG or SVG formats.
 
 ## How to Connect
 
-Before connecting, make sure you have your API key ready for authentication. See the [Authentication](https://streamline-api.readme.io/reference/authentication-1#/) section for details.
+Before connecting, make sure you have your API key ready for authentication. See the <Anchor label="Authentication" target="_blank" href="https://streamline-api.readme.io/reference/authentication-1#/">Authentication</Anchor> section for details.
 
-Add the following configuration to your MCP-compatible client (e.g., [Cursor](https://cursor.com/docs/context/mcp)) to connect to Streamline MCP Server:
+Add the following configuration to your MCP-compatible client (e.g.,  <Anchor label="Cursor" target="_blank" href="https://cursor.com/docs/context/mcp">Cursor</Anchor>) to connect to Streamline MCP Server:
 
 ```json
 {
