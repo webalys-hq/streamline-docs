@@ -8,15 +8,19 @@ metadata:
 ---
 ## Overview
 
-<Anchor label="Model Context Protocol (MCP)" target="_blank" href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</Anchor> is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude Desktop) can connect to external applications, use their tools, and retrieve data seamlessly.
+<Anchor target="_blank" href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</Anchor> is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude Desktop) can connect to external applications, use their tools, and retrieve data seamlessly.
 
 The Streamline MCP Server provides tools to access icons, illustrations, emojis, and other design assets. It allows MCP-compatible clients to search, retrieve, and download assets in PNG or SVG formats.
 
-## How to Connect
+## Setup Instructions
 
-Before connecting, make sure you have your API key ready for authentication. See the <Anchor label="Authentication" target="_blank" href="https://streamline-api.readme.io/reference/authentication-1#/">Authentication</Anchor> section for details.
+Before connecting, make sure you have your API key ready for authentication. See the <Anchor target="_blank" href="https://streamline-api.readme.io/reference/authentication-1#/">Authentication</Anchor> section for details.
 
-Add the following configuration to your MCP-compatible client (e.g.,  <Anchor label="Cursor" target="_blank" href="https://cursor.com/docs/context/mcp">Cursor</Anchor>) to connect to Streamline MCP Server:
+## How to Connect on Cursor
+
+Go to Cursor > Cursor Settings > Tools & MCPs and then click on "New MCP Server" and add the streamlineMCPServer configuration that you can see below:
+
+Add the following configuration to your MCP-compatible client (e.g.,  <Anchor target="_blank" href="https://cursor.com/docs/context/mcp">Cursor</Anchor>) to connect to Streamline MCP Server:
 
 ```json
 {
@@ -33,6 +37,18 @@ Add the following configuration to your MCP-compatible client (e.g.,  <Anchor la
 
 ```
 
+You can see more details about adding MCPs to Cursor here: [https://cursor.com/docs/mcp](https://cursor.com/docs/mcp "https://cursor.com/docs/mcp")
+
+## How to Connect on Claude Code
+
+Run this command replacing the YOUR\_API\_KEY\_HERE part with your Streamline Api Key.
+
+```text
+claude mcp add --transport http streamline-mcp https://public-api.streamlinehq.com/mcp --header "X-Api-Key: YOUR_API_KEY_HERE"
+```
+
+Run `claude mcp list` to confirm it's up and running.
+
 ## How to Use
 
 Once connected, you can access tools like [`search`](#search) , [`family_search`](#family_search),  [`get_icon_by_hash`](#get_icon_by_hash), [`download_png`](#download_png), and [`download_svg`](#download_svg) directly through the client AI Chat.
@@ -41,16 +57,16 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
 
 ## Key Features
 
-* Search icons, illustrations, emojis, and elements.
-* Retrieve detailed information about specific icons.
-* Download assets in PNG or SVG format with customization options (size, colors, background, stroke).
-* Fully compatible with MCP protocol clients.
+- Search icons, illustrations, emojis, and elements.
+- Retrieve detailed information about specific icons.
+- Download assets in PNG or SVG format with customization options (size, colors, background, stroke).
+- Fully compatible with MCP protocol clients.
 
 ## Use Cases
 
-* Finding icons for web or mobile projects.
-* Retrieving and customizing specific assets for design workflows.
-* Automating icon-related tasks in applications or scripts.
+- Finding icons for web or mobile projects.
+- Retrieving and customizing specific assets for design workflows.
+- Automating icon-related tasks in applications or scripts.
 
 ## Tools
 
@@ -60,13 +76,13 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
   Search for icons, illustrations, emojis, or elements from all families.
 
   <div>
-    <strong>productType<span style={{color: 'red'}}>\*</span></strong>\
+    <strong>productType<span style="color: red">\*</span></strong>\
     Description: Product type for the search.\
     Type: icons | illustrations | emojis | elements
   </div>
 
   <div>
-    <strong>query<span style={{color: 'red'}}>\*</span></strong>\
+    <strong>query<span style="color: red">\*</span></strong>\
     Description: Search term to find icons.\
     Type: string
   </div>
@@ -105,13 +121,13 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
   Search for icons, illustrations, emojis, or elements from a specific family.
 
   <div>
-    <strong>familySlug<span style={{color: 'red'}}>\*</span></strong>\
+    <strong>familySlug<span style="color: red">\*</span></strong>\
     Description: Family slug obtained from a global search or family group.\
     Type: string
   </div>
 
   <div>
-    <strong>query<span style={{color: 'red'}}>\*</span></strong>\
+    <strong>query<span style="color: red">\*</span></strong>\
     Description: Search term to find icons.\
     Type: string
   </div>
@@ -137,7 +153,7 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
   Retrieves detailed information about a specific icon.
 
   <div>
-    <strong>iconHash<span style={{color: 'red'}}>\*</span></strong>\
+    <strong>iconHash<span style="color: red">\*</span></strong>\
     Description: Icon hash obtained from a global search response.\
     Type: string
   </div>
@@ -149,13 +165,13 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
   Apply modifications (size, colors, background, stroke) and download the icon as PNG.
 
   <div>
-    <strong>iconHash<span style={{color: 'red'}}>\*</span></strong>\
+    <strong>iconHash<span style="color: red">\*</span></strong>\
     Description: Icon hash obtained from a global search response.\
     Type: string
   </div>
 
   <div>
-    <strong>size<span style={{color: 'red'}}>\*</span></strong>\
+    <strong>size<span style="color: red">\*</span></strong>\
     Description: Image size in pixels (square).\
     Type: number
   </div>
@@ -186,13 +202,13 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
   Apply modifications (size, colors, background, stroke, responsive, stroke-to-fill) and download the icon as SVG.
 
   <div>
-    <strong>iconHash<span style={{color: 'red'}}>\*</span></strong>\
+    <strong>iconHash<span style="color: red">\*</span></strong>\
     Description: Icon hash obtained from a global search response.\
     Type: string
   </div>
 
   <div>
-    <strong>size<span style={{color: 'red'}}>\*</span></strong>\
+    <strong>size<span style="color: red">\*</span></strong>\
     Description: Image size in pixels (square).\
     Type: number
   </div>
