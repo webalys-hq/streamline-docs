@@ -49,6 +49,12 @@ claude mcp add --transport http streamline-mcp https://public-api.streamlinehq.c
 
 Run `claude mcp list` to confirm it's up and running.
 
+## How to Connect on Codex
+
+Go to Settings > Settings > MCP Servers and click on "Add Server". Fill the form with the following information: <br />**Name:** Streamline MCP Server<br />Select the **Streamable HTTP** option<br />**URL:** [https://public-api.streamlinehq.com/mcp](https://public-api.streamlinehq.com/mcp "https://public-api.streamlinehq.com/mcp")<br />**Headers Key:** X-API-Key <br />**Headers Value:&#xA0;**&#x59;OUR\_API\_KEY\_HERE (Replace with your actual key)<br />Then Click on **Save**
+
+![](https://files.readme.io/5d94c07b2ed859c6acd20b7e01796f72e803b77357a2d140bddf2ad545744a85-image.png)
+
 ## How to Use
 
 Once connected, you can access tools like [`search`](#search) , [`family_search`](#family_search),  [`get_icon_by_hash`](#get_icon_by_hash), [`download_png`](#download_png), and [`download_svg`](#download_svg) directly through the client AI Chat.
