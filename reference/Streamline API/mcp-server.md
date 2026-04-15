@@ -8,19 +8,19 @@ metadata:
 ---
 ## Overview
 
-<Anchor target="_blank" href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</Anchor> is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude Desktop) can connect to external applications, use their tools, and retrieve data seamlessly.
+<Anchor target="_blank" label="Model Context Protocol (MCP)" href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</Anchor> is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude Desktop) can connect to external applications, use their tools, and retrieve data seamlessly.
 
 The Streamline MCP Server provides tools to access icons, illustrations, emojis, and other design assets. It allows MCP-compatible clients to search, retrieve, and download assets in PNG or SVG formats.
 
 ## Setup Instructions
 
-Before connecting, make sure you have your API key ready for authentication. See the <Anchor target="_blank" href="https://streamline-api.readme.io/reference/authentication-1#/">Authentication</Anchor> section for details.
+Before connecting, make sure you have your API key ready for authentication. See the <Anchor target="_blank" label="Authentication" href="https://streamline-api.readme.io/reference/authentication-1#/">Authentication</Anchor> section for details.
 
 ## How to Connect on Cursor
 
 Go to Cursor > Cursor Settings > Tools & MCPs and then click on "New MCP Server" and add the streamlineMCPServer configuration that you can see below:
 
-Add the following configuration to your MCP-compatible client (e.g.,  <Anchor target="_blank" href="https://cursor.com/docs/context/mcp">Cursor</Anchor>) to connect to Streamline MCP Server:
+Add the following configuration to your MCP-compatible client (e.g.,  <Anchor target="_blank" label="Cursor" href="https://cursor.com/docs/context/mcp">Cursor</Anchor>) to connect to Streamline MCP Server:
 
 ```json
 {
@@ -37,11 +37,11 @@ Add the following configuration to your MCP-compatible client (e.g.,  <Anchor ta
 
 ```
 
-You can see more details about adding MCPs to Cursor here: [https://cursor.com/docs/mcp](https://cursor.com/docs/mcp "https://cursor.com/docs/mcp")
+You can see more details about adding MCPs to Cursor here: <Anchor label="https://cursor.com/docs/mcp" title="https://cursor.com/docs/mcp" href="https://cursor.com/docs/mcp">https://cursor.com/docs/mcp</Anchor>
 
 ## How to Connect on Claude Code
 
-Run this command replacing the YOUR\_API\_KEY\_HERE part with your Streamline Api Key.
+Run this command replacing the YOUR_API_KEY_HERE part with your Streamline Api Key.
 
 ```text
 claude mcp add --transport http streamline-mcp https://public-api.streamlinehq.com/mcp --header "X-Api-Key: YOUR_API_KEY_HERE"
@@ -51,7 +51,7 @@ Run `claude mcp list` to confirm it's up and running.
 
 ## How to Connect on Codex
 
-Go to Settings > Settings > MCP Servers and click on "Add Server". Fill the form with the following information: <br />**Name:** Streamline MCP Server<br />Select the **Streamable HTTP** option<br />**URL:** [https://public-api.streamlinehq.com/mcp](https://public-api.streamlinehq.com/mcp "https://public-api.streamlinehq.com/mcp")<br />**Headers Key:** X-API-Key <br />**Headers Value:&#xA0;**&#x59;OUR\_API\_KEY\_HERE (Replace with your actual key)<br />Then Click on **Save**
+Go to Settings > Settings > MCP Servers and click on "Add Server". Fill the form with the following information: <br />**Name:** Streamline MCP Server<br />Select the **Streamable HTTP** option<br />**URL:** <Anchor label="https://public-api.streamlinehq.com/mcp" title="https://public-api.streamlinehq.com/mcp" href="https://public-api.streamlinehq.com/mcp">https://public-api.streamlinehq.com/mcp</Anchor><br />**Headers Key:** X-API-Key <br />**Headers Value: **YOUR_API_KEY_HERE (Replace with your actual key)<br />Then Click on **Save**
 
 ![](https://files.readme.io/5d94c07b2ed859c6acd20b7e01796f72e803b77357a2d140bddf2ad545744a85-image.png)
 
@@ -63,16 +63,16 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
 
 ## Key Features
 
-- Search icons, illustrations, emojis, and elements.
-- Retrieve detailed information about specific icons.
-- Download assets in PNG or SVG format with customization options (size, colors, background, stroke).
-- Fully compatible with MCP protocol clients.
+* Search icons, illustrations, emojis, and elements.
+* Retrieve detailed information about specific icons.
+* Download assets in PNG or SVG format with customization options (size, colors, background, stroke).
+* Fully compatible with MCP protocol clients.
 
 ## Use Cases
 
-- Finding icons for web or mobile projects.
-- Retrieving and customizing specific assets for design workflows.
-- Automating icon-related tasks in applications or scripts.
+* Finding icons for web or mobile projects.
+* Retrieving and customizing specific assets for design workflows.
+* Automating icon-related tasks in applications or scripts.
 
 ## Tools
 
@@ -82,13 +82,13 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
   Search for icons, illustrations, emojis, or elements from all families.
 
   <div>
-    <strong>productType<span style="color: red">\*</span></strong>\
+    <strong>productType<span>\*</span></strong>\
     Description: Product type for the search.\
     Type: icons | illustrations | emojis | elements
   </div>
 
   <div>
-    <strong>query<span style="color: red">\*</span></strong>\
+    <strong>query<span>\*</span></strong>\
     Description: Search term to find icons.\
     Type: string
   </div>
@@ -127,13 +127,13 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
   Search for icons, illustrations, emojis, or elements from a specific family.
 
   <div>
-    <strong>familySlug<span style="color: red">\*</span></strong>\
+    <strong>familySlug<span>\*</span></strong>\
     Description: Family slug obtained from a global search or family group.\
     Type: string
   </div>
 
   <div>
-    <strong>query<span style="color: red">\*</span></strong>\
+    <strong>query<span>\*</span></strong>\
     Description: Search term to find icons.\
     Type: string
   </div>
@@ -159,7 +159,7 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
   Retrieves detailed information about a specific icon.
 
   <div>
-    <strong>iconHash<span style="color: red">\*</span></strong>\
+    <strong>iconHash<span>\*</span></strong>\
     Description: Icon hash obtained from a global search response.\
     Type: string
   </div>
@@ -171,13 +171,13 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
   Apply modifications (size, colors, background, stroke) and download the icon as PNG.
 
   <div>
-    <strong>iconHash<span style="color: red">\*</span></strong>\
+    <strong>iconHash<span>\*</span></strong>\
     Description: Icon hash obtained from a global search response.\
     Type: string
   </div>
 
   <div>
-    <strong>size<span style="color: red">\*</span></strong>\
+    <strong>size<span>\*</span></strong>\
     Description: Image size in pixels (square).\
     Type: number
   </div>
@@ -208,13 +208,13 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
   Apply modifications (size, colors, background, stroke, responsive, stroke-to-fill) and download the icon as SVG.
 
   <div>
-    <strong>iconHash<span style="color: red">\*</span></strong>\
+    <strong>iconHash<span>\*</span></strong>\
     Description: Icon hash obtained from a global search response.\
     Type: string
   </div>
 
   <div>
-    <strong>size<span style="color: red">\*</span></strong>\
+    <strong>size<span>\*</span></strong>\
     Description: Image size in pixels (square).\
     Type: number
   </div>
