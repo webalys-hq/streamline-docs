@@ -12,9 +12,29 @@ metadata:
 
 The Streamline MCP Server provides tools to access icons, illustrations, emojis, and other design assets. It allows MCP-compatible clients to search, retrieve, and download assets in PNG or SVG formats.
 
-## Setup Instructions
+## Authentication
+
+The Streamline MCP endpoint supports two ways to authenticate. Use either one on each request to [https://public-api.streamlinehq.com/mcp](https://public-api.streamlinehq.com/mcp) (not both at once).
+
+## Authentication with API Key 
 
 Before connecting, make sure you have your API key ready for authentication. See the <Anchor target="_blank" label="Authentication" href="https://streamline-api.readme.io/reference/authentication-1#/">Authentication</Anchor> section for details.
+
+Send your Streamline API key in the X-API-Key header on every MCP request. This matches the setup examples above (Cursor, Claude Code, Codex).
+
+**When to use:** quick setup, scripts, and clients that only support static headers.
+
+## Authentication with OAuth 2.1 (Authorization Code + PKCE)
+
+Send a Streamline-issued access token in the Authorization header:
+
+``Authorization: Bearer <access_token>``
+
+The server validates Bearer tokens issued by this API’s OAuth endpoints. There is no X-API-Key header in this mode.
+
+**When to use:** MCP clients or apps that implement OAuth (browser login, refresh tokens, dynamic client registration), as required by some hosted or enterprise setups.
+
+Discovery (machine-readable):
 
 ## How to Connect on Cursor
 
