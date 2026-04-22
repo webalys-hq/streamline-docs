@@ -28,7 +28,9 @@ Send your Streamline API key in the X-API-Key header on every MCP request. This 
 
 Send a Streamline-issued access token in the Authorization header:
 
-`Authorization: Bearer <access_token>`
+```
+Authorization: Bearer <access_token>
+```
 
 The server validates Bearer tokens issued by this API’s OAuth endpoints. There is no X-API-Key header in this mode.
 
