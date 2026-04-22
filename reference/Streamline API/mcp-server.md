@@ -102,17 +102,17 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
 <Accordion title="search" icon="fa-magnifying-glass">
   ### search
 
-  Search for icons, illustrations, emojis, or elements from all families.
+  Search for icons, illustrations, or elements across all families. Use when the user asks for a specific asset with no Family/Set preference.
 
   <div>
-    <strong>productType<span>\*</span></strong>\
-    Description: Product type for the search.\
-    Type: icons | illustrations | emojis | elements
+    <strong>productType<span>*</span></strong>\
+    Description: Asset type to search.\
+    Type: icons | illustrations | elements
   </div>
 
   <div>
-    <strong>query<span>\*</span></strong>\
-    Description: Search term to find icons.\
+    <strong>query<span>*</span></strong>\
+    Description: Search term.\
     Type: string
   </div>
 
@@ -132,32 +132,32 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
 
   <div>
     <strong>productTier</strong>\
-    Description: Filter by price tier (free, premium, all).\
+    Description: Filter by price tier of sets.\
     Type: all | free | premium\
     Default value: all
   </div>
 
   <div>
     <strong>style</strong>\
-    Description: Filter for the style of the sets.\
+    Description: Filter by icon set style. Only applies when `productType` is `icons`.\
     Type: line | solid | flat | duo | handrawn | creative | gradient | remix | neon | pop | light | glyph | minimal | outlined | geometric | bold | stroke | wireframe | filled
   </div>
 </Accordion>
 
-<Accordion title="family_search" icon="fa-magnifying-glass">
-  ### family\_search
+<Accordion title="family_group_search" icon="fa-magnifying-glass">
+  ### family_group_search
 
-  Search for icons, illustrations, emojis, or elements from a specific family.
+  Search for icons, illustrations, or elements within a **Family** (family group) identified by `familyGroupSlug`. Use when you already have a resolved slug from `get_all_family_groups` or `search_family_groups`.
 
   <div>
-    <strong>familySlug<span>\*</span></strong>\
-    Description: Family slug obtained from a global search or family group.\
+    <strong>familyGroupSlug<span>*</span></strong>\
+    Description: Family group slug.\
     Type: string
   </div>
 
   <div>
-    <strong>query<span>\*</span></strong>\
-    Description: Search term to find icons.\
+    <strong>query<span>*</span></strong>\
+    Description: Search term.\
     Type: string
   </div>
 
@@ -176,109 +176,244 @@ Once connected, you can access tools like [`search`](#search) , [`family_search`
   </div>
 </Accordion>
 
-<Accordion title="get_icon_by_hash" icon="fa-info-circle">
-  ### get\_icon\_by\_hash
+<Accordion title="family_search" icon="fa-magnifying-glass">
+  ### family_search
 
-  Retrieves detailed information about a specific icon.
+  Search for icons, illustrations, or elements within a **Set** (family) identified by `familySlug`. Use when you already have a resolved slug from `search_families`, `find_families_by_name`, or `get_all_families_from_family_group`.
 
   <div>
-    <strong>iconHash<span>\*</span></strong>\
-    Description: Icon hash obtained from a global search response.\
+    <strong>familySlug<span>*</span></strong>\
+    Description: Family (Set) slug.\
+    Type: string
+  </div>
+
+  <div>
+    <strong>query<span>*</span></strong>\
+    Description: Search term.\
+    Type: string
+  </div>
+
+  <div>
+    <strong>offset</strong>\
+    Description: Number of items to skip before returning results.\
+    Type: number\
+    Default value: 0
+  </div>
+
+  <div>
+    <strong>limit</strong>\
+    Description: Maximum number of items to return.\
+    Type: number\
+    Default value: 10 (max 50)
+  </div>
+</Accordion>
+
+<Accordion title="search_family_groups" icon="fa-layer-group">
+  ### search_family_groups
+
+  Semantic (natural-language) search for **family groups** (broad discovery). Use for style- or concept-oriented requests. For listing everything, use `get_all_family_groups`.
+
+  <div>
+    <strong>query<span>*</span></strong>\
+    Description: Natural-language search term.\
+    Type: string (min 1 character)
+  </div>
+
+  <div>
+    <strong>offset</strong>\
+    Description: Number of items to skip before returning results.\
+    Type: number\
+    Default value: 0
+  </div>
+
+  <div>
+    <strong>limit</strong>\
+    Description: Maximum number of family groups to return.\
+    Type: number\
+    Default value: 5 (max 100)
+  </div>
+</Accordion>
+
+<Accordion title="search_families" icon="fa-shapes">
+  ### search_families
+
+  Semantic search for **families (Sets)** by meaning (not substring on stored names). For partial name match on stored names, use `find_families_by_name` instead. To list all sets in a group without search intent, use `get_all_families_from_family_group`.
+
+  <div>
+    <strong>query<span>*</span></strong>\
+    Description: Natural-language search term.\
+    Type: string (min 1 character)
+  </div>
+
+  <div>
+    <strong>familyGroupSlug</strong>\
+    Description: When set, only return families in this family group.\
+    Type: string\
+    Default: (unset)
+  </div>
+
+  <div>
+    <strong>offset</strong>\
+    Description: Number of items to skip before returning results.\
+    Type: number\
+    Default value: 0
+  </div>
+
+  <div>
+    <strong>limit</strong>\
+    Description: Maximum number of families to return.\
+    Type: number\
+    Default value: 20 (max 100)
+  </div>
+</Accordion>
+
+<Accordion title="find_families_by_name" icon="fa-font">
+  ### find_families_by_name
+
+  Case-insensitive **substring** match on stored Set (family) names. Minimum 3 characters. For semantic discovery, use `search_families`.
+
+  <div>
+    <strong>name<span>*</span></strong>\
+    Description: Substring to match against family names.\
+    Type: string (min 3 characters)
+  </div>
+</Accordion>
+
+<Accordion title="get_all_family_groups" icon="fa-list">
+  ### get_all_family_groups
+
+  Returns all family groups (hash, slug, and related fields) for browsing the full catalog.
+
+  <div>
+    <em>No parameters.</em>
+  </div>
+</Accordion>
+
+<Accordion title="get_all_families_from_family_group" icon="fa-list-ul">
+  ### get_all_families_from_family_group
+
+  Returns all families (Sets) in a family group, with pagination. Use when you already know the group and want a full list (no search).
+
+  <div>
+    <strong>familyGroupHash<span>*</span></strong>\
+    Description: Family group hash. Obtain from `get_all_family_groups` or `search_family_groups` results.\
+    Type: string (max 80 characters)
+  </div>
+
+  <div>
+    <strong>offset</strong>\
+    Description: Number of items to skip.\
+    Type: number\
+    Default value: 0
+  </div>
+
+  <div>
+    <strong>limit</strong>\
+    Description: Maximum number of families to return.\
+    Type: number\
+    Default value: 100 (max 100)
+  </div>
+</Accordion>
+
+<Accordion title="get_icon_by_hash" icon="fa-info-circle">
+  ### get_icon_by_hash
+
+  Full icon metadata (family, variants, preview URLs, tags, etc.) before download.
+
+  <div>
+    <strong>iconHash<span>*</span></strong>\
+    Description: Icon ID (hash) from `search`, `family_search`, or `family_group_search` results.\
     Type: string
   </div>
 </Accordion>
 
 <Accordion title="download_png" icon="fa-file-image">
-  ### download\_png
+  ### download_png
 
-  Apply modifications (size, colors, background, stroke) and download the icon as PNG.
+  Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType` (`image/png`), and `fileName`. The MCP `tools/call` is authenticated; perform a plain **GET** on `downloadUrl` without `X-API-Key` or Bearer (the URL carries the signed token) to download bytes.
 
   <div>
-    <strong>iconHash<span>\*</span></strong>\
-    Description: Icon hash obtained from a global search response.\
+    <strong>iconHash<span>*</span></strong>\
+    Description: Icon ID (hash) from search results.\
     Type: string
   </div>
 
   <div>
-    <strong>size<span>\*</span></strong>\
-    Description: Image size in pixels (square).\
+    <strong>size<span>*</span></strong>\
+    Description: Square size in pixels (1–4096).\
     Type: number
   </div>
 
   <div>
     <strong>colors</strong>\
-    Description: List of HEX or named colors for export.\
-    Type: array of strings
+    Description: Array of HEX strings or CSS named colors.\
+    Type: array of strings\
+    Default value: [] 
   </div>
 
   <div>
     <strong>backgroundColor</strong>\
-    Description: Background color in HEX or named color.\
+    Description: Background color (HEX or CSS name).\
     Type: string\
-    Default value: #ffffff00
+    Default value: #ffffff00 (transparent)
   </div>
 
   <div>
     <strong>strokeWidth</strong>\
-    Description: Adjusts vector path thickness.\
+    Description: Adjust vector path thickness.\
     Type: number
   </div>
 </Accordion>
 
 <Accordion title="download_svg" icon="fa-file-code">
-  ### download\_svg
+  ### download_svg
 
-  Apply modifications (size, colors, background, stroke, responsive, stroke-to-fill) and download the icon as SVG.
+  Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType` (`image/svg+xml`), and `fileName`. The MCP `tools/call` is authenticated; perform a plain **GET** on `downloadUrl` without `X-API-Key` or Bearer to download bytes.
 
   <div>
-    <strong>iconHash<span>\*</span></strong>\
-    Description: Icon hash obtained from a global search response.\
+    <strong>iconHash<span>*</span></strong>\
+    Description: Icon ID (hash) from search results.\
     Type: string
   </div>
 
   <div>
-    <strong>size<span>\*</span></strong>\
-    Description: Image size in pixels (square).\
+    <strong>size<span>*</span></strong>\
+    Description: Square size in pixels (1–4096).\
     Type: number
   </div>
 
   <div>
     <strong>colors</strong>\
-    Description: List of HEX or named colors for export.\
-    Type: array of strings
+    Description: Array of HEX strings or CSS named colors.\
+    Type: array of strings\
+    Default value: [] 
   </div>
 
   <div>
     <strong>backgroundColor</strong>\
-    Description: Background color in HEX or named color.\
+    Description: Background color (HEX or CSS name).\
     Type: string\
-    Default value: #ffffff00
+    Default value: #ffffff00 (transparent)
   </div>
 
   <div>
     <strong>responsive</strong>\
-    Description: Scales SVG with container; removes width/height.\
+    Description: If true, SVG uses viewBox and drops fixed width/height for responsive scaling.\
     Type: boolean\
     Default value: false
   </div>
 
   <div>
     <strong>strokeWidth</strong>\
-    Description: Adjusts vector path thickness.\
+    Description: Adjust vector path thickness.\
     Type: number
   </div>
 
   <div>
     <strong>strokeToFill</strong>\
-    Description: Converts strokes to fills; strokeWidth ignored if true.\
+    Description: If true, strokes become fills; `strokeWidth` is not applied.\
     Type: boolean\
     Default value: false
-  </div>
-
-  <div>
-    <strong>base64</strong>\
-    Description: Return SVG as base64 string instead of raw data.\
-    Type: boolean
   </div>
 </Accordion>
 
