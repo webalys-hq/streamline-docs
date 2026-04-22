@@ -34,8 +34,6 @@ Authorization: Bearer <access_token>
 
 The server validates Bearer tokens issued by this API’s OAuth endpoints. There is no X-API-Key header in this mode.
 
-**When to use:** MCP clients or apps that implement OAuth (browser login, refresh tokens, dynamic client registration), as required by some hosted or enterprise setups.
-
 Discovery (machine-readable):
 
 | What                     | URL                                                                                |
