@@ -22,8 +22,6 @@ Before connecting, make sure you have your API key ready for authentication. See
 
 Send your Streamline API key in the X-API-Key header on every MCP request. This matches the setup examples above (Cursor, Claude Code, Codex).
 
-**When to use:** quick setup, scripts, and clients that only support static headers.
-
 ## Authentication with OAuth 2.1 (Authorization Code + PKCE)
 
 Send a Streamline-issued access token in the Authorization header:
@@ -42,13 +40,6 @@ Discovery (machine-readable):
 | Authorization server     | `GET https://public-api.streamlinehq.com/.well-known/oauth-authorization-server`   |
 
 From there, clients learn the authorization server base URL, registration endpoint, authorize and token URLs, and supported scope (e.g. mcp:tools).
-
-Typical flow (summary):
-
-1. Register an OAuth client (e.g. `POST /oauth/register` with redirect URIs), if your client uses dynamic client registration.
-2. Send the user through `GET /oauth/authorize` with PKCE (code_challenge / code_challenge_method=S256) and the registered client_id / redirect_uri.
-3. After the user signs in and consents, exchange the authorization code at `POST /oauth/token` for access_token (and usually refresh_token).
-4. Call the MCP JSON-RPC endpoint with `Authorization: Bearer <access_token>`.
 
 ## How to Connect on Cursor
 
