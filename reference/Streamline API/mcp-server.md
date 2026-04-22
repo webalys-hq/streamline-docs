@@ -80,7 +80,7 @@ Go to Settings > Settings > MCP Servers and click on "Add Server". Fill the form
 
 <br />
 
-## How to Connect on Claude using Connectors
+## How to Connect to Claude using Connectors
 
 **Prerequisites**
 
@@ -144,6 +144,8 @@ Once connected, you can ask Claude to:
 * _"Search for free illustrations related to teamwork"_
 
 * _"Download the settings icon as a 64px PNG"_
+
+<br />
 
 ## How to Use
 
