@@ -10,7 +10,7 @@ metadata:
 
 <Anchor target="_blank" label="Model Context Protocol (MCP)" href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</Anchor> is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude) can connect to external applications, use their tools, and retrieve data seamlessly.
 
-The Streamline MCP Server provides tools to access icons, illustrations, emojis, and other design assets. It allows MCP-compatible clients to search, retrieve, and download assets in PNG or SVG formats.
+The Streamline MCP Server provides tools for accessing icons, illustrations, emojis, and other design assets within the Streamline application. It allows MCP-compatible clients to search, retrieve, and download assets in PNG or SVG formats.
 
 ## Authentication
 
