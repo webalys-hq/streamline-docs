@@ -18,9 +18,7 @@ The Streamline MCP endpoint supports two ways to authenticate. Use either one on
 
 ## Authentication with API Key
 
-Before connecting, make sure you have your API key ready for authentication. See the <Anchor target="_blank" label="Authentication" href="https://streamline-api.readme.io/reference/authentication-1#/">Authentication</Anchor> section for details.
-
-Send your Streamline API key in the X-API-Key header on every MCP request. This matches the setup examples above (Cursor, Claude Code, Codex).
+Before connecting, make sure you have your Streamline API key ready. Send it in the X-API-Key header with every MCP request. For setup details, see the Authentication section.
 
 ## Authentication with OAuth 2.1 (Authorization Code + PKCE)
 
@@ -30,7 +28,7 @@ Send a Streamline-issued access token in the Authorization header:
 Authorization: Bearer <access_token>
 ```
 
-The server validates Bearer tokens issued by this API’s OAuth endpoints. There is no X-API-Key header in this mode.
+The server validates Bearer tokens issued by this API's OAuth endpoints. In this mode, the X-API-Key header is not used.
 
 Discovery (machine-readable):
 
@@ -39,7 +37,7 @@ Discovery (machine-readable):
 | Protected resource (MCP) | `GET https://public-api.streamlinehq.com/mcp/.well-known/oauth-protected-resource` |
 | Authorization server     | `GET https://public-api.streamlinehq.com/.well-known/oauth-authorization-server`   |
 
-From there, clients learn the authorization server base URL, registration endpoint, authorize and token URLs, and supported scope (e.g. mcp:tools).
+Clients use these endpoints to retrieve the authorization server base URL, registration endpoint, authorize and token URLs, and supported scopes (e.g. `mcp:tools`).
 
 ## How to Connect on Cursor
 
