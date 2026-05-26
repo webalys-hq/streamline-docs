@@ -146,7 +146,7 @@ Once connected, you can ask Claude to:
 
 ## How to Use
 
-Once connected, you can access tools like [`search_icons_globally`](#search_icons_globally) , [`search_icons_by_family`](#search_icons_by_family),  [`get_icon_by_hash`](#get_icon_by_hash), [`download_png`](#download_png), [`download_svg`](#download_svg) and others directly through the client AI Chat.
+Once connected, you can access tools like [`search_assets`](#search_assets) , [`search_sets `](#search_sets),  [`get_icon_by_hash`](#get_icon_by_hash), [`download_asset `](#download_asset) and others directly through the client AI Chat.
 
 **Example:** You can experiment by asking the AI chat in your client to **search for dog icons**. The client will handle calling the appropriate MCP tool and returning the results.
 
