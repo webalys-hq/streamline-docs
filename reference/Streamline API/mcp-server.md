@@ -105,8 +105,7 @@ Before you begin, make sure you have a Streamline account. You will be prompted 
 1. After adding the connector, click **Connect**
 2. You will be redirected to the Streamline web app
 3. Sign in to your account if prompted
-4. Review and grant the requested access
-   Once authorized, you will be redirected back to Claude automatically.
+4. Review and grant the requested access Once authorized, you will be redirected back to Claude automatically.
 
 ***
 
@@ -123,8 +122,7 @@ After being redirected back to Claude, confirm the connector is active:
 
 1. Start a new chat in Claude
 2. Ask Claude to verify the connector is working, for example:
-   > _"Check if you are connected to the Streamline MCP Server"_
-   > Claude will confirm the connection and list the available tools.
+   > _"Check if you are connected to the Streamline MCP Server"_ Claude will confirm the connection and list the available tools.
 
 ***
 
@@ -136,8 +134,7 @@ Once connected, you can ask Claude to:
 
 * Filter assets by style, type, or pricing tier (free or premium)
 
-* Download assets as PNG with custom size, colors, and stroke width
-  **Example prompts:**
+* Download assets as PNG with custom size, colors, and stroke width **Example prompts:**
 
 * _"Find me a line-style icon for notifications"_
 
@@ -168,21 +165,33 @@ Once connected, you can access tools like [`search_icons_globally`](#search_icon
 
 ## Tools
 
-<Accordion title="search_icons_globally" icon="fa-magnifying-glass">
-  ### search\_icons\_globally
+<Accordion title="search_assets" icon="fa-magnifying-glass">
+  ### search\_assets
 
-  Search for icons, illustrations, or elements across all Families and Sets. Use when the user asks for a specific asset with no Family/Set preference.
-
-  <div>
-    <strong>productType<span>\*</span></strong>\
-    Description: Asset type to search.\
-    Type: icons | illustrations | elements
-  </div>
+  Search for icons, illustrations, or elements. With a non-empty `setSlug`, search within that Set. With a non-empty `familySlug` (and no `setSlug`), search within that Family. Otherwise performs a global search — `productType` is required for global search.
 
   <div>
     <strong>query<span>\*</span></strong>\
-    Description: Search term.\
+    Description: Search term. Translate abstract concepts into concrete visual nouns when searching globally. Never mix different concepts in the same query.\
     Type: string
+  </div>
+
+  <div>
+    <strong>setSlug</strong>\
+    Description: Set slug from `search_sets`, `find_sets_by_name`, or `get_all_sets_from_family`. When provided, search is scoped to this Set (takes precedence over `familySlug`).\
+    Type: string
+  </div>
+
+  <div>
+    <strong>familySlug</strong>\
+    Description: Family slug from `get_all_families`. When provided and `setSlug` is omitted, search is scoped to this Family.\
+    Type: string
+  </div>
+
+  <div>
+    <strong>productType</strong>\
+    Description: Required for global search only (when both `setSlug` and `familySlug` are omitted). Asset type to search.\
+    Type: icons | illustrations | elements
   </div>
 
   <div>
@@ -196,110 +205,20 @@ Once connected, you can access tools like [`search_icons_globally`](#search_icon
     <strong>limit</strong>\
     Description: Maximum number of items to return.\
     Type: number\
-    Default value: 10 (max 50)
+    Default value: 20 (max 100)
   </div>
 
   <div>
     <strong>productTier</strong>\
-    Description: Filter by price tier of Sets (e.g. `free` limits results to free Sets).\
+    Description: Filter by price tier of Sets (e.g. `free` limits results to free Sets). Used for global search only.\
     Type: all | free | premium\
     Default value: all
   </div>
 
   <div>
     <strong>style</strong>\
-    Description: Filter by Set style. Only applies when `productType` is `icons`.\
+    Description: Filter by Set style. Global search only; applies when `productType` is `icons`.\
     Type: line | solid | flat | duo | handrawn | creative | gradient | remix | neon | pop | light | glyph | minimal | outlined | geometric | bold | stroke | wireframe | filled
-  </div>
-</Accordion>
-
-<Accordion title="search_icons_by_family" icon="fa-magnifying-glass">
-  ### search\_icons\_by\_family
-
-  Search for icons, illustrations, or elements within a **Family** identified by `familySlug`. Use when you already have a resolved slug from `get_all_families` or `search_families`.
-
-  <div>
-    <strong>familySlug<span>\*</span></strong>\
-    Description: Family slug.\
-    Type: string
-  </div>
-
-  <div>
-    <strong>query<span>\*</span></strong>\
-    Description: Search term.\
-    Type: string
-  </div>
-
-  <div>
-    <strong>offset</strong>\
-    Description: Number of items to skip before returning results.\
-    Type: number\
-    Default value: 0
-  </div>
-
-  <div>
-    <strong>limit</strong>\
-    Description: Maximum number of items to return.\
-    Type: number\
-    Default value: 10 (max 50)
-  </div>
-</Accordion>
-
-<Accordion title="search_icons_by_set" icon="fa-magnifying-glass">
-  ### search\_icons\_by\_set
-
-  Search for icons, illustrations, or elements within a **Set** identified by `setSlug`. Use when you already have a resolved slug from `search_sets`, `find_sets_by_name`, or `get_all_sets_from_family`.
-
-  <div>
-    <strong>setSlug<span>\*</span></strong>\
-    Description: Set slug.\
-    Type: string
-  </div>
-
-  <div>
-    <strong>query<span>\*</span></strong>\
-    Description: Search term.\
-    Type: string
-  </div>
-
-  <div>
-    <strong>offset</strong>\
-    Description: Number of items to skip before returning results.\
-    Type: number\
-    Default value: 0
-  </div>
-
-  <div>
-    <strong>limit</strong>\
-    Description: Maximum number of items to return.\
-    Type: number\
-    Default value: 10 (max 50)
-  </div>
-</Accordion>
-
-<Accordion title="search_families" icon="fa-layer-group">
-  ### search\_families
-
-  Semantic (natural-language) search for **Families** (bundles). Use for broad or style/concept-oriented discovery. To list the full catalog, use `get_all_families`.
-
-  <div>
-    <strong>query<span>\*</span></strong>\
-    Description: Natural-language search term.\
-    Type: string (min 1 character)
-  </div>
-
-  <div>
-    <strong>offset</strong>\
-    Description: Number of items to skip before returning results.\
-    Type: number\
-    Default value: 0
-  </div>
-
-  <div>
-    <strong>limit</strong>\
-    Description: Maximum number of Families to return.\
-    Type: number\
-    Default value: 5 (max 100)
   </div>
 </Accordion>
 
@@ -316,16 +235,9 @@ Once connected, you can access tools like [`search_icons_globally`](#search_icon
 
   <div>
     <strong>familySlug</strong>\
-    Description: When set, only return Sets belonging to this Family. Use the Family `slug` from `search_families` or `get_all_families`.\
+    Description: When set, only return Sets belonging to this Family. Use the Family `slug` from `get_all_families`.\
     Type: string (min 1 character when provided)\
     Default: (unset)
-  </div>
-
-  <div>
-    <strong>offset</strong>\
-    Description: Number of items to skip before returning results.\
-    Type: number\
-    Default value: 0
   </div>
 
   <div>
@@ -365,7 +277,7 @@ Once connected, you can access tools like [`search_icons_globally`](#search_icon
 
   <div>
     <strong>familyHash<span>\*</span></strong>\
-    Description: Family hash. Use `hash` from `get_all_families` or `search_families` results, or `familyHash` from `find_sets_by_name` when available.\
+    Description: Family hash. Use `hash` from `get_all_families` or `familyHash` from `find_sets_by_name` when available.\
     Type: string (max 80 characters)
   </div>
 
@@ -384,6 +296,18 @@ Once connected, you can access tools like [`search_icons_globally`](#search_icon
   </div>
 </Accordion>
 
+<Accordion title="get_family_extra_details" icon="fa-circle-info">
+  ### get\_family\_extra\_details
+
+  Returns full semantic text for a Family in four sections: fit & recommendations, brand & cultural identity, visual & technical specs, and pairing & compatibility. Use when you need richer metadata to choose between Families after `search_sets` or `get_all_families`. Pass the exact `familySlug` from those results — do not invent slugs.
+
+  <div>
+    <strong>familySlug<span>\*</span></strong>\
+    Description: Family slug from `get_all_families`.\
+    Type: string
+  </div>
+</Accordion>
+
 <Accordion title="get_icon_by_hash" icon="fa-info-circle">
   ### get\_icon\_by\_hash
 
@@ -391,25 +315,31 @@ Once connected, you can access tools like [`search_icons_globally`](#search_icon
 
   <div>
     <strong>iconHash<span>\*</span></strong>\
-    Description: Icon ID (hash) from `search_icons_globally`, `search_icons_by_set`, or `search_icons_by_family` results.\
+    Description: Icon ID (hash) from `search_assets` results.\
     Type: string
   </div>
 </Accordion>
 
-<Accordion title="download_png" icon="fa-file-image">
-  ### download\_png
+<Accordion title="download_asset" icon="fa-file-arrow-down">
+  ### download\_asset
 
-  Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType` (`image/png`), and `fileName`. The MCP `tools/call` is authenticated; perform a plain **GET** on `downloadUrl` without `X-API-Key` or Bearer (the URL carries the signed token) to download bytes.
+  Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType`, and `fileName`. The MCP `tools/call` is authenticated; perform a plain **GET** on `downloadUrl` without `X-API-Key` or Bearer (the URL carries the signed token) to download bytes. SVG-only params: `responsive`, `strokeToFill`.
+
+  <div>
+    <strong>format<span>\*</span></strong>\
+    Description: Export format.\
+    Type: png | svg
+  </div>
 
   <div>
     <strong>iconHash<span>\*</span></strong>\
-    Description: Icon ID (hash) from `search_icons_globally`, `search_icons_by_set`, or `search_icons_by_family` results.\
+    Description: Icon ID (hash) from `search_assets` results.\
     Type: string
   </div>
 
   <div>
     <strong>size<span>\*</span></strong>\
-    Description: Square size in pixels (1–4096 in the current backend constants).\
+    Description: Square size in pixels.\
     Type: number
   </div>
 
@@ -433,56 +363,17 @@ Once connected, you can access tools like [`search_icons_globally`](#search_icon
     Type: number\
     Default: (optional)
   </div>
-</Accordion>
-
-<Accordion title="download_svg" icon="fa-file-code">
-  ### download\_svg
-
-  Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType` (`image/svg+xml`), and `fileName`. The MCP `tools/call` is authenticated; perform a plain **GET** on `downloadUrl` without `X-API-Key` or Bearer to download bytes.
-
-  <div>
-    <strong>iconHash<span>\*</span></strong>\
-    Description: Icon ID (hash) from `search_icons_globally`, `search_icons_by_set`, or `search_icons_by_family` results.\
-    Type: string
-  </div>
-
-  <div>
-    <strong>size<span>\*</span></strong>\
-    Description: Square size in pixels (1–4096 in the current backend constants).\
-    Type: number
-  </div>
-
-  <div>
-    <strong>colors</strong>\
-    Description: Array of HEX strings or CSS named colors.\
-    Type: array of strings\
-    Default value: \[]
-  </div>
-
-  <div>
-    <strong>backgroundColor</strong>\
-    Description: Background color (HEX or CSS name).\
-    Type: string\
-    Default value: #ffffff00 (transparent)
-  </div>
 
   <div>
     <strong>responsive</strong>\
-    Description: If true, SVG uses viewBox and drops fixed width/height for responsive scaling.\
+    Description: SVG only. If true, SVG uses viewBox and drops fixed width/height for responsive scaling.\
     Type: boolean\
     Default value: false
   </div>
 
   <div>
-    <strong>strokeWidth</strong>\
-    Description: Adjust vector path thickness.\
-    Type: number\
-    Default: (optional)
-  </div>
-
-  <div>
     <strong>strokeToFill</strong>\
-    Description: If true, strokes become fills; `strokeWidth` is not applied.\
+    Description: SVG only. If true, strokes become fills; `strokeWidth` is not applied.\
     Type: boolean\
     Default value: false
   </div>
