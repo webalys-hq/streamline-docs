@@ -6,11 +6,18 @@ hidden: false
 metadata:
   robots: index
 ---
+
 ## Overview
 
 <Anchor target="_blank" label="Model Context Protocol (MCP)" href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</Anchor> is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude) can connect to external applications, use their tools, and retrieve data seamlessly.
 
 The Streamline MCP Server provides tools for accessing icons, illustrations, emojis, and other design assets within the Streamline application. It allows MCP-compatible clients to search, retrieve, and download assets in PNG or SVG formats.
+
+## Pricing
+
+Access via the Public API and MCP Server is included with **Pro plans** (up to **1,000 assets/week**).
+
+For full plan details and current pricing, see the <Anchor target="_blank" label="Streamline pricing page" href="https://home.streamlinehq.com/pricing">Streamline pricing page</Anchor>.
 
 ## Authentication
 
@@ -18,7 +25,7 @@ The Streamline MCP endpoint supports two ways to authenticate. Use either one on
 
 ## Authentication with API Key
 
-Before connecting, make sure you have your Streamline API key ready. Send it in the X-API-Key header with every MCP request. For setup details, see the Authentication section.
+Before connecting, make sure you have your Streamline API key ready. You can generate one from your <Anchor target="_blank" label="API settings page" href="https://www.streamlinehq.com/profile?tab=api_keys">API settings page</Anchor> — see the <Anchor target="_blank" label="Quick start guide" href="https://docs.streamlinehq.com/reference/quick-start-guide">Quick start guide</Anchor> for step-by-step instructions. Send it in the X-API-Key header with every MCP request.
 
 ## Authentication with OAuth 2.1 (Authorization Code + PKCE)
 
@@ -43,7 +50,7 @@ Clients use these endpoints to retrieve the authorization server base URL, regis
 
 Go to Cursor > Cursor Settings > Tools & MCPs and then click on "New MCP Server" and add the streamlineMCPServer configuration that you can see below:
 
-Add the following configuration to your MCP-compatible client (e.g.,  <Anchor target="_blank" label="Cursor" href="https://cursor.com/docs/context/mcp">Cursor</Anchor>) to connect to Streamline MCP Server:
+Add the following configuration to your MCP-compatible client (e.g., <Anchor target="_blank" label="Cursor" href="https://cursor.com/docs/context/mcp">Cursor</Anchor>) to connect to Streamline MCP Server:
 
 ```json
 {
@@ -57,7 +64,6 @@ Add the following configuration to your MCP-compatible client (e.g.,  <Anchor ta
     }
   }
 }
-
 ```
 
 You can see more details about adding MCPs to Cursor here: <Anchor label="https://cursor.com/docs/mcp" title="https://cursor.com/docs/mcp" href="https://cursor.com/docs/mcp">https://cursor.com/docs/mcp</Anchor>
@@ -86,7 +92,7 @@ Go to Settings > Settings > MCP Servers and click on "Add Server". Fill the form
 
 Before you begin, make sure you have a Streamline account. You will be prompted to sign in and authorize access during the connection flow.
 
-***
+---
 
 **Step 1 — Add the Custom Connector**
 
@@ -98,7 +104,7 @@ Before you begin, make sure you have a Streamline account. You will be prompted 
    ```
 4. Click **Add**
 
-***
+---
 
 **Step 2 — Authenticate and Authorize**
 
@@ -107,16 +113,16 @@ Before you begin, make sure you have a Streamline account. You will be prompted 
 3. Sign in to your account if prompted
 4. Review and grant the requested access Once authorized, you will be redirected back to Claude automatically.
 
-***
+---
 
 **Step 3 — Verify the Connection**
 
 After being redirected back to Claude, confirm the connector is active:
 
-* Go to **Settings → Connectors**
-* The Streamline MCP Server should appear with a **Connected** status
+- Go to **Settings → Connectors**
+- The Streamline MCP Server should appear with a **Connected** status
 
-***
+---
 
 **Step 4 — Test It**
 
@@ -124,51 +130,51 @@ After being redirected back to Claude, confirm the connector is active:
 2. Ask Claude to verify the connector is working, for example:
    > _"Check if you are connected to the Streamline MCP Server"_ Claude will confirm the connection and list the available tools.
 
-***
+---
 
 **What You Can Do**
 
 Once connected, you can ask Claude to:
 
-* Search for icons, illustrations, or design elements from the Streamline library
+- Search for icons, illustrations, or design elements from the Streamline library
 
-* Filter assets by style, type, or pricing tier (free or premium)
+- Filter assets by style, type, or pricing tier (free or premium)
 
-* Download assets as PNG with custom size, colors, and stroke width **Example prompts:**
+- Download assets as PNG with custom size, colors, and stroke width **Example prompts:**
 
-* _"Find me a line-style icon for notifications"_
+- _"Find me a line-style icon for notifications"_
 
-* _"Search for free illustrations related to teamwork"_
+- _"Search for free illustrations related to teamwork"_
 
-* _"Download the settings icon as a 64px PNG"_
+- _"Download the settings icon as a 64px PNG"_
 
 <br />
 
 ## How to Use
 
-Once connected, you can access tools like [`search_assets`](#search_assets) , [`search_sets `](#search_sets),  [`get_icon_by_hash`](#get_icon_by_hash), [`download_asset `](#download_asset) and others directly through the client AI Chat.
+Once connected, you can access tools like [`search_assets`](#search_assets) , [`search_sets `](#search_sets), [`get_icon_by_hash`](#get_icon_by_hash), [`download_asset `](#download_asset) and others directly through the client AI Chat.
 
 **Example:** You can experiment by asking the AI chat in your client to **search for dog icons**. The client will handle calling the appropriate MCP tool and returning the results.
 
 ## Key Features
 
-* Search icons, illustrations, emojis, and elements.
-* Retrieve detailed information about specific icons.
-* Download assets in PNG or SVG format with customization options (size, colors, background, stroke).
-* Fully compatible with MCP protocol clients.
+- Search icons, illustrations, emojis, and elements.
+- Retrieve detailed information about specific icons.
+- Download assets in PNG or SVG format with customization options (size, colors, background, stroke).
+- Fully compatible with MCP protocol clients.
 
 ## Use Cases
 
-* Finding icons for web or mobile projects.
-* Retrieving and customizing specific assets for design workflows.
-* Automating icon-related tasks in applications or scripts.
+- Finding icons for web or mobile projects.
+- Retrieving and customizing specific assets for design workflows.
+- Automating icon-related tasks in applications or scripts.
 
 ## Tools
 
 <Accordion title="search_assets" icon="fa-magnifying-glass">
   ### search\_assets
 
-  Search for icons, illustrations, or elements. With a non-empty `setSlug`, search within that Set. With a non-empty `familySlug` (and no `setSlug`), search within that Family. Otherwise performs a global search — `productType` is required for global search.
+Search for icons, illustrations, or elements. With a non-empty `setSlug`, search within that Set. With a non-empty `familySlug` (and no `setSlug`), search within that Family. Otherwise performs a global search — `productType` is required for global search.
 
   <div>
     <strong>query<span>\*</span></strong>\
@@ -225,7 +231,7 @@ Once connected, you can access tools like [`search_assets`](#search_assets) , [`
 <Accordion title="search_sets" icon="fa-shapes">
   ### search\_sets
 
-  Semantic search for **Sets** by meaning (not substring on stored names). For partial name match on stored Set names, use `find_sets_by_name`. To list all Sets in a Family without search intent, use `get_all_sets_from_family`.
+Semantic search for **Sets** by meaning (not substring on stored names). For partial name match on stored Set names, use `find_sets_by_name`. To list all Sets in a Family without search intent, use `get_all_sets_from_family`.
 
   <div>
     <strong>query<span>\*</span></strong>\
@@ -251,7 +257,7 @@ Once connected, you can access tools like [`search_assets`](#search_assets) , [`
 <Accordion title="find_sets_by_name" icon="fa-font">
   ### find\_sets\_by\_name
 
-  Case-insensitive **substring** match on stored **Set** names. Minimum 3 characters. For semantic discovery, use `search_sets`.
+Case-insensitive **substring** match on stored **Set** names. Minimum 3 characters. For semantic discovery, use `search_sets`.
 
   <div>
     <strong>name<span>\*</span></strong>\
@@ -263,7 +269,7 @@ Once connected, you can access tools like [`search_assets`](#search_assets) , [`
 <Accordion title="get_all_families" icon="fa-list">
   ### get\_all\_families
 
-  Returns all Families (e.g. hash, slug, and related fields) for browsing the full catalog.
+Returns all Families (e.g. hash, slug, and related fields) for browsing the full catalog.
 
   <div>
     <em>No parameters.</em>
@@ -273,7 +279,7 @@ Once connected, you can access tools like [`search_assets`](#search_assets) , [`
 <Accordion title="get_all_sets_from_family" icon="fa-list-ul">
   ### get\_all\_sets\_from\_family
 
-  Returns all Sets in a Family, with pagination. Use when you already know the Family and want a full list (no search).
+Returns all Sets in a Family, with pagination. Use when you already know the Family and want a full list (no search).
 
   <div>
     <strong>familyHash<span>\*</span></strong>\
@@ -299,7 +305,7 @@ Once connected, you can access tools like [`search_assets`](#search_assets) , [`
 <Accordion title="get_family_extra_details" icon="fa-circle-info">
   ### get\_family\_extra\_details
 
-  Returns full semantic text for a Family in four sections: fit & recommendations, brand & cultural identity, visual & technical specs, and pairing & compatibility. Use when you need richer metadata to choose between Families after `search_sets` or `get_all_families`. Pass the exact `familySlug` from those results — do not invent slugs.
+Returns full semantic text for a Family in four sections: fit & recommendations, brand & cultural identity, visual & technical specs, and pairing & compatibility. Use when you need richer metadata to choose between Families after `search_sets` or `get_all_families`. Pass the exact `familySlug` from those results — do not invent slugs.
 
   <div>
     <strong>familySlug<span>\*</span></strong>\
@@ -311,7 +317,7 @@ Once connected, you can access tools like [`search_assets`](#search_assets) , [`
 <Accordion title="get_icon_by_hash" icon="fa-info-circle">
   ### get\_icon\_by\_hash
 
-  Full icon metadata (Set, variants, preview URLs, tags, etc.) before download.
+Full icon metadata (Set, variants, preview URLs, tags, etc.) before download.
 
   <div>
     <strong>iconHash<span>\*</span></strong>\
@@ -323,7 +329,7 @@ Once connected, you can access tools like [`search_assets`](#search_assets) , [`
 <Accordion title="download_asset" icon="fa-file-arrow-down">
   ### download\_asset
 
-  Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType`, and `fileName`. The MCP `tools/call` is authenticated; perform a plain **GET** on `downloadUrl` without `X-API-Key` or Bearer (the URL carries the signed token) to download bytes. SVG-only params: `responsive`, `strokeToFill`.
+Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType`, and `fileName`. The MCP `tools/call` is authenticated; perform a plain **GET** on `downloadUrl` without `X-API-Key` or Bearer (the URL carries the signed token) to download bytes. SVG-only params: `responsive`, `strokeToFill`.
 
   <div>
     <strong>format<span>\*</span></strong>\
