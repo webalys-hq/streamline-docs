@@ -6,7 +6,6 @@ hidden: false
 metadata:
   robots: index
 ---
-
 ## Overview
 
 <Anchor target="_blank" href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</Anchor> is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude) can connect to external applications, use their tools, and retrieve data seamlessly.
@@ -100,7 +99,7 @@ You can see more details about adding MCPs to Cursor here: [https://cursor.com/
 
 Run this command replacing the YOUR\_API\_KEY\_HERE part with your Streamline Api Key.
 
-```text
+```shell
 claude mcp add --transport http streamline-mcp https://public-api.streamlinehq.com/mcp --header "X-API-Key: YOUR_API_KEY_HERE"
 ```
 
@@ -120,7 +119,7 @@ Go to Settings > Settings > MCP Servers and click on "Add Server". Fill the form
 
 Before you begin, make sure you have a Streamline account. You will be prompted to sign in and authorize access during the connection flow.
 
----
+***
 
 **Step 1 — Add the Custom Connector**
 
@@ -132,7 +131,7 @@ Before you begin, make sure you have a Streamline account. You will be prompted 
    ```
 4. Click **Add**
 
----
+***
 
 **Step 2 — Authenticate and Authorize**
 
@@ -141,7 +140,7 @@ Before you begin, make sure you have a Streamline account. You will be prompted 
 3. Sign in to your account if prompted
 4. Review and grant the requested access. Once authorized, you will be redirected back to Claude automatically.
 
----
+***
 
 **Step 3 — Verify the Connection**
 
@@ -150,7 +149,7 @@ After being redirected back to Claude, confirm the connector is active:
 - Go to **Settings → Connectors**
 - The Streamline MCP Server should appear with a **Connected** status
 
----
+***
 
 **Step 4 — Test It**
 
@@ -161,7 +160,7 @@ After being redirected back to Claude, confirm the connector is active:
 
    Claude will confirm the connection and list the available tools.
 
----
+***
 
 **What You Can Do**
 
