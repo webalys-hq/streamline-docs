@@ -12,6 +12,19 @@ metadata:
 
 The Streamline MCP Server provides tools for accessing icons, illustrations, emojis, and other design assets within the Streamline application. It allows MCP-compatible clients to search, retrieve, and download assets in PNG or SVG formats.
 
+## Key Features
+
+- Search icons, illustrations, emojis, and elements.
+- Retrieve detailed information about specific icons.
+- Download assets in PNG or SVG format with customization options (size, colors, background, stroke).
+- Fully compatible with MCP protocol clients.
+
+## Use Cases
+
+- Finding icons for web or mobile projects.
+- Retrieving and customizing specific assets for design workflows.
+- Automating icon-related tasks in applications or scripts.
+
 ## Pricing
 
 Access via the Public API and MCP Server is included with **Pro plans** (up to **1,000 assets/week**).
@@ -22,11 +35,11 @@ For full plan details and current pricing, see the <Anchor target="_blank" href=
 
 The Streamline MCP endpoint supports two ways to authenticate. Use either one on each request to [https://public-api.streamlinehq.com/mcp](https://public-api.streamlinehq.com/mcp) (not both at once).
 
-## Authentication with API Key
+### API Key
 
 Before connecting, make sure you have your Streamline API key ready. You can generate one from your <Anchor target="_blank" href="https://www.streamlinehq.com/profile?tab=api_keys">API settings page</Anchor> — see the <Anchor target="_blank" href="https://docs.streamlinehq.com/reference/quick-start-guide">Quick start guide</Anchor> for step-by-step instructions. Send it in the X-API-Key header with every MCP request.
 
-## Authentication with OAuth 2.1 (Authorization Code + PKCE)
+### OAuth 2.1 (Authorization Code + PKCE)
 
 Send a Streamline-issued access token in the Authorization header:
 
@@ -45,7 +58,11 @@ Discovery (machine-readable):
 
 Clients use these endpoints to retrieve the authorization server base URL, registration endpoint, authorize and token URLs, and supported scopes (e.g. `mcp:tools`).
 
-## Connect on Cursor
+## Connecting a Client
+
+Point your MCP client at `https://public-api.streamlinehq.com/mcp` and authenticate with your API key. Follow the guide for your client below.
+
+### Cursor
 
 Go to Cursor > Cursor Settings > Tools & MCPs and then click on "New MCP Server" and add the streamlineMCPServer configuration that you can see below:
 
@@ -78,17 +95,17 @@ Add the following configuration to your MCP-compatible client (e.g., <Anchor tar
 
 You can see more details about adding MCPs to Cursor here: [https://cursor.com/docs/mcp](https://cursor.com/docs/mcp "https://cursor.com/docs/mcp")
 
-## Connect on Claude Code
+### Claude Code
 
 Run this command replacing the YOUR\_API\_KEY\_HERE part with your Streamline Api Key.
 
 ```text
-claude mcp add --transport http streamline-mcp https://public-api.streamlinehq.com/mcp --header "X-Api-Key: YOUR_API_KEY_HERE"
+claude mcp add --transport http streamline-mcp https://public-api.streamlinehq.com/mcp --header "X-API-Key: YOUR_API_KEY_HERE"
 ```
 
 Run `claude mcp list` to confirm it's up and running.
 
-## Connect on Codex
+### Codex
 
 Go to Settings > Settings > MCP Servers and click on "Add Server". Fill the form with the following information: <br />**Name:** Streamline MCP Server<br />Select the **Streamable HTTP** option<br />**URL:** [https://public-api.streamlinehq.com/mcp](https://public-api.streamlinehq.com/mcp "https://public-api.streamlinehq.com/mcp")<br />**Headers Key:** X-API-Key <br />**Headers Value:** YOUR\_API\_KEY\_HERE (Replace with your actual key)<br />Then Click on **Save**
 
@@ -96,7 +113,7 @@ Go to Settings > Settings > MCP Servers and click on "Add Server". Fill the form
 
 <br />
 
-## Connect to Claude using Connectors
+### Claude (via Connectors)
 
 **Prerequisites**
 
@@ -121,7 +138,7 @@ Before you begin, make sure you have a Streamline account. You will be prompted 
 1. After adding the connector, click **Connect**
 2. You will be redirected to the Streamline web app
 3. Sign in to your account if prompted
-4. Review and grant the requested access Once authorized, you will be redirected back to Claude automatically.
+4. Review and grant the requested access. Once authorized, you will be redirected back to Claude automatically.
 
 ***
 
@@ -138,7 +155,10 @@ After being redirected back to Claude, confirm the connector is active:
 
 1. Start a new chat in Claude
 2. Ask Claude to verify the connector is working, for example:
-   > _"Check if you are connected to the Streamline MCP Server"_ Claude will confirm the connection and list the available tools.
+
+   > _"Check if you are connected to the Streamline MCP Server"_
+
+   Claude will confirm the connection and list the available tools.
 
 ***
 
@@ -150,34 +170,21 @@ Once connected, you can ask Claude to:
 
 - Filter assets by style, type, or pricing tier (free or premium)
 
-- Download assets as PNG with custom size, colors, and stroke width **Example prompts:**
+- Download assets as PNG with custom size, colors, and stroke width
+
+**Example prompts:**
 
 - _"Find me a line-style icon for notifications"_
-
 - _"Search for free illustrations related to teamwork"_
-
 - _"Download the settings icon as a 64px PNG"_
 
 <br />
 
 ## How to Use
 
-Once connected, you can access tools like [`search_assets`](#search_assets) , [`search_sets `](#search_sets), [`get_icon_by_hash`](#get_icon_by_hash), [`download_asset `](#download_asset) and others directly through the client AI Chat.
+Once connected, you can access tools like [`search_assets`](#search_assets), [`search_sets`](#search_sets), [`get_icon_by_hash`](#get_icon_by_hash), [`download_asset`](#download_asset) and others directly through the client AI Chat.
 
 **Example:** You can experiment by asking the AI chat in your client to **search for dog icons**. The client will handle calling the appropriate MCP tool and returning the results.
-
-## Key Features
-
-- Search icons, illustrations, emojis, and elements.
-- Retrieve detailed information about specific icons.
-- Download assets in PNG or SVG format with customization options (size, colors, background, stroke).
-- Fully compatible with MCP protocol clients.
-
-## Use Cases
-
-- Finding icons for web or mobile projects.
-- Retrieving and customizing specific assets for design workflows.
-- Automating icon-related tasks in applications or scripts.
 
 ## Tools
 
