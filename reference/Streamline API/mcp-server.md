@@ -6,10 +6,9 @@ hidden: false
 metadata:
   robots: index
 ---
-
 ## Overview
 
-<Anchor target="_blank" label="Model Context Protocol (MCP)" href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</Anchor> is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude) can connect to external applications, use their tools, and retrieve data seamlessly.
+<Anchor target="_blank" href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</Anchor> is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude) can connect to external applications, use their tools, and retrieve data seamlessly.
 
 The Streamline MCP Server provides tools for accessing icons, illustrations, emojis, and other design assets within the Streamline application. It allows MCP-compatible clients to search, retrieve, and download assets in PNG or SVG formats.
 
@@ -17,7 +16,7 @@ The Streamline MCP Server provides tools for accessing icons, illustrations, emo
 
 Access via the Public API and MCP Server is included with **Pro plans** (up to **1,000 assets/week**).
 
-For full plan details and current pricing, see the <Anchor target="_blank" label="Streamline pricing page" href="https://home.streamlinehq.com/pricing">Streamline pricing page</Anchor>.
+For full plan details and current pricing, see the <Anchor target="_blank" href="https://home.streamlinehq.com/pricing">Streamline pricing page</Anchor>.
 
 ## Authentication
 
@@ -25,7 +24,7 @@ The Streamline MCP endpoint supports two ways to authenticate. Use either one on
 
 ## Authentication with API Key
 
-Before connecting, make sure you have your Streamline API key ready. You can generate one from your <Anchor target="_blank" label="API settings page" href="https://www.streamlinehq.com/profile?tab=api_keys">API settings page</Anchor> — see the <Anchor target="_blank" label="Quick start guide" href="https://docs.streamlinehq.com/reference/quick-start-guide">Quick start guide</Anchor> for step-by-step instructions. Send it in the X-API-Key header with every MCP request.
+Before connecting, make sure you have your Streamline API key ready. You can generate one from your <Anchor target="_blank" href="https://www.streamlinehq.com/profile?tab=api_keys">API settings page</Anchor> — see the <Anchor target="_blank" href="https://docs.streamlinehq.com/reference/quick-start-guide">Quick start guide</Anchor> for step-by-step instructions. Send it in the X-API-Key header with every MCP request.
 
 ## Authentication with OAuth 2.1 (Authorization Code + PKCE)
 
@@ -46,13 +45,13 @@ Discovery (machine-readable):
 
 Clients use these endpoints to retrieve the authorization server base URL, registration endpoint, authorize and token URLs, and supported scopes (e.g. `mcp:tools`).
 
-## How to Connect on Cursor
+## Connect on Cursor
 
 Go to Cursor > Cursor Settings > Tools & MCPs and then click on "New MCP Server" and add the streamlineMCPServer configuration that you can see below:
 
-Add the following configuration to your MCP-compatible client (e.g., <Anchor target="_blank" label="Cursor" href="https://cursor.com/docs/context/mcp">Cursor</Anchor>) to connect to Streamline MCP Server:
+Add the following configuration to your MCP-compatible client (e.g., <Anchor target="_blank" href="https://cursor.com/docs/context/mcp">Cursor</Anchor>, [Zed](https://zed.dev/docs/ai/mcp#as-custom-servers)) to connect to Streamline MCP Server:
 
-```json
+```json Cursor
 {
   "mcpServers": {
     "streamlineMCPServer": {
@@ -64,13 +63,24 @@ Add the following configuration to your MCP-compatible client (e.g., <Anchor tar
     }
   }
 }
+
+```
+```json Zed
+"streamline": {
+    /// The URL of the remote MCP server
+    "url": "https://public-api.streamlinehq.com/mcp",
+    "headers": {
+     /// Any headers to send along
+     "X-API-Key": "YOUR_API_KEY_HERE"
+    }
+}
 ```
 
-You can see more details about adding MCPs to Cursor here: <Anchor label="https://cursor.com/docs/mcp" title="https://cursor.com/docs/mcp" href="https://cursor.com/docs/mcp">https://cursor.com/docs/mcp</Anchor>
+You can see more details about adding MCPs to Cursor here: [https://cursor.com/docs/mcp](https://cursor.com/docs/mcp "https://cursor.com/docs/mcp")
 
-## How to Connect on Claude Code
+## Connect on Claude Code
 
-Run this command replacing the YOUR_API_KEY_HERE part with your Streamline Api Key.
+Run this command replacing the YOUR\_API\_KEY\_HERE part with your Streamline Api Key.
 
 ```text
 claude mcp add --transport http streamline-mcp https://public-api.streamlinehq.com/mcp --header "X-Api-Key: YOUR_API_KEY_HERE"
@@ -78,21 +88,21 @@ claude mcp add --transport http streamline-mcp https://public-api.streamlinehq.c
 
 Run `claude mcp list` to confirm it's up and running.
 
-## How to Connect on Codex
+## Connect on Codex
 
-Go to Settings > Settings > MCP Servers and click on "Add Server". Fill the form with the following information: <br />**Name:** Streamline MCP Server<br />Select the **Streamable HTTP** option<br />**URL:** <Anchor label="https://public-api.streamlinehq.com/mcp" title="https://public-api.streamlinehq.com/mcp" href="https://public-api.streamlinehq.com/mcp">https://public-api.streamlinehq.com/mcp</Anchor><br />**Headers Key:** X-API-Key <br />**Headers Value: **YOUR_API_KEY_HERE (Replace with your actual key)<br />Then Click on **Save**
+Go to Settings > Settings > MCP Servers and click on "Add Server". Fill the form with the following information: <br />**Name:** Streamline MCP Server<br />Select the **Streamable HTTP** option<br />**URL:** [https://public-api.streamlinehq.com/mcp](https://public-api.streamlinehq.com/mcp "https://public-api.streamlinehq.com/mcp")<br />**Headers Key:** X-API-Key <br />**Headers Value:** YOUR\_API\_KEY\_HERE (Replace with your actual key)<br />Then Click on **Save**
 
 ![](https://files.readme.io/5d94c07b2ed859c6acd20b7e01796f72e803b77357a2d140bddf2ad545744a85-image.png)
 
 <br />
 
-## How to Connect to Claude using Connectors
+## Connect to Claude using Connectors
 
 **Prerequisites**
 
 Before you begin, make sure you have a Streamline account. You will be prompted to sign in and authorize access during the connection flow.
 
----
+***
 
 **Step 1 — Add the Custom Connector**
 
@@ -104,7 +114,7 @@ Before you begin, make sure you have a Streamline account. You will be prompted 
    ```
 4. Click **Add**
 
----
+***
 
 **Step 2 — Authenticate and Authorize**
 
@@ -113,7 +123,7 @@ Before you begin, make sure you have a Streamline account. You will be prompted 
 3. Sign in to your account if prompted
 4. Review and grant the requested access Once authorized, you will be redirected back to Claude automatically.
 
----
+***
 
 **Step 3 — Verify the Connection**
 
@@ -122,7 +132,7 @@ After being redirected back to Claude, confirm the connector is active:
 - Go to **Settings → Connectors**
 - The Streamline MCP Server should appear with a **Connected** status
 
----
+***
 
 **Step 4 — Test It**
 
@@ -130,7 +140,7 @@ After being redirected back to Claude, confirm the connector is active:
 2. Ask Claude to verify the connector is working, for example:
    > _"Check if you are connected to the Streamline MCP Server"_ Claude will confirm the connection and list the available tools.
 
----
+***
 
 **What You Can Do**
 
