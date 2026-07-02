@@ -61,7 +61,7 @@ Clients use these endpoints to retrieve the authorization server base URL, regis
 
 ## Connecting a Client
 
-Point your MCP client at `https://public-api.streamlinehq.com/mcp` and authenticate with your API key. Follow the guide for your client below.
+Point your MCP client at `https://public-api.streamlinehq.com/mcp` and authenticate with your API key (or, for Claude Connectors, the OAuth sign-in flow). Follow the guide for your client below.
 
 ### Cursor
 
@@ -96,7 +96,7 @@ Add the following configuration to your MCP-compatible client (e.g., <Anchor tar
 
 You can see more details about adding MCPs to Cursor here: [https://cursor.com/docs/mcp](https://cursor.com/docs/mcp "https://cursor.com/docs/mcp")
 
-### Claude Code
+### Claude Code (CLI)
 
 Run this command replacing the YOUR\_API\_KEY\_HERE part with your Streamline Api Key.
 
