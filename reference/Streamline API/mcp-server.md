@@ -82,17 +82,6 @@ Add the following configuration to your MCP-compatible client (e.g., <Anchor tar
 }
 ```
 
-```json Zed
-"streamline": {
-    /// The URL of the remote MCP server
-    "url": "https://public-api.streamlinehq.com/mcp",
-    "headers": {
-     /// Any headers to send along
-     "X-API-Key": "YOUR_API_KEY_HERE"
-    }
-}
-```
-
 You can see more details about adding MCPs to Cursor here: [https://cursor.com/docs/mcp](https://cursor.com/docs/mcp "https://cursor.com/docs/mcp")
 
 ### Claude Code (CLI)
