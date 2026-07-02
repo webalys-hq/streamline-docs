@@ -6,6 +6,7 @@ hidden: false
 metadata:
   robots: index
 ---
+
 ## Overview
 
 <Anchor target="_blank" href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</Anchor> is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude) can connect to external applications, use their tools, and retrieve data seamlessly.
@@ -80,8 +81,8 @@ Add the following configuration to your MCP-compatible client (e.g., <Anchor tar
     }
   }
 }
-
 ```
+
 ```json Zed
 "streamline": {
     /// The URL of the remote MCP server
@@ -119,7 +120,7 @@ Go to Settings > Settings > MCP Servers and click on "Add Server". Fill the form
 
 Before you begin, make sure you have a Streamline account. You will be prompted to sign in and authorize access during the connection flow.
 
-***
+---
 
 **Step 1 — Add the Custom Connector**
 
@@ -131,7 +132,7 @@ Before you begin, make sure you have a Streamline account. You will be prompted 
    ```
 4. Click **Add**
 
-***
+---
 
 **Step 2 — Authenticate and Authorize**
 
@@ -140,7 +141,7 @@ Before you begin, make sure you have a Streamline account. You will be prompted 
 3. Sign in to your account if prompted
 4. Review and grant the requested access. Once authorized, you will be redirected back to Claude automatically.
 
-***
+---
 
 **Step 3 — Verify the Connection**
 
@@ -149,7 +150,7 @@ After being redirected back to Claude, confirm the connector is active:
 - Go to **Settings → Connectors**
 - The Streamline MCP Server should appear with a **Connected** status
 
-***
+---
 
 **Step 4 — Test It**
 
@@ -160,7 +161,7 @@ After being redirected back to Claude, confirm the connector is active:
 
    Claude will confirm the connection and list the available tools.
 
-***
+---
 
 **What You Can Do**
 
@@ -182,224 +183,106 @@ Once connected, you can ask Claude to:
 
 ## How to Use
 
-Once connected, you can access tools like [`search_assets`](#search_assets), [`search_sets`](#search_sets), [`get_icon_by_hash`](#get_icon_by_hash), [`download_asset`](#download_asset) and others directly through the client AI Chat.
+Once connected, you can access tools like `search_assets`, `search_sets`, `get_icon_by_hash`, `download_asset` and others directly through the client AI Chat. See the [Tools](#tools) section below for the full list and their parameters.
 
 **Example:** You can experiment by asking the AI chat in your client to **search for dog icons**. The client will handle calling the appropriate MCP tool and returning the results.
 
 ## Tools
 
 <Accordion title="search_assets" icon="fa-magnifying-glass">
-  ### search\_assets
 
 Search for icons, illustrations, or elements. With a non-empty `setSlug`, search within that Set. With a non-empty `familySlug` (and no `setSlug`), search within that Family. Otherwise performs a global search — `productType` is required for global search.
 
-  <div>
-    <strong>query<span>\*</span></strong>\
-    Description: Search term. Translate abstract concepts into concrete visual nouns when searching globally. Never mix different concepts in the same query.\
-    Type: string
-  </div>
+| Parameter            | Type                                   | Description                                                                                                                                                                                                                                                                        |
+| -------------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `query` _(required)_ | string                                 | Search term. Translate abstract concepts into concrete visual nouns when searching globally. Never mix different concepts in the same query.                                                                                                                                       |
+| `setSlug`            | string                                 | Set slug from `search_sets`, `find_sets_by_name`, or `get_all_sets_from_family`. When provided, search is scoped to this Set (takes precedence over `familySlug`).                                                                                                                 |
+| `familySlug`         | string                                 | Family slug from `get_all_families`. When provided and `setSlug` is omitted, search is scoped to this Family.                                                                                                                                                                      |
+| `productType`        | `icons` / `illustrations` / `elements` | Required for global search only (when both `setSlug` and `familySlug` are omitted). Asset type to search.                                                                                                                                                                          |
+| `offset`             | number                                 | Number of items to skip before returning results. Default: `0`.                                                                                                                                                                                                                    |
+| `limit`              | number                                 | Maximum number of items to return. Default: `20` (max `100`).                                                                                                                                                                                                                      |
+| `productTier`        | `all` / `free` / `premium`             | Filter by price tier of Sets (e.g. `free` limits results to free Sets). Used for global search only. Default: `all`.                                                                                                                                                               |
+| `style`              | enum                                   | Filter by Set style. Global search only; applies when `productType` is `icons`. One of: `line`, `solid`, `flat`, `duo`, `handrawn`, `creative`, `gradient`, `remix`, `neon`, `pop`, `light`, `glyph`, `minimal`, `outlined`, `geometric`, `bold`, `stroke`, `wireframe`, `filled`. |
 
-  <div>
-    <strong>setSlug</strong>\
-    Description: Set slug from `search_sets`, `find_sets_by_name`, or `get_all_sets_from_family`. When provided, search is scoped to this Set (takes precedence over `familySlug`).\
-    Type: string
-  </div>
-
-  <div>
-    <strong>familySlug</strong>\
-    Description: Family slug from `get_all_families`. When provided and `setSlug` is omitted, search is scoped to this Family.\
-    Type: string
-  </div>
-
-  <div>
-    <strong>productType</strong>\
-    Description: Required for global search only (when both `setSlug` and `familySlug` are omitted). Asset type to search.\
-    Type: icons | illustrations | elements
-  </div>
-
-  <div>
-    <strong>offset</strong>\
-    Description: Number of items to skip before returning results.\
-    Type: number\
-    Default value: 0
-  </div>
-
-  <div>
-    <strong>limit</strong>\
-    Description: Maximum number of items to return.\
-    Type: number\
-    Default value: 20 (max 100)
-  </div>
-
-  <div>
-    <strong>productTier</strong>\
-    Description: Filter by price tier of Sets (e.g. `free` limits results to free Sets). Used for global search only.\
-    Type: all | free | premium\
-    Default value: all
-  </div>
-
-  <div>
-    <strong>style</strong>\
-    Description: Filter by Set style. Global search only; applies when `productType` is `icons`.\
-    Type: line | solid | flat | duo | handrawn | creative | gradient | remix | neon | pop | light | glyph | minimal | outlined | geometric | bold | stroke | wireframe | filled
-  </div>
 </Accordion>
 
 <Accordion title="search_sets" icon="fa-shapes">
-  ### search\_sets
 
 Semantic search for **Sets** by meaning (not substring on stored names). For partial name match on stored Set names, use `find_sets_by_name`. To list all Sets in a Family without search intent, use `get_all_sets_from_family`.
 
-  <div>
-    <strong>query<span>\*</span></strong>\
-    Description: Natural-language search term.\
-    Type: string (min 1 character)
-  </div>
+| Parameter            | Type   | Description                                                                                                                                            |
+| -------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `query` _(required)_ | string | Natural-language search term. Minimum 1 character.                                                                                                     |
+| `familySlug`         | string | When set, only return Sets belonging to this Family. Use the Family `slug` from `get_all_families`. Minimum 1 character when provided. Default: unset. |
+| `limit`              | number | Maximum number of Sets to return. Default: `20` (max `100`).                                                                                           |
 
-  <div>
-    <strong>familySlug</strong>\
-    Description: When set, only return Sets belonging to this Family. Use the Family `slug` from `get_all_families`.\
-    Type: string (min 1 character when provided)\
-    Default: (unset)
-  </div>
-
-  <div>
-    <strong>limit</strong>\
-    Description: Maximum number of Sets to return.\
-    Type: number\
-    Default value: 20 (max 100)
-  </div>
 </Accordion>
 
 <Accordion title="find_sets_by_name" icon="fa-font">
-  ### find\_sets\_by\_name
 
 Case-insensitive **substring** match on stored **Set** names. Minimum 3 characters. For semantic discovery, use `search_sets`.
 
-  <div>
-    <strong>name<span>\*</span></strong>\
-    Description: Substring to match against Set names.\
-    Type: string (min 3 characters)
-  </div>
+| Parameter           | Type   | Description                                                 |
+| ------------------- | ------ | ----------------------------------------------------------- |
+| `name` _(required)_ | string | Substring to match against Set names. Minimum 3 characters. |
+
 </Accordion>
 
 <Accordion title="get_all_families" icon="fa-list">
-  ### get\_all\_families
 
 Returns all Families (e.g. hash, slug, and related fields) for browsing the full catalog.
 
-  <div>
-    <em>No parameters.</em>
-  </div>
+_No parameters._
+
 </Accordion>
 
 <Accordion title="get_all_sets_from_family" icon="fa-list-ul">
-  ### get\_all\_sets\_from\_family
 
 Returns all Sets in a Family, with pagination. Use when you already know the Family and want a full list (no search).
 
-  <div>
-    <strong>familyHash<span>\*</span></strong>\
-    Description: Family hash. Use `hash` from `get_all_families` or `familyHash` from `find_sets_by_name` when available.\
-    Type: string (max 80 characters)
-  </div>
+| Parameter                 | Type   | Description                                                                                                                 |
+| ------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------- |
+| `familyHash` _(required)_ | string | Family hash. Use `hash` from `get_all_families` or `familyHash` from `find_sets_by_name` when available. Max 80 characters. |
+| `offset`                  | number | Number of items to skip. Default: `0`.                                                                                      |
+| `limit`                   | number | Maximum number of Sets to return. Default: `100` (max `100`).                                                               |
 
-  <div>
-    <strong>offset</strong>\
-    Description: Number of items to skip.\
-    Type: number\
-    Default value: 0
-  </div>
-
-  <div>
-    <strong>limit</strong>\
-    Description: Maximum number of Sets to return.\
-    Type: number\
-    Default value: 100 (max 100)
-  </div>
 </Accordion>
 
 <Accordion title="get_family_extra_details" icon="fa-circle-info">
-  ### get\_family\_extra\_details
 
 Returns full semantic text for a Family in four sections: fit & recommendations, brand & cultural identity, visual & technical specs, and pairing & compatibility. Use when you need richer metadata to choose between Families after `search_sets` or `get_all_families`. Pass the exact `familySlug` from those results — do not invent slugs.
 
-  <div>
-    <strong>familySlug<span>\*</span></strong>\
-    Description: Family slug from `get_all_families`.\
-    Type: string
-  </div>
+| Parameter                 | Type   | Description                          |
+| ------------------------- | ------ | ------------------------------------ |
+| `familySlug` _(required)_ | string | Family slug from `get_all_families`. |
+
 </Accordion>
 
 <Accordion title="get_icon_by_hash" icon="fa-info-circle">
-  ### get\_icon\_by\_hash
 
 Full icon metadata (Set, variants, preview URLs, tags, etc.) before download.
 
-  <div>
-    <strong>iconHash<span>\*</span></strong>\
-    Description: Icon ID (hash) from `search_assets` results.\
-    Type: string
-  </div>
+| Parameter               | Type   | Description                                  |
+| ----------------------- | ------ | -------------------------------------------- |
+| `iconHash` _(required)_ | string | Icon ID (hash) from `search_assets` results. |
+
 </Accordion>
 
 <Accordion title="download_asset" icon="fa-file-arrow-down">
-  ### download\_asset
 
 Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType`, and `fileName`. The MCP `tools/call` is authenticated; perform a plain **GET** on `downloadUrl` without `X-API-Key` or Bearer (the URL carries the signed token) to download bytes. SVG-only params: `responsive`, `strokeToFill`.
 
-  <div>
-    <strong>format<span>\*</span></strong>\
-    Description: Export format.\
-    Type: png | svg
-  </div>
+| Parameter               | Type          | Description                                                                                                |
+| ----------------------- | ------------- | ---------------------------------------------------------------------------------------------------------- |
+| `format` _(required)_   | `png` / `svg` | Export format.                                                                                             |
+| `iconHash` _(required)_ | string        | Icon ID (hash) from `search_assets` results.                                                               |
+| `size` _(required)_     | number        | Square size in pixels.                                                                                     |
+| `colors`                | string[]      | Array of HEX strings or CSS named colors. Default: `[]`.                                                   |
+| `backgroundColor`       | string        | Background color (HEX or CSS name). Default: `#ffffff00` (transparent).                                    |
+| `strokeWidth`           | number        | Adjust vector path thickness. Optional.                                                                    |
+| `responsive`            | boolean       | SVG only. If true, SVG uses viewBox and drops fixed width/height for responsive scaling. Default: `false`. |
+| `strokeToFill`          | boolean       | SVG only. If true, strokes become fills; `strokeWidth` is not applied. Default: `false`.                   |
 
-  <div>
-    <strong>iconHash<span>\*</span></strong>\
-    Description: Icon ID (hash) from `search_assets` results.\
-    Type: string
-  </div>
-
-  <div>
-    <strong>size<span>\*</span></strong>\
-    Description: Square size in pixels.\
-    Type: number
-  </div>
-
-  <div>
-    <strong>colors</strong>\
-    Description: Array of HEX strings or CSS named colors.\
-    Type: array of strings\
-    Default value: \[]
-  </div>
-
-  <div>
-    <strong>backgroundColor</strong>\
-    Description: Background color (HEX or CSS name).\
-    Type: string\
-    Default value: #ffffff00 (transparent)
-  </div>
-
-  <div>
-    <strong>strokeWidth</strong>\
-    Description: Adjust vector path thickness.\
-    Type: number\
-    Default: (optional)
-  </div>
-
-  <div>
-    <strong>responsive</strong>\
-    Description: SVG only. If true, SVG uses viewBox and drops fixed width/height for responsive scaling.\
-    Type: boolean\
-    Default value: false
-  </div>
-
-  <div>
-    <strong>strokeToFill</strong>\
-    Description: SVG only. If true, strokes become fills; `strokeWidth` is not applied.\
-    Type: boolean\
-    Default value: false
-  </div>
 </Accordion>
 
 ## FAQ
