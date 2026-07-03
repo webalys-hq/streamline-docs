@@ -1802,31 +1802,6 @@
         "tags": [
           "McpServer"
         ]
-      },
-      "get": {
-        "operationId": "mcpGet",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": ""
-          },
-          "401": {
-            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
-            "content": {
-              "application/json": {
-                "example": {
-                  "message": "Api key is required",
-                  "error": "Unauthorized",
-                  "statusCode": 401
-                }
-              }
-            }
-          }
-        },
-        "summary": "MCP GET endpoint to acknowledge client checks.\nUsed by MCP clients (e.g., Cursor) to check server availability before RPC calls.",
-        "tags": [
-          "McpServer"
-        ]
       }
     }
   },
