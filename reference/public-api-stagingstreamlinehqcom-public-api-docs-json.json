@@ -1760,49 +1760,6 @@
           "FamilyGroup"
         ]
       }
-    },
-    "/mcp": {
-      "post": {
-        "description": "Exposes the **Streamline MCP Server** over HTTP. Requires authentication (**`X-API-Key`** or **OAuth Bearer**). This endpoint is the single entrypoint for MCP-compatible clients (e.g. Cursor, Claude Desktop) to: <br><br>\n      - Discover available MCP tools.<br>\n      - Invoke tools such as: **search_assets**, **search_families**, **search_sets**, **find_sets_by_name**, **get_icon_by_hash**, and **download_asset**.<br><br>\n      **download_asset** returns JSON with a short-lived signed **downloadUrl** (JWT in the query). The `tools/call` that mints the URL is authenticated. Clients **GET** that URL **without** repeating `X-API-Key` or Bearer; the signed URL authorizes the download.<br><br>\n      **Getting an API key:** Generate or manage your key at [streamlinehq.com/profile?tab=api_keys](https://www.streamlinehq.com/profile?tab=api_keys), then send it as the `X-API-Key` header.<br><br>\n      **Pricing:** Access via the Public API + MCP Server (up to 1,000 assets/week) is included in [Pro plans](https://home.streamlinehq.com/pricing).",
-        "operationId": "mcpPost",
-        "parameters": [],
-        "requestBody": {
-          "required": true,
-          "description": "A JSON-RPC request object compatible with the MCP protocol.",
-          "content": {
-            "application/json": {
-              "schema": {
-                "example": {
-                  "method": "tools/list",
-                  "jsonrpc": "2.0",
-                  "id": 1
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "201": {
-            "description": ""
-          },
-          "401": {
-            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
-            "content": {
-              "application/json": {
-                "example": {
-                  "message": "Api key is required",
-                  "error": "Unauthorized",
-                  "statusCode": 401
-                }
-              }
-            }
-          }
-        },
-        "summary": "Streamline MCP Server (MCP entrypoint).",
-        "tags": [
-          "McpServer"
-        ]
-      }
     }
   },
   "info": {
