@@ -1828,40 +1828,6 @@
           "McpServer"
         ]
       }
-    },
-    "/mcp/.well-known/oauth-protected-resource": {
-      "get": {
-        "operationId": "getOauthProtectedResourcesInfo",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
-            "content": {
-              "application/json": {
-                "example": {
-                  "message": "Api key is required",
-                  "error": "Unauthorized",
-                  "statusCode": 401
-                }
-              }
-            }
-          }
-        },
-        "summary": "Describes how to access the `/mcp` resource using OAuth and required authorization.",
-        "tags": [
-          "McpServer"
-        ]
-      }
     }
   },
   "info": {
