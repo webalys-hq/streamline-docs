@@ -6,6 +6,7 @@ hidden: false
 metadata:
   robots: index
 ---
+
 ## Overview
 
 <Anchor target="_blank" href="https://modelcontextprotocol.io/docs/getting-started/intro">Model Context Protocol (MCP)</Anchor> is an open protocol that standardizes how applications provide context to large language models (LLMs). With MCP, AI apps (like Cursor or Claude) can connect to external applications, use their tools, and retrieve data seamlessly.
@@ -101,6 +102,45 @@ Go to Settings > Settings > MCP Servers and click on "Add Server". Fill the form
 ![](https://files.readme.io/5d94c07b2ed859c6acd20b7e01796f72e803b77357a2d140bddf2ad545744a85-image.png)
 
 <br />
+
+### Gemini CLI
+
+Add the Streamline MCP Server to your `.gemini/settings.json`, replacing `YOUR_API_KEY_HERE` with your Streamline API key:
+
+```json .gemini/settings.json
+{
+  "mcpServers": {
+    "streamline": {
+      "name": "Streamline MCP Server",
+      "url": "https://public-api.streamlinehq.com/mcp",
+      "headers": {
+        "X-API-Key": "YOUR_API_KEY_HERE"
+      }
+    }
+  }
+}
+```
+
+For more details, see the <Anchor target="_blank" href="https://geminicli.com/docs/tools/mcp-server/">Gemini CLI MCP documentation</Anchor>.
+
+### Antigravity CLI & IDE
+
+Add the Streamline MCP Server to your `~/.gemini/config/mcp_config.json`, replacing `YOUR_API_KEY_HERE` with your Streamline API key. Because this config lives in `~/.gemini/config/mcp_config.json`, it applies to **both the Antigravity CLI and the Antigravity IDE** — configure it once and it's available in both:
+
+```json ~/.gemini/config/mcp_config.json
+{
+  "mcpServers": {
+    "streamline": {
+      "serverUrl": "https://public-api.streamlinehq.com/mcp",
+      "headers": {
+        "X-API-Key": "YOUR_API_KEY_HERE"
+      }
+    }
+  }
+}
+```
+
+For more details, see the <Anchor target="_blank" href="https://antigravity.google/docs/mcp">Antigravity MCP documentation</Anchor>.
 
 ### Claude (via Connectors)
 
