@@ -23,9 +23,9 @@
                   "$ref": "#/components/schemas/CategoryResponse"
                 },
                 "example": {
-                  "hash": "ico_zQkDZPpYzFbNYb",
-                  "slug": "aestivus",
-                  "name": "babushka"
+                  "hash": "ico_KzODLAesCcyAzN",
+                  "slug": "adversus",
+                  "name": "decision"
                 }
               }
             }
@@ -97,56 +97,64 @@
                 "example": {
                   "icons": [
                     {
-                      "hash": "ico_LqbxXrtHwqZnzB",
-                      "name": "bid",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/apostolus-sum-armarium.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_yxECRWnYhcgVKl",
+                      "name": "grandson",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/consequatur-cotidie-tui.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/itaque-crudelis-admiratio--70528",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "debilito",
-                      "familyName": "packaging",
-                      "categorySlug": "tempus",
-                      "categoryName": "abacus",
-                      "subcategorySlug": "admitto",
-                      "subcategoryName": "poppy"
+                      "familySlug": "abscido",
+                      "familyName": "scarification",
+                      "familyProductType": "icons",
+                      "categorySlug": "dicta",
+                      "categoryName": "tabletop",
+                      "subcategorySlug": "cauda",
+                      "subcategoryName": "phrase"
                     },
                     {
-                      "hash": "ico_SFJqQpyQodAFaX",
-                      "name": "strategy",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/taedium-video-crux.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_blWuBldVtIqOEL",
+                      "name": "archaeology",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/demonstro-ipsum-nihil.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/provident-commemoro-adsum--33698",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "arma",
-                      "familyName": "doubter",
-                      "categorySlug": "thermae",
-                      "categoryName": "bell",
-                      "subcategorySlug": "cuppedia",
-                      "subcategoryName": "citizen"
+                      "familySlug": "conqueror",
+                      "familyName": "tuxedo",
+                      "familyProductType": "icons",
+                      "categorySlug": "verbera",
+                      "categoryName": "giggle",
+                      "subcategorySlug": "urbanus",
+                      "subcategoryName": "molasses"
                     },
                     {
-                      "hash": "ico_obxGoZskdvNCrV",
-                      "name": "wear",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/timor-confero-vado.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_kbyzTlkvOUCwYu",
+                      "name": "skyline",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/derideo-abstergo-summisse.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/debitis-tondeo-armarium--33433",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "currus",
-                      "familyName": "license",
-                      "categorySlug": "vapulus",
-                      "categoryName": "blowgun",
-                      "subcategorySlug": "amaritudo",
-                      "subcategoryName": "minister"
+                      "familySlug": "adhuc",
+                      "familyName": "rule",
+                      "familyProductType": "icons",
+                      "categorySlug": "cena",
+                      "categoryName": "scholarship",
+                      "subcategorySlug": "cubo",
+                      "subcategoryName": "depot"
                     },
                     {
-                      "hash": "ico_seUKWaVikDwZdO",
-                      "name": "decongestant",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/tenetur-subvenio-delicate.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_BvvDiBVFFesrFq",
+                      "name": "birdcage",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/communis-impedit-stultus.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/suppellex-aggredior-sit--49702",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "acer",
-                      "familyName": "soliloquy",
-                      "categorySlug": "vicissitudo",
-                      "categoryName": "swanling",
-                      "subcategorySlug": "custodia",
-                      "subcategoryName": "cheetah"
+                      "familySlug": "mollitia",
+                      "familyName": "behest",
+                      "familyProductType": "icons",
+                      "categorySlug": "crustulum",
+                      "categoryName": "honesty",
+                      "subcategorySlug": "aduro",
+                      "subcategoryName": "translation"
                     }
                   ],
                   "pagination": {
@@ -205,9 +213,9 @@
                   "$ref": "#/components/schemas/SubcategoryResponse"
                 },
                 "example": {
-                  "hash": "ico_RqucJLziPpvlWT",
-                  "slug": "sortitus",
-                  "name": "giant"
+                  "hash": "ico_teafItjLHwNWfN",
+                  "slug": "aspicio",
+                  "name": "knuckle"
                 }
               }
             }
@@ -279,56 +287,64 @@
                 "example": {
                   "icons": [
                     {
-                      "hash": "ico_nwIpkJwVYbDlQS",
-                      "name": "suspension",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/dolorem-desparatus-ambitus.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_UQxqKyORvPYXAd",
+                      "name": "begonia",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/custodia-capto-coniecto.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/torqueo-vester-curis--41219",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "claro",
-                      "familyName": "release",
-                      "categorySlug": "clibanus",
-                      "categoryName": "devastation",
-                      "subcategorySlug": "solus",
-                      "subcategoryName": "granny"
+                      "familySlug": "natus",
+                      "familyName": "warming",
+                      "familyProductType": "icons",
+                      "categorySlug": "minus",
+                      "categoryName": "orchid",
+                      "subcategorySlug": "traho",
+                      "subcategoryName": "horst"
                     },
                     {
-                      "hash": "ico_vDEqFkoateFjeu",
-                      "name": "edge",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/censura-dolor-nihil.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_SYeQzEUOdpRGpN",
+                      "name": "foodstuffs",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/doloribus-theologus-suggero.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/utilis-doloribus-statua--27800",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "teneo",
-                      "familyName": "substitution",
-                      "categorySlug": "aut",
-                      "categoryName": "goat",
-                      "subcategorySlug": "victoria",
-                      "subcategoryName": "corporation"
+                      "familySlug": "tergeo",
+                      "familyName": "caption",
+                      "familyProductType": "icons",
+                      "categorySlug": "soluta",
+                      "categoryName": "thyme",
+                      "subcategorySlug": "vis",
+                      "subcategoryName": "monster"
                     },
                     {
-                      "hash": "ico_upUyBObTDPmLXJ",
-                      "name": "haircut",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/nemo-attonbitus-curvo.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_nrIYazPSqtXmbV",
+                      "name": "brace",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/agnosco-umerus-illum.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/alias-crudelis-cinis--56113",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "conatus",
-                      "familyName": "going",
-                      "categorySlug": "architecto",
-                      "categoryName": "planula",
-                      "subcategorySlug": "adimpleo",
-                      "subcategoryName": "accountability"
+                      "familySlug": "curriculum",
+                      "familyName": "exploration",
+                      "familyProductType": "icons",
+                      "categorySlug": "turba",
+                      "categoryName": "alb",
+                      "subcategorySlug": "totam",
+                      "subcategoryName": "marten"
                     },
                     {
-                      "hash": "ico_QvCJNccIRYDdfj",
-                      "name": "import",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/socius-bonus-in.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_JWsxbEcvJBDWuo",
+                      "name": "intellect",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/denique-dolorum-ver.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/tum-adipiscor-vesper--57879",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "timor",
-                      "familyName": "sandbar",
-                      "categorySlug": "explicabo",
-                      "categoryName": "vol",
-                      "subcategorySlug": "minus",
-                      "subcategoryName": "plain"
+                      "familySlug": "depraedor",
+                      "familyName": "puritan",
+                      "familyProductType": "icons",
+                      "categorySlug": "truculenter",
+                      "categoryName": "yeast",
+                      "subcategorySlug": "apto",
+                      "subcategoryName": "accompanist"
                     }
                   ],
                   "pagination": {
@@ -408,56 +424,64 @@
                 "example": {
                   "icons": [
                     {
-                      "hash": "ico_RjsnswxrrEDOVQ",
-                      "name": "fold",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/aliquam-attonbitus-urbs.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_fNfFwuNKjtMuba",
+                      "name": "conversation",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/cotidie-cribro-degero.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/adfectus-cohors-tempus--92889",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "capillus",
-                      "familyName": "swath",
-                      "categorySlug": "attero",
-                      "categoryName": "polyester",
-                      "subcategorySlug": "viduo",
-                      "subcategoryName": "adviser"
+                      "familySlug": "aestus",
+                      "familyName": "marten",
+                      "familyProductType": "icons",
+                      "categorySlug": "tondeo",
+                      "categoryName": "whack",
+                      "subcategorySlug": "spero",
+                      "subcategoryName": "roadway"
                     },
                     {
-                      "hash": "ico_LxHTKgEFMZiAse",
-                      "name": "valley",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/antea-strenuus-labore.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_roJkwJwfhMaUvr",
+                      "name": "makeover",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/vel-dedecor-suus.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/spargo-clarus-universe--49482",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "voluntarius",
-                      "familyName": "mantua",
-                      "categorySlug": "aiunt",
-                      "categoryName": "seagull",
-                      "subcategorySlug": "aequus",
-                      "subcategoryName": "marksman"
+                      "familySlug": "arguo",
+                      "familyName": "hexagon",
+                      "familyProductType": "icons",
+                      "categorySlug": "rerum",
+                      "categoryName": "providence",
+                      "subcategorySlug": "quam",
+                      "subcategoryName": "pop"
                     },
                     {
-                      "hash": "ico_ixpvIxkmLdHEcR",
-                      "name": "king",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/trucido-thesis-suffoco.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_MjnDHNBqVZHCoN",
+                      "name": "goat",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/bene-statim-perspiciatis.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/laborum-maiores-deorsum--79281",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "somnus",
-                      "familyName": "lyre",
-                      "categorySlug": "debitis",
-                      "categoryName": "commodity",
-                      "subcategorySlug": "patria",
-                      "subcategoryName": "humor"
+                      "familySlug": "suffoco",
+                      "familyName": "statue",
+                      "familyProductType": "icons",
+                      "categorySlug": "cibo",
+                      "categoryName": "stump",
+                      "subcategorySlug": "pecco",
+                      "subcategoryName": "reasoning"
                     },
                     {
-                      "hash": "ico_XncPjvbzvVIQRg",
-                      "name": "illusion",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/inventore-audacia-adsidue.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_HZDgCaWPmfpPky",
+                      "name": "council",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/cohibeo-cunabula-adficio.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/solvo-sordeo-solio--73697",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "vulpes",
-                      "familyName": "tuxedo",
-                      "categorySlug": "curto",
-                      "categoryName": "pacemaker",
-                      "subcategorySlug": "taceo",
-                      "subcategoryName": "secret"
+                      "familySlug": "deduco",
+                      "familyName": "plugin",
+                      "familyProductType": "icons",
+                      "categorySlug": "vester",
+                      "categoryName": "coordination",
+                      "subcategorySlug": "vesco",
+                      "subcategoryName": "chiffonier"
                     }
                   ],
                   "pagination": {
@@ -496,7 +520,7 @@
     },
     "/v1/icons/{hash}": {
       "get": {
-        "description": "Retrieves detailed information about the requested icon, including the SVG for users with premium access.",
+        "description": "Retrieves detailed information about the requested icon.",
         "operationId": "getIconByHash",
         "parameters": [
           {
@@ -512,24 +536,26 @@
         ],
         "responses": {
           "200": {
-            "description": "Premium SVGs are included only for premium users.",
+            "description": "",
             "content": {
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/IconResponse"
                 },
                 "example": {
-                  "hash": "ico_ITIjprNayvReTm",
-                  "name": "mechanic",
-                  "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/angustus-ter-sapiente.png?_a=DATAg1UqZAA0",
+                  "hash": "ico_cGGdGyJhsVoehO",
+                  "name": "heartbeat",
+                  "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/blanditiis-curriculum-causa.png?_a=DATAiZiuZAA0",
+                  "webUrl": "https://www.streamlinehq.com/icons/download/vicinus-vobis-caelum--38151",
                   "colors": [],
                   "isFree": false,
-                  "familySlug": "consuasor",
-                  "familyName": "dish",
-                  "categorySlug": "audacia",
-                  "categoryName": "scenario",
-                  "subcategorySlug": "vetus",
-                  "subcategoryName": "polarisation"
+                  "familySlug": "ver",
+                  "familyName": "information",
+                  "familyProductType": "icons",
+                  "categorySlug": "spiritus",
+                  "categoryName": "loyalty",
+                  "subcategorySlug": "sub",
+                  "subcategoryName": "secrecy"
                 }
               }
             }
@@ -572,7 +598,7 @@
     },
     "/v1/icons/{hash}/download/svg": {
       "get": {
-        "description": "Apply the required modifications to the asset such as size as color and returns the SVG.",
+        "description": "Apply the required modifications to the asset such as size as color and returns the SVG. Weekly download limits are enforced for free users and regular subscription users (Full Access, Icons, Illustrations, and Elements).",
         "operationId": "downloadIconAsSVG",
         "parameters": [
           {
@@ -613,6 +639,7 @@
             "in": "query",
             "description": "Allows increasing or decreasing the thickness of the vector paths.",
             "schema": {
+              "nullable": true,
               "example": 1.5,
               "type": "number"
             }
@@ -642,12 +669,12 @@
           },
           {
             "name": "strokeToFill",
+            "required": true,
             "in": "query",
-            "required": false,
             "description": "When true, SVG strokes will be converted to fills.",
             "schema": {
-              "type": "boolean",
-              "default": ""
+              "default": false,
+              "type": "boolean"
             }
           }
         ],
@@ -763,6 +790,7 @@
             "in": "query",
             "description": "Allows increasing or decreasing the thickness of the vector paths.",
             "schema": {
+              "nullable": true,
               "example": 1.5,
               "type": "number"
             }
@@ -859,13 +887,7 @@
             "in": "query",
             "description": "Product type for the search.",
             "schema": {
-              "type": "string",
-              "enum": [
-                "icons",
-                "illustrations",
-                "emojis",
-                "elements"
-              ]
+              "$ref": "#/components/schemas/Object"
             }
           },
           {
@@ -884,6 +906,7 @@
             "in": "query",
             "description": "Specifies the number of items to skip before starting to return results.",
             "schema": {
+              "minimum": 0,
               "default": 0,
               "type": "number"
             }
@@ -894,6 +917,7 @@
             "in": "query",
             "description": "Specifies the maximum number of items to return in the response.",
             "schema": {
+              "minimum": 0,
               "maximum": 100,
               "default": 50,
               "type": "number"
@@ -918,7 +942,7 @@
             "name": "style",
             "required": false,
             "in": "query",
-            "description": "Filter for the style of the sets.",
+            "description": "Filter for the style of the sets. This can be applied just when the productType param is \"icons\".",
             "schema": {
               "type": "string",
               "enum": [
@@ -926,7 +950,7 @@
                 "solid",
                 "flat",
                 "duo",
-                "handrawn",
+                "hand-drawn",
                 "creative",
                 "gradient",
                 "remix",
@@ -954,31 +978,33 @@
                   "$ref": "#/components/schemas/SearchResponse"
                 },
                 "example": {
-                  "query": "retention",
+                  "query": "outset",
                   "results": [
                     {
-                      "hash": "ico_aIbHpUHbGjrULF",
-                      "name": "retention",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/dens-catena-delectus.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_OXJpvJBXbLyHVk",
+                      "name": "outset",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/cribro-terror-creo.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/audax-beneficium-defendo--47001",
                       "isFree": false,
-                      "familySlug": "vere",
-                      "familyName": "obligation",
-                      "categorySlug": "sollers",
-                      "categoryName": "folklore",
-                      "subcategorySlug": "speculum",
-                      "subcategoryName": "mainstream"
+                      "familySlug": "bellum",
+                      "familyName": "devil",
+                      "categorySlug": "abduco",
+                      "categoryName": "cantaloupe",
+                      "subcategorySlug": "urbs",
+                      "subcategoryName": "cross-contamination"
                     },
                     {
-                      "hash": "ico_PEcxlKhwfjcKbR",
-                      "name": "retention",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/crapula-et-cenaculum.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_PpgyYytpUfdHkE",
+                      "name": "outset",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/corona-derideo-vinculum.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/sopor-amet-repellat--52329",
                       "isFree": false,
-                      "familySlug": "cruciamentum",
-                      "familyName": "commodity",
-                      "categorySlug": "undique",
-                      "categoryName": "minister",
-                      "subcategorySlug": "deputo",
-                      "subcategoryName": "saw"
+                      "familySlug": "clibanus",
+                      "familyName": "bidet",
+                      "categorySlug": "aut",
+                      "categoryName": "fund",
+                      "subcategorySlug": "creptio",
+                      "subcategoryName": "cope"
                     }
                   ],
                   "pagination": {
@@ -1036,7 +1062,9 @@
             "name": "familySlug",
             "required": true,
             "in": "path",
+            "description": "This is the icon slug, you can obtain the family slug from a global search response or when retrieving the families from a family group.",
             "schema": {
+              "example": "ultimate-line",
               "type": "string"
             }
           },
@@ -1054,6 +1082,7 @@
             "name": "offset",
             "required": false,
             "in": "query",
+            "description": "Specifies the number of items to skip before starting to return results (default: 0).",
             "schema": {
               "default": 0,
               "type": "number"
@@ -1063,6 +1092,7 @@
             "name": "limit",
             "required": false,
             "in": "query",
+            "description": "Specifies the maximum number of items to return in the response (default: 10, max: 100).",
             "schema": {
               "maximum": 100,
               "default": 50,
@@ -1079,31 +1109,33 @@
                   "$ref": "#/components/schemas/SearchResponse"
                 },
                 "example": {
-                  "query": "gray",
+                  "query": "graffiti",
                   "results": [
                     {
-                      "hash": "ico_XdJIUKhDAtSRLX",
-                      "name": "gray",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/sperno-undique-crudelis.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_fzkLMgPvazVKku",
+                      "name": "graffiti",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/annus-somnus-sophismata.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/aperio-patria-desolo--32054",
                       "isFree": false,
-                      "familySlug": "fibre",
-                      "familyName": "saloon",
-                      "categorySlug": "quas",
-                      "categoryName": "embossing",
-                      "subcategorySlug": "speciosus",
-                      "subcategoryName": "phrase"
+                      "familySlug": "tarragon",
+                      "familyName": "habit",
+                      "categorySlug": "vilicus",
+                      "categoryName": "shadowbox",
+                      "subcategorySlug": "vix",
+                      "subcategoryName": "individual"
                     },
                     {
-                      "hash": "ico_YmgnNCVfuJhlGS",
-                      "name": "gray",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/tametsi-caveo-aegrus.png?_a=DATAg1UqZAA0",
+                      "hash": "ico_PNCqwoIEzHITsW",
+                      "name": "graffiti",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/venia-perferendis-rem.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/volva-depraedor-blandior--92172",
                       "isFree": false,
-                      "familySlug": "fibre",
-                      "familyName": "saloon",
-                      "categorySlug": "capto",
-                      "categoryName": "petticoat",
-                      "subcategorySlug": "aedificium",
-                      "subcategoryName": "pendant"
+                      "familySlug": "tarragon",
+                      "familyName": "habit",
+                      "categorySlug": "commemoro",
+                      "categoryName": "parsnip",
+                      "subcategorySlug": "alo",
+                      "subcategoryName": "kettledrum"
                     }
                   ],
                   "pagination": {
@@ -1152,6 +1184,457 @@
         ]
       }
     },
+    "/v1/search/family-group/{familyGroupSlug}": {
+      "get": {
+        "description": "Search for icons, illustrations, emojis or elements within a family group/bundle.",
+        "operationId": "familyGroupSearch",
+        "parameters": [
+          {
+            "name": "familyGroupSlug",
+            "required": true,
+            "in": "path",
+            "description": "The slug of the family group. You can obtain it from GET /family-groups.",
+            "schema": {
+              "example": "ultimate-sets",
+              "type": "string"
+            }
+          },
+          {
+            "name": "query",
+            "required": true,
+            "in": "query",
+            "description": "Search term to find icons.",
+            "schema": {
+              "example": "home",
+              "type": "string"
+            }
+          },
+          {
+            "name": "offset",
+            "required": false,
+            "in": "query",
+            "description": "Specifies the number of items to skip before starting to return results (default: 0).",
+            "schema": {
+              "default": 0,
+              "type": "number"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "description": "Specifies the maximum number of items to return in the response (default: 10, max: 100).",
+            "schema": {
+              "maximum": 100,
+              "default": 50,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchResponse"
+                },
+                "example": {
+                  "query": "solution",
+                  "results": [
+                    {
+                      "hash": "ico_oHEZuNcIpVRsMN",
+                      "name": "solution",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/vir-veritas-stips.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/uxor-tunc-conscendo--53992",
+                      "isFree": false,
+                      "familySlug": "tenuis",
+                      "familyName": "advertisement",
+                      "categorySlug": "strenuus",
+                      "categoryName": "expansion",
+                      "subcategorySlug": "omnis",
+                      "subcategoryName": "bonnet"
+                    },
+                    {
+                      "hash": "ico_zPQcXitkqmcCGI",
+                      "name": "solution",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/contigo-virgo-vesco.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/textilis-atrocitas-socius--41647",
+                      "isFree": false,
+                      "familySlug": "placeat",
+                      "familyName": "lid",
+                      "categorySlug": "basium",
+                      "categoryName": "drive",
+                      "subcategorySlug": "convoco",
+                      "subcategoryName": "release"
+                    }
+                  ],
+                  "pagination": {
+                    "total": 10,
+                    "hasMore": true,
+                    "offset": 0,
+                    "nextOffset": 2
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "A Bad Request is returned when required fields are missing or when an invalid value is provided.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Required fields are missing or invalid",
+                  "error": "Bad Request",
+                  "statusCode": 400
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Family group search.",
+        "tags": [
+          "Search"
+        ]
+      }
+    },
+    "/v1/search/family-groups/chunks": {
+      "get": {
+        "description": "**Experimental / debug only.** Per-chunk kNN results in OpenSearch order, without per-family unification. Not for production use.",
+        "operationId": "searchFamilyGroupChunksDebug",
+        "parameters": [
+          {
+            "name": "query",
+            "required": true,
+            "in": "query",
+            "description": "Search term to find family groups.",
+            "schema": {
+              "example": "minimalist line icons",
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "description": "Specifies the maximum number of items to return in the response (default: 5, max: 100).",
+            "schema": {
+              "minimum": 0,
+              "maximum": 100,
+              "default": 5,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response (chunk documents in hit order).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FamilyGroupChunkSearchDebugResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "A Bad Request is returned when required fields are missing or when an invalid value is provided.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Required fields are missing or invalid",
+                  "error": "Bad Request",
+                  "statusCode": 400
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Family group search (raw chunk hits, debug).",
+        "tags": [
+          "Search"
+        ]
+      }
+    },
+    "/v1/search/family-groups": {
+      "get": {
+        "description": "Semantic search for family groups by query.",
+        "operationId": "searchFamilyGroups",
+        "parameters": [
+          {
+            "name": "query",
+            "required": true,
+            "in": "query",
+            "description": "Search term to find family groups.",
+            "schema": {
+              "example": "minimalist line icons",
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "description": "Specifies the maximum number of items to return in the response (default: 5, max: 100).",
+            "schema": {
+              "minimum": 0,
+              "maximum": 100,
+              "default": 5,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FamilyGroupSearchResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "A Bad Request is returned when required fields are missing or when an invalid value is provided.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Required fields are missing or invalid",
+                  "error": "Bad Request",
+                  "statusCode": 400
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Search family groups.",
+        "tags": [
+          "Search"
+        ]
+      }
+    },
+    "/v1/search/families/chunks": {
+      "get": {
+        "description": "**Experimental / debug only.** Per-chunk hybrid results in OpenSearch order, without per-family unification. Supports optional `familyGroupSlug` like GET /search/families. Not for production use.",
+        "operationId": "searchFamilyChunksDebug",
+        "parameters": [
+          {
+            "name": "query",
+            "required": true,
+            "in": "query",
+            "description": "Search term to find families.",
+            "schema": {
+              "example": "minimalist line icons",
+              "type": "string"
+            }
+          },
+          {
+            "name": "familyGroupSlug",
+            "required": false,
+            "in": "query",
+            "description": "The slug of the family group. When set, only families in that group are returned. You can obtain it from GET /family-groups.",
+            "schema": {
+              "example": "ultimate-sets",
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "description": "Specifies the maximum number of items to return in the response (default: 10, max: 100).",
+            "schema": {
+              "minimum": 0,
+              "maximum": 100,
+              "default": 10,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response (chunk documents in hit order).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FamilyChunkSearchDebugResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "A Bad Request is returned when required fields are missing or when an invalid value is provided.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Required fields are missing or invalid",
+                  "error": "Bad Request",
+                  "statusCode": 400
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Family (set) search (raw chunk hits, debug).",
+        "tags": [
+          "Search"
+        ]
+      }
+    },
+    "/v1/search/families": {
+      "get": {
+        "description": "Semantic search for families by query.",
+        "operationId": "searchFamilies",
+        "parameters": [
+          {
+            "name": "query",
+            "required": true,
+            "in": "query",
+            "description": "Search term to find families.",
+            "schema": {
+              "example": "minimalist line icons",
+              "type": "string"
+            }
+          },
+          {
+            "name": "familyGroupSlug",
+            "required": false,
+            "in": "query",
+            "description": "The slug of the family group. When set, only families in that group are returned. You can obtain it from GET /family-groups.",
+            "schema": {
+              "example": "ultimate-sets",
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "description": "Specifies the maximum number of items to return in the response (default: 10, max: 100).",
+            "schema": {
+              "minimum": 0,
+              "maximum": 100,
+              "default": 10,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FamiliesSearchResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "A Bad Request is returned when required fields are missing or when an invalid value is provided.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Required fields are missing or invalid",
+                  "error": "Bad Request",
+                  "statusCode": 400
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "api-key": []
+          }
+        ],
+        "summary": "Search families.",
+        "tags": [
+          "Search"
+        ]
+      }
+    },
     "/v1/family-groups": {
       "get": {
         "operationId": "getAll",
@@ -1165,10 +1648,11 @@
                   "$ref": "#/components/schemas/FamilyGroupResponse"
                 },
                 "example": {
-                  "hash": "ico_RdRQkBzoRxMOfg",
-                  "slug": "vitae",
-                  "name": "deduction",
-                  "description": "Sint urbanus thesis charisma. Strues amoveo admoneo. Dolores testimonium cognomen aliqua culpa vicinus usus crastinus.\nVestrum articulus curso ipsam. Vulgaris maiores volup magni triumphus veritatis valetudo. Acies suscipit complectus dolorum vere thesaurus.\nCogito officiis acer tollo cornu suus. Quod triumphus adhaero decimus sustineo tabernus. Delibero decet capio amicitia suadeo sunt autem thalassinus virga."
+                  "hash": "ico_QlUDVHcwHcbYpf",
+                  "slug": "altus",
+                  "name": "cornet",
+                  "description": "Audeo amoveo vilitas vetus cursim. Utrum talio cubo ultio eum ipsam vilis eligendi civis vulnus. Demonstro quasi quam id cetera. Deorsum provident asper. Volup depulso ubi accusantium odit vobis triduana.",
+                  "productType": "icons"
                 }
               }
             }
@@ -1199,6 +1683,7 @@
     },
     "/v1/family-groups/{familyGroupHash}/families": {
       "get": {
+        "description": "Optional `offset` and `limit` query parameters page results. Query params `offset` (default 0) and `limit` (default 100).",
         "operationId": "getFamilies",
         "parameters": [
           {
@@ -1207,6 +1692,27 @@
             "in": "path",
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "offset",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "minimum": 0,
+              "default": 0,
+              "type": "number"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "minimum": 1,
+              "maximum": 100,
+              "default": 100,
+              "type": "number"
             }
           }
         ],
@@ -1219,11 +1725,14 @@
                   "$ref": "#/components/schemas/FamilyResponse"
                 },
                 "example": {
-                  "hash": "ico_DDqAigBHRmmjMT",
-                  "slug": "defendo",
+                  "hash": "ico_vLTMiongdZFauQ",
+                  "slug": "suffoco",
                   "productType": "icons",
-                  "name": "meander",
-                  "isFree": false
+                  "name": "publicity",
+                  "isFree": true,
+                  "cover": "https://picsum.photos/seed/UYkP5P/48/296",
+                  "iconCount": 7625,
+                  "description": "Sopor libero terra."
                 }
               }
             }
@@ -1246,9 +1755,111 @@
             "api-key": []
           }
         ],
-        "summary": "Get all families from a family group/bundle.",
+        "summary": "Get families from a family group/bundle.",
         "tags": [
           "FamilyGroup"
+        ]
+      }
+    },
+    "/mcp": {
+      "post": {
+        "description": "Exposes the **Streamline MCP Server** over HTTP. Requires authentication (**`X-API-Key`** or **OAuth Bearer**). This endpoint is the single entrypoint for MCP-compatible clients (e.g. Cursor, Claude Desktop) to: <br><br>\n      - Discover available MCP tools.<br>\n      - Invoke tools such as: **search_assets**, **search_families**, **search_sets**, **find_sets_by_name**, **get_icon_by_hash**, and **download_asset**.<br><br>\n      **download_asset** returns JSON with a short-lived signed **downloadUrl** (JWT in the query). The `tools/call` that mints the URL is authenticated. Clients **GET** that URL **without** repeating `X-API-Key` or Bearer; the signed URL authorizes the download.<br><br>\n      **Getting an API key:** Generate or manage your key at [streamlinehq.com/profile?tab=api_keys](https://www.streamlinehq.com/profile?tab=api_keys), then send it as the `X-API-Key` header.<br><br>\n      **Pricing:** Access via the Public API + MCP Server (up to 1,000 assets/week) is included in [Pro plans](https://home.streamlinehq.com/pricing).",
+        "operationId": "mcpPost",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "description": "A JSON-RPC request object compatible with the MCP protocol.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "example": {
+                  "method": "tools/list",
+                  "jsonrpc": "2.0",
+                  "id": 1
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "summary": "Streamline MCP Server (MCP entrypoint).",
+        "tags": [
+          "McpServer"
+        ]
+      },
+      "get": {
+        "operationId": "mcpGet",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "summary": "MCP GET endpoint to acknowledge client checks.\nUsed by MCP clients (e.g., Cursor) to check server availability before RPC calls.",
+        "tags": [
+          "McpServer"
+        ]
+      }
+    },
+    "/mcp/.well-known/oauth-protected-resource": {
+      "get": {
+        "operationId": "getOauthProtectedResourcesInfo",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "summary": "Describes how to access the `/mcp` resource using OAuth and required authorization.",
+        "tags": [
+          "McpServer"
         ]
       }
     }
@@ -1306,6 +1917,9 @@
           "imagePreviewUrl": {
             "type": "string"
           },
+          "webUrl": {
+            "type": "string"
+          },
           "colors": {
             "type": "array",
             "items": {
@@ -1321,6 +1935,14 @@
           "familyName": {
             "type": "string"
           },
+          "familyProductType": {
+            "enum": [
+              "icons",
+              "illustrations",
+              "elements"
+            ],
+            "type": "string"
+          },
           "categorySlug": {
             "type": "string"
           },
@@ -1332,16 +1954,21 @@
           },
           "subcategoryName": {
             "type": "string"
+          },
+          "svg": {
+            "type": "string"
           }
         },
         "required": [
           "hash",
           "name",
           "imagePreviewUrl",
+          "webUrl",
           "colors",
           "isFree",
           "familySlug",
           "familyName",
+          "familyProductType",
           "categorySlug",
           "categoryName",
           "subcategorySlug",
@@ -1408,6 +2035,10 @@
           "name"
         ]
       },
+      "Object": {
+        "type": "object",
+        "properties": {}
+      },
       "SearchIcon": {
         "type": "object",
         "properties": {
@@ -1420,6 +2051,9 @@
           "imagePreviewUrl": {
             "type": "string"
           },
+          "webUrl": {
+            "type": "string"
+          },
           "isFree": {
             "type": "boolean"
           },
@@ -1427,6 +2061,14 @@
             "type": "string"
           },
           "familyName": {
+            "type": "string"
+          },
+          "familyProductType": {
+            "enum": [
+              "icons",
+              "illustrations",
+              "elements"
+            ],
             "type": "string"
           },
           "categorySlug": {
@@ -1440,15 +2082,20 @@
           },
           "subcategoryName": {
             "type": "string"
+          },
+          "svg": {
+            "type": "string"
           }
         },
         "required": [
           "hash",
           "name",
           "imagePreviewUrl",
+          "webUrl",
           "isFree",
           "familySlug",
           "familyName",
+          "familyProductType",
           "categorySlug",
           "categoryName",
           "subcategorySlug",
@@ -1484,6 +2131,394 @@
           "pagination"
         ]
       },
+      "FamilyGroupChunkSearchDebugItem": {
+        "type": "object",
+        "properties": {
+          "hash": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "subtitle": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "productType": {
+            "enum": [
+              "icons",
+              "illustrations",
+              "elements"
+            ],
+            "type": "string",
+            "description": "Product type for this family group."
+          },
+          "sourceType": {
+            "enum": [
+              "FIT_RECOMMENDATION",
+              "BRAND_CULTURAL",
+              "VISUAL_TECHNICAL",
+              "PAIRING_COMPATIBILITY"
+            ],
+            "type": "string",
+            "description": "Which semantic section this document represents."
+          },
+          "subsectionKey": {
+            "type": "string",
+            "description": "Sub-key within the pillar (`###` subsection), e.g. `avoid_when`."
+          },
+          "chunkText": {
+            "type": "string",
+            "description": "Chunk text as stored in the index (`chunkText`)."
+          },
+          "score": {
+            "type": "number",
+            "description": "kNN score for this hit (OpenSearch `_score`)."
+          }
+        },
+        "required": [
+          "hash",
+          "slug",
+          "name",
+          "productType",
+          "sourceType",
+          "subsectionKey",
+          "chunkText",
+          "score"
+        ]
+      },
+      "FamilyGroupChunkSearchDebugResponse": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FamilyGroupChunkSearchDebugItem"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/Pagination"
+          }
+        },
+        "required": [
+          "query",
+          "results",
+          "pagination"
+        ]
+      },
+      "FamilyGroupSearchChunkItem": {
+        "type": "object",
+        "properties": {
+          "chunkType": {
+            "enum": [
+              "FIT_RECOMMENDATION",
+              "BRAND_CULTURAL",
+              "VISUAL_TECHNICAL",
+              "PAIRING_COMPATIBILITY"
+            ],
+            "type": "string",
+            "description": "Which semantic section matched."
+          },
+          "text": {
+            "type": "string",
+            "description": "Chunk text (excerpt) from the index."
+          }
+        },
+        "required": [
+          "chunkType",
+          "text"
+        ]
+      },
+      "FamiliesSearchChunkItem": {
+        "type": "object",
+        "properties": {
+          "chunkType": {
+            "enum": [
+              "FIT_RECOMMENDATION",
+              "BRAND_CULTURAL",
+              "VISUAL_TECHNICAL",
+              "PAIRING_COMPATIBILITY"
+            ],
+            "type": "string",
+            "description": "Which semantic pillar (`##`) this source matched."
+          },
+          "text": {
+            "type": "string",
+            "description": "Chunk text (excerpt) from the index."
+          },
+          "score": {
+            "type": "number",
+            "description": "kNN-related score for this chunk hit."
+          }
+        },
+        "required": [
+          "chunkType",
+          "text",
+          "score"
+        ]
+      },
+      "FamiliesSearchItem": {
+        "type": "object",
+        "properties": {
+          "hash": {
+            "type": "string",
+            "description": "Hash identifier for the family."
+          },
+          "slug": {
+            "type": "string",
+            "description": "URL-friendly slug for the family."
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the family."
+          },
+          "familyGroupSlug": {
+            "type": "string",
+            "description": "URL-friendly slug of the family group this family belongs to."
+          },
+          "productType": {
+            "enum": [
+              "icons",
+              "illustrations",
+              "elements"
+            ],
+            "type": "string",
+            "description": "Streamline product surface for this family (icons, illustrations, elements)."
+          },
+          "cover": {
+            "type": "string",
+            "nullable": true,
+            "description": "Cover image identifier or URL from persistence (raw)."
+          },
+          "iconCount": {
+            "type": "number",
+            "description": "Number of icons in the family."
+          },
+          "webUrl": {
+            "type": "string",
+            "description": "Url for the family on the website."
+          },
+          "sources": {
+            "description": "Sections of text that can be a good match for reasoning about the answer.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FamiliesSearchChunkItem"
+            }
+          }
+        },
+        "required": [
+          "hash",
+          "slug",
+          "name",
+          "familyGroupSlug",
+          "productType",
+          "iconCount",
+          "webUrl",
+          "sources"
+        ]
+      },
+      "FamilyGroupSearchItem": {
+        "type": "object",
+        "properties": {
+          "hash": {
+            "type": "string",
+            "description": "Hash identifier for the family group."
+          },
+          "slug": {
+            "type": "string",
+            "description": "URL-friendly slug for the family group."
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the family group."
+          },
+          "subtitle": {
+            "type": "string",
+            "nullable": true,
+            "description": "Short subtitle for the family group."
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "description": "Marketing or public description."
+          },
+          "webUrl": {
+            "type": "string",
+            "description": "Url for the family on the website.",
+            "nullable": false
+          },
+          "familyScore": {
+            "type": "number",
+            "description": "Family-level score: reciprocal-rank fusion (RRF) from chunk ranks, overwritten by LLM rerank when enabled."
+          },
+          "sources": {
+            "description": "Sections of text that can be a good match for reasoning about the answer.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FamilyGroupSearchChunkItem"
+            }
+          },
+          "sampleSets": {
+            "description": "Sample of Sets (families) in this family group (length capped server-side; see totalSets).",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FamiliesSearchItem"
+            }
+          },
+          "totalSets": {
+            "type": "number",
+            "description": "Total number of Sets (families) in this family group (not truncated)."
+          }
+        },
+        "required": [
+          "hash",
+          "slug",
+          "name",
+          "webUrl",
+          "familyScore",
+          "sources",
+          "sampleSets",
+          "totalSets"
+        ]
+      },
+      "FamilyGroupSearchResponse": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "The search query string used by the user."
+          },
+          "results": {
+            "description": "List of family groups matching the search query.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FamilyGroupSearchItem"
+            }
+          },
+          "pagination": {
+            "description": "Pagination information for the results.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Pagination"
+              }
+            ]
+          }
+        },
+        "required": [
+          "query",
+          "results",
+          "pagination"
+        ]
+      },
+      "FamilyChunkSearchDebugItem": {
+        "type": "object",
+        "properties": {
+          "hash": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "familyGroupSlug": {
+            "type": "string",
+            "description": "Family group slug this set belongs to."
+          },
+          "sourceType": {
+            "enum": [
+              "FIT_RECOMMENDATION",
+              "BRAND_CULTURAL",
+              "VISUAL_TECHNICAL",
+              "PAIRING_COMPATIBILITY"
+            ],
+            "type": "string",
+            "description": "Which semantic pillar (`##`) this document belongs to."
+          },
+          "subsectionKey": {
+            "type": "string",
+            "description": "Sub-key within the pillar (`###` subsection), e.g. `primary_use_cases`."
+          },
+          "chunkText": {
+            "type": "string",
+            "description": "Chunk text as stored in the index (`chunkText`)."
+          },
+          "score": {
+            "type": "number",
+            "description": "Hybrid score for this hit (OpenSearch `_score`)."
+          }
+        },
+        "required": [
+          "hash",
+          "slug",
+          "name",
+          "familyGroupSlug",
+          "sourceType",
+          "subsectionKey",
+          "chunkText",
+          "score"
+        ]
+      },
+      "FamilyChunkSearchDebugResponse": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FamilyChunkSearchDebugItem"
+            }
+          },
+          "pagination": {
+            "$ref": "#/components/schemas/Pagination"
+          }
+        },
+        "required": [
+          "query",
+          "results",
+          "pagination"
+        ]
+      },
+      "FamiliesSearchResponse": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "The search query string used by the user."
+          },
+          "results": {
+            "description": "List of families matching the search query.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FamiliesSearchItem"
+            }
+          },
+          "pagination": {
+            "description": "Pagination information for the results.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Pagination"
+              }
+            ]
+          }
+        },
+        "required": [
+          "query",
+          "results",
+          "pagination"
+        ]
+      },
       "FamilyGroupResponse": {
         "type": "object",
         "properties": {
@@ -1498,13 +2533,22 @@
           },
           "description": {
             "type": "string"
+          },
+          "productType": {
+            "type": "string",
+            "enum": [
+              "icons",
+              "illustrations",
+              "elements"
+            ]
           }
         },
         "required": [
           "hash",
           "slug",
           "name",
-          "description"
+          "description",
+          "productType"
         ]
       },
       "FamilyResponse": {
@@ -1521,7 +2565,6 @@
             "enum": [
               "icons",
               "illustrations",
-              "emojis",
               "elements"
             ]
           },
@@ -1530,6 +2573,17 @@
           },
           "isFree": {
             "type": "boolean"
+          },
+          "cover": {
+            "type": "string",
+            "nullable": true
+          },
+          "iconCount": {
+            "type": "number"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
           }
         },
         "required": [
@@ -1537,7 +2591,10 @@
           "slug",
           "productType",
           "name",
-          "isFree"
+          "isFree",
+          "cover",
+          "iconCount",
+          "description"
         ]
       }
     }

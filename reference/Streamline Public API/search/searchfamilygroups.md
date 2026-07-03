@@ -1,6 +1,6 @@
 ---
 api:
   file: public-api-stagingstreamlinehqcom-public-api-docs-json.json
-  operationId: getIconsByCategory
-hidden: true
+  operationId: searchFamilyGroups
+hidden: false
 ---
