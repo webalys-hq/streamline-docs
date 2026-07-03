@@ -1,4 +1,0 @@
----
-title: McpServer
-hidden: false
----
