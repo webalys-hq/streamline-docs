@@ -1,5 +1,5 @@
 ---
-title: How to search
+title: Search guide
 deprecated: false
 hidden: false
 metadata:
