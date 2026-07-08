@@ -328,3 +328,7 @@ Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresI
 > Yes, see the Authentication section in the docs for API key usage.
 
 <br />
+
+## Need help?
+
+Want direct access to the Streamline dev team? <a href="https://go.streamlinehq.com/mcp-support" target="_blank">Join our public Slack channel</a> to ask questions, share feedback, and get help setting up the MCP server straight from the people building it.
