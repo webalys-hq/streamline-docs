@@ -1,7 +1,0 @@
----
-title: MCP Setup
-deprecated: false
-hidden: false
-metadata:
-  robots: index
----
