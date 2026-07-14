@@ -7,7 +7,7 @@ metadata:
   robots: index
 ---
 
-Go to **Settings > Settings > MCP Servers** and click **Add Server**. Fill the form with the following information:
+Go to **Codex > Settings > MCP Servers** and click **Add Server**. Fill the form with the following information:
 
 - **Name:** Streamline MCP Server
 - Select the **Streamable HTTP** option
@@ -17,4 +17,8 @@ Go to **Settings > Settings > MCP Servers** and click **Add Server**. Fill the f
 
 Then click **Save**.
 
+Don't have a key yet? See [Setup → Authentication](https://docs.streamlinehq.com/reference/mcp-setup) for how to generate one.
+
 ![](https://files.readme.io/5d94c07b2ed859c6acd20b7e01796f72e803b77357a2d140bddf2ad545744a85-image.png)
+
+To confirm it's connected, ask Codex to **search for a dog icon** — you should get results from Streamline.

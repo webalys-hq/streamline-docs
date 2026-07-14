@@ -87,6 +87,8 @@ Run this command, replacing `YOUR_API_KEY_HERE` with your Streamline API key:
 claude mcp add --transport http streamline-mcp https://public-api.streamlinehq.com/mcp --header "X-API-Key: YOUR_API_KEY_HERE"
 ```
 
+Don't have a key yet? See <Anchor href="https://docs.streamlinehq.com/reference/mcp-setup">Setup → Authentication</Anchor> for how to generate one.
+
 Run `claude mcp list` to confirm it's up and running.
 
 </Accordion>

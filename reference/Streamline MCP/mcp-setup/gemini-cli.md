@@ -23,4 +23,8 @@ Add the Streamline MCP Server to your `.gemini/settings.json`, replacing `YOUR_A
 }
 ```
 
+Don't have a key yet? See <Anchor href="https://docs.streamlinehq.com/reference/mcp-setup">Setup → Authentication</Anchor> for how to generate one.
+
 For more details, see the <Anchor target="_blank" href="https://geminicli.com/docs/tools/mcp-server/">Gemini CLI MCP documentation</Anchor>.
+
+To confirm it's connected, ask the Gemini CLI to **search for a dog icon** — you should get results from Streamline.
