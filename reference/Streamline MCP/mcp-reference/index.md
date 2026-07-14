@@ -30,7 +30,7 @@ Explore:
 
 **Do I need authentication?**
 
-> Yes, see the <Anchor href="https://docs.streamlinehq.com/reference/mcp-setup">Setup</Anchor> page for API key and OAuth details.
+> Yes, see the <Anchor href="https://docs.streamlinehq.com/reference/mcp-setup">Setup</Anchor> page for OAuth (recommended) and API key details.
 
 ## Need help?
 
