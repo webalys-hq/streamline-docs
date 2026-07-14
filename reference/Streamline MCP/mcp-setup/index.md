@@ -41,12 +41,11 @@ Clients use these endpoints to retrieve the authorization server base URL, regis
 Follow the guide for your client:
 
 - <Anchor href="https://docs.streamlinehq.com/reference/universal-setup">Universal setup</Anchor> — generic config that works with most clients
+- <Anchor href="https://docs.streamlinehq.com/reference/claude">Claude</Anchor> — Desktop, Web, and Claude Code (CLI)
 - <Anchor href="https://docs.streamlinehq.com/reference/cursor">Cursor</Anchor>
-- <Anchor href="https://docs.streamlinehq.com/reference/claude-code">Claude Code (CLI)</Anchor>
 - <Anchor href="https://docs.streamlinehq.com/reference/codex">Codex</Anchor>
 - <Anchor href="https://docs.streamlinehq.com/reference/gemini-cli">Gemini CLI</Anchor>
 - <Anchor href="https://docs.streamlinehq.com/reference/antigravity">Antigravity</Anchor>
-- <Anchor href="https://docs.streamlinehq.com/reference/claude-connectors">Claude (via Connectors)</Anchor>
 
 ## Need help?
 

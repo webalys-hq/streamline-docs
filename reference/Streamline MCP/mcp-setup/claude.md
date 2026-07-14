@@ -1,11 +1,18 @@
 ---
-title: Claude (via Connectors)
-excerpt: Connect Streamline to Claude using a custom connector with OAuth sign-in.
+title: Claude
+excerpt: Add the Streamline MCP Server to Claude — Desktop, Web, or Claude Code (CLI).
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
+
+Claude connects to the Streamline MCP Server in two ways. Pick the one that matches how you use Claude:
+
+- **Desktop & Web app** — add Streamline as a custom connector and sign in with OAuth.
+- **Claude Code (CLI)** — add the server with a single `claude mcp add` command using your API key.
+
+<Accordion title="Desktop & Web app (Connectors)" icon="fa-desktop" defaultState="open">
 
 **Prerequisites**
 
@@ -69,3 +76,17 @@ Once connected, you can ask Claude to:
 - _"Find me a line-style icon for notifications"_
 - _"Search for free illustrations related to teamwork"_
 - _"Download the settings icon as a 64px PNG"_
+
+</Accordion>
+
+<Accordion title="Claude Code (CLI)" icon="fa-terminal">
+
+Run this command, replacing `YOUR_API_KEY_HERE` with your Streamline API key:
+
+```shell
+claude mcp add --transport http streamline-mcp https://public-api.streamlinehq.com/mcp --header "X-API-Key: YOUR_API_KEY_HERE"
+```
+
+Run `claude mcp list` to confirm it's up and running.
+
+</Accordion>
