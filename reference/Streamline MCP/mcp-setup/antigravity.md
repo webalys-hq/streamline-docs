@@ -22,4 +22,8 @@ Add the Streamline MCP Server to your `~/.gemini/config/mcp_config.json`, replac
 }
 ```
 
+Don't have a key yet? See <Anchor href="https://docs.streamlinehq.com/reference/mcp-setup">Setup → Authentication</Anchor> for how to generate one.
+
 For more details, see the <Anchor target="_blank" href="https://antigravity.google/docs/mcp">Antigravity MCP documentation</Anchor>.
+
+To confirm it's connected, ask Antigravity to **search for a dog icon** — you should get results from Streamline.

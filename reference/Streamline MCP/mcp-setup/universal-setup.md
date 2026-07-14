@@ -25,4 +25,6 @@ Most MCP-compatible clients accept a JSON configuration block. Add the following
 
 Don't have a key yet? See <Anchor href="https://docs.streamlinehq.com/reference/mcp-setup">Setup → Authentication</Anchor> for how to generate one.
 
+To confirm it's connected, ask your client to **search for a dog icon** — you should get results from Streamline.
+
 For step-by-step instructions tailored to a specific client, see the dedicated guides: <Anchor href="https://docs.streamlinehq.com/reference/claude">Claude</Anchor>, <Anchor href="https://docs.streamlinehq.com/reference/cursor">Cursor</Anchor>, <Anchor href="https://docs.streamlinehq.com/reference/codex">Codex</Anchor>, <Anchor href="https://docs.streamlinehq.com/reference/gemini-cli">Gemini CLI</Anchor>, and <Anchor href="https://docs.streamlinehq.com/reference/antigravity">Antigravity</Anchor>.
