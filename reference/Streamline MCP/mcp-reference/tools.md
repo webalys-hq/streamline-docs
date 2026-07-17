@@ -104,3 +104,28 @@ Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresI
 | `strokeToFill`          | boolean       | SVG only. If true, strokes become fills; `strokeWidth` is not applied. Default: `false`.                   |
 
 </Accordion>
+
+<Accordion title="download_multiple_assets" icon="fa-download">
+
+Batch version of `download_asset`: export **up to 50 icons** in a single call, all sharing the same `format`, `size`, and render options. Returns **JSON** with a `downloads` array — one entry per requested hash, each with a short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType`, and `fileName`. The MCP `tools/call` is authenticated; perform a plain **GET** on each `downloadUrl` without `X-API-Key` or Bearer (the URL carries the signed token) to download bytes. SVG-only params: `responsive`, `strokeToFill`.
+
+| Parameter                 | Type          | Description                                                                                                |
+| ------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------- |
+| `format` _(required)_     | `png` / `svg` | Export format. Applies to every hash in the batch.                                                         |
+| `iconHashes` _(required)_ | string[]      | Icon IDs (hashes) from `search_assets` results, one per array element. Between `1` and `50` items.         |
+| `size` _(required)_       | number        | Square size in pixels. Applies to every hash in the batch.                                                 |
+| `colors`                  | string[]      | Array of HEX strings or CSS named colors. Default: `[]`.                                                   |
+| `backgroundColor`         | string        | Background color (HEX or CSS name). Default: `#ffffff00` (transparent).                                    |
+| `strokeWidth`             | number        | Adjust vector path thickness. Optional.                                                                    |
+| `responsive`              | boolean       | SVG only. If true, SVG uses viewBox and drops fixed width/height for responsive scaling. Default: `false`. |
+| `strokeToFill`            | boolean       | SVG only. If true, strokes become fills; `strokeWidth` is not applied. Default: `false`.                   |
+
+> 📘 Bulk downloads and rate limits
+>
+> Every hash in `iconHashes` is exported and metered **individually**: a request for 40 hashes counts as 40 downloads against your plan's download allowance (see <Anchor href="https://docs.streamlinehq.com/reference/mcp">Overview</Anchor> and <Anchor href="https://docs.streamlinehq.com/reference/rate-limit">Rate Limit</Anchor>), not as a single download.
+>
+> All signed URLs are returned up front, but your allowance is only spent when each `downloadUrl` is fetched. On a large pull that crosses your remaining allowance, the earlier fetches succeed while later ones return `429 Too Many Requests` with the date your limit resets.
+>
+> A separate per-hour request limit applies to the MCP tool calls themselves, so a single `download_multiple_assets` call is far more efficient for bulk exports than many `download_asset` calls.
+
+</Accordion>
