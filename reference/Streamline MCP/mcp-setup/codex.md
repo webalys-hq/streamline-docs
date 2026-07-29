@@ -4,6 +4,7 @@ excerpt: Add the Streamline MCP Server to ChatGPT.
 deprecated: false
 hidden: false
 metadata:
+  description: Add the Streamline MCP Server to ChatGPT.
   robots: index
 ---
 Go to **ChatGPT > Settings > Plugins > MCPs&#x20;**&#x20;and click **Add Server**. Fill the form with the following information:<br />
