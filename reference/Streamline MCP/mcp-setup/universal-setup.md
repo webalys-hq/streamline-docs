@@ -7,7 +7,22 @@ metadata:
   robots: index
 ---
 
-Most MCP-compatible clients accept a JSON configuration block. Add the following to your client, replacing `YOUR_API_KEY_HERE` with your Streamline API key:
+Most MCP-compatible clients accept a JSON configuration block. If your client supports OAuth — most do — add the following and let it walk you through signing in to Streamline:
+
+```json
+{
+  "mcpServers": {
+    "streamlineMCPServer": {
+      "name": "Streamline MCP Server",
+      "url": "https://public-api.streamlinehq.com/mcp"
+    }
+  }
+}
+```
+
+Streamline supports dynamic client registration, so there are no client credentials to configure. The first time the client connects, it opens your browser to sign in and authorize access.
+
+For clients that don't support OAuth, add your Streamline API key as a header instead, replacing `YOUR_API_KEY_HERE`:
 
 ```json
 {
@@ -27,4 +42,4 @@ Don't have a key yet? See <Anchor href="https://docs.streamlinehq.com/reference/
 
 To confirm it's connected, ask your client to **search for a dog icon** — you should get results from Streamline.
 
-For step-by-step instructions tailored to a specific client, see the dedicated guides: <Anchor href="https://docs.streamlinehq.com/reference/claude">Claude</Anchor>, <Anchor href="https://docs.streamlinehq.com/reference/cursor">Cursor</Anchor>, <Anchor href="https://docs.streamlinehq.com/reference/codex">Codex</Anchor>, <Anchor href="https://docs.streamlinehq.com/reference/gemini-cli">Gemini CLI</Anchor>, and <Anchor href="https://docs.streamlinehq.com/reference/antigravity">Antigravity</Anchor>.
+For step-by-step instructions tailored to a specific client, see the dedicated guides: <Anchor href="https://docs.streamlinehq.com/reference/claude">Claude</Anchor>, <Anchor href="https://docs.streamlinehq.com/reference/cursor">Cursor</Anchor>, <Anchor href="https://docs.streamlinehq.com/reference/chatgpt">ChatGPT</Anchor>, and <Anchor href="https://docs.streamlinehq.com/reference/antigravity">Antigravity</Anchor> (also covers the Gemini CLI).
