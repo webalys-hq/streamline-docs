@@ -7,23 +7,20 @@ metadata:
   robots: index
 ---
 
-Go to **Cursor > Cursor Settings > Tools & MCPs**, then click **New MCP Server** and add the `streamlineMCPServer` configuration below, replacing `YOUR_API_KEY_HERE` with your Streamline API key:
+Go to **Cursor > Cursor Settings > Tools & MCPs**, then click **New MCP Server** and add the `streamlineMCPServer` configuration below. There's no API key to paste — you sign in with OAuth:
 
 ```json Cursor
 {
   "mcpServers": {
     "streamlineMCPServer": {
       "name": "Streamline MCP Server",
-      "url": "https://public-api.streamlinehq.com/mcp",
-      "headers": {
-        "X-API-Key": "YOUR_API_KEY_HERE"
-      }
+      "url": "https://public-api.streamlinehq.com/mcp"
     }
   }
 }
 ```
 
-Don't have a key yet? See [Setup → Authentication](https://docs.streamlinehq.com/reference/mcp-setup) for how to generate one.
+Back in **Tools & MCPs**, the server appears as needing login: click **Login**, sign in to Streamline in your browser, and grant access. Cursor stores and refreshes the token for you.
 
 You can see more details about adding MCPs to Cursor here: [https://cursor.com/docs/mcp](https://cursor.com/docs/mcp "https://cursor.com/docs/mcp")
 
