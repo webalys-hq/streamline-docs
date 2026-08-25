@@ -9,20 +9,45 @@ metadata:
 
 Once connected, these tools are available through your client's AI chat. For guidance on choosing the right tool and writing effective queries, see the <Anchor href="https://docs.streamlinehq.com/reference/how-to-search">Search guide</Anchor>.
 
+<Accordion title="get_user_context" icon="fa-user">
+
+Returns the profile of the authenticated session. Call this **before** `search_assets` — that tool requires the `userContext` string this one returns.
+
+_No parameters._
+
+Returns two strings:
+
+| Field             | Description                                                                                                                         |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `userContext`     | One-line summary of the signed-in account, e.g. `you@example.com is on the free plan`. Pass it straight through to `search_assets`. |
+| `llmInstructions` | Presentation guidance for the assistant — how to lay out catalog results, and how to handle premium assets for this account.        |
+
+</Accordion>
+
 <Accordion title="search_assets" icon="fa-magnifying-glass">
 
-Search for icons, illustrations, or elements. With a non-empty `setSlug`, search within that Set. With a non-empty `familySlug` (and no `setSlug`), search within that Family. Otherwise performs a global search — `productType` is required for global search.
+Search for icons, illustrations, or elements.
 
-| Parameter            | Type                                   | Description                                                                                                                                                                                                                                                                        |
-| -------------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `query` _(required)_ | string                                 | Search term. Translate abstract concepts into concrete visual nouns when searching globally. Never mix different concepts in the same query.                                                                                                                                       |
-| `setSlug`            | string                                 | Set slug from `search_sets`, `find_sets_by_name`, or `get_all_sets_from_family`. When provided, search is scoped to this Set (takes precedence over `familySlug`).                                                                                                                 |
-| `familySlug`         | string                                 | Family slug from `get_all_families`. When provided and `setSlug` is omitted, search is scoped to this Family.                                                                                                                                                                      |
-| `productType`        | `icons` / `illustrations` / `elements` | Required for global search only (when both `setSlug` and `familySlug` are omitted). Asset type to search.                                                                                                                                                                          |
-| `offset`             | number                                 | Number of items to skip before returning results. Default: `0`.                                                                                                                                                                                                                    |
-| `limit`              | number                                 | Maximum number of items to return. Default: `20` (max `100`).                                                                                                                                                                                                                      |
-| `productTier`        | `all` / `free` / `premium`             | Filter by price tier of Sets (e.g. `free` limits results to free Sets). Used for global search only. Default: `all`.                                                                                                                                                               |
-| `style`              | enum                                   | Filter by Set style. Global search only; applies when `productType` is `icons`. One of: `line`, `solid`, `flat`, `duo`, `handrawn`, `creative`, `gradient`, `remix`, `neon`, `pop`, `light`, `glyph`, `minimal`, `outlined`, `geometric`, `bold`, `stroke`, `wireframe`, `filled`. |
+How wide the search goes depends on which slug you pass. The first rule that matches wins:
+
+- **One Set** — pass `setSlug`. Narrowest scope, and it overrides `familySlug` if you pass both.
+- **One Family** — pass `familySlug` and leave `setSlug` out.
+- **The whole catalog** — leave both out. `productType` is then required, so the search knows whether to look at icons, illustrations, or elements.
+
+An empty or blank slug counts as "not passed".
+
+| Parameter                  | Type                                   | Description                                                                                                                                                                                                                                                                          |
+| -------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `query` _(required)_       | string                                 | Search term, 1–100 characters. Translate abstract concepts into concrete visual nouns when searching globally. Never mix different concepts in the same query.                                                                                                                       |
+| `language`                 | enum                                   | Source language of `query`. When set, the query is machine-translated to English before searching. One of: `en`, `fr`, `de`, `es` (Spain), `es-MX` (Latin America), `pt` (Brazil), `pt-PT`, `hi`, `ko`, `ja`. Omit for English. Default: unset.                                      |
+| `setSlug`                  | string                                 | Set slug from `search_sets`, `find_sets_by_name`, or `get_all_sets_from_family`. When provided, search is scoped to this Set (takes precedence over `familySlug`).                                                                                                                   |
+| `familySlug`               | string                                 | Family slug from `get_all_families`. When provided and `setSlug` is omitted, search is scoped to this Family.                                                                                                                                                                        |
+| `productType`              | `icons` / `illustrations` / `elements` | Required for global search only (when both `setSlug` and `familySlug` are omitted). Asset type to search.                                                                                                                                                                            |
+| `offset`                   | number                                 | Number of items to skip before returning results. Default: `0`.                                                                                                                                                                                                                      |
+| `limit`                    | number                                 | Maximum number of items to return. Default: `20` (max `100`).                                                                                                                                                                                                                        |
+| `productTier`              | `all` / `free` / `premium`             | Filter by price tier of Sets (e.g. `free` limits results to free Sets). Used for global search only. Default: `all`. On ChatGPT this is forced to `free` for accounts without a premium entitlement (see note below).                                                                |
+| `style`                    | enum                                   | Filter by Set style. Global search only; applies when `productType` is `icons`. One of: `line`, `solid`, `flat`, `duo`, `hand-drawn`, `creative`, `gradient`, `remix`, `neon`, `pop`, `light`, `glyph`, `minimal`, `outlined`, `geometric`, `bold`, `stroke`, `wireframe`, `filled`. |
+| `userContext` _(required)_ | string                                 | The `userContext` string returned by `get_user_context`. Call that tool first — do not invent or guess this value.                                                                                                                                                                   |
 
 </Accordion>
 
@@ -32,9 +57,9 @@ Semantic search for **Sets** by meaning (not substring on stored names). For par
 
 | Parameter            | Type   | Description                                                                                                                                            |
 | -------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `query` _(required)_ | string | Natural-language search term. Minimum 1 character.                                                                                                     |
+| `query` _(required)_ | string | Natural-language search term, 1–100 characters. Preserve the full intent (questions, negatives); don't compress it into a keyword stack.               |
 | `familySlug`         | string | When set, only return Sets belonging to this Family. Use the Family `slug` from `get_all_families`. Minimum 1 character when provided. Default: unset. |
-| `limit`              | number | Maximum number of Sets to return. Default: `20` (max `100`).                                                                                           |
+| `limit`              | number | Maximum number of Sets to return. Default: `20` (min `1`, max `100`).                                                                                  |
 
 </Accordion>
 
@@ -64,7 +89,7 @@ Returns all Sets in a Family, with pagination. Use when you already know the Fam
 | ------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------- |
 | `familyHash` _(required)_ | string | Family hash. Use `hash` from `get_all_families` or `familyHash` from `find_sets_by_name` when available. Max 80 characters. |
 | `offset`                  | number | Number of items to skip. Default: `0`.                                                                                      |
-| `limit`                   | number | Maximum number of Sets to return. Default: `100` (max `100`).                                                               |
+| `limit`                   | number | Maximum number of Sets to return. Default: `100` (min `1`, max `100`).                                                      |
 
 </Accordion>
 
@@ -96,7 +121,7 @@ Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresI
 | ----------------------- | ------------- | ---------------------------------------------------------------------------------------------------------- |
 | `format` _(required)_   | `png` / `svg` | Export format.                                                                                             |
 | `iconHash` _(required)_ | string        | Icon ID (hash) from `search_assets` results.                                                               |
-| `size` _(required)_     | number        | Square size in pixels.                                                                                     |
+| `size` _(required)_     | number        | Square size in pixels. Between `1` and `4096`.                                                             |
 | `colors`                | string[]      | Array of HEX strings or CSS named colors. Default: `[]`.                                                   |
 | `backgroundColor`       | string        | Background color (HEX or CSS name). Default: `#ffffff00` (transparent).                                    |
 | `strokeWidth`           | number        | Adjust vector path thickness. Optional.                                                                    |
@@ -107,13 +132,13 @@ Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresI
 
 <Accordion title="download_multiple_assets" icon="fa-download">
 
-Batch version of `download_asset`: export **up to 50 icons** in a single call, all sharing the same `format`, `size`, and render options. Returns **JSON** with a `downloads` array — one entry per requested hash, each with a short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType`, and `fileName`. The MCP `tools/call` is authenticated; perform a plain **GET** on each `downloadUrl` without `X-API-Key` or Bearer (the URL carries the signed token) to download bytes. SVG-only params: `responsive`, `strokeToFill`.
+Batch version of `download_asset`: export **up to 50 icons** in a single call, all sharing the same `format`, `size`, and render options. Returns **JSON** with a `downloads` array — one entry per requested hash, each with its `iconHash`, a short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType`, and `fileName`. The MCP `tools/call` is authenticated; perform a plain **GET** on each `downloadUrl` without `X-API-Key` or Bearer (the URL carries the signed token) to download bytes. SVG-only params: `responsive`, `strokeToFill`.
 
 | Parameter                 | Type          | Description                                                                                                |
 | ------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------- |
 | `format` _(required)_     | `png` / `svg` | Export format. Applies to every hash in the batch.                                                         |
 | `iconHashes` _(required)_ | string[]      | Icon IDs (hashes) from `search_assets` results, one per array element. Between `1` and `50` items.         |
-| `size` _(required)_       | number        | Square size in pixels. Applies to every hash in the batch.                                                 |
+| `size` _(required)_       | number        | Square size in pixels. Between `1` and `4096`. Applies to every hash in the batch.                         |
 | `colors`                  | string[]      | Array of HEX strings or CSS named colors. Default: `[]`.                                                   |
 | `backgroundColor`         | string        | Background color (HEX or CSS name). Default: `#ffffff00` (transparent).                                    |
 | `strokeWidth`             | number        | Adjust vector path thickness. Optional.                                                                    |
@@ -122,7 +147,7 @@ Batch version of `download_asset`: export **up to 50 icons** in a single call, a
 
 > 📘 Bulk downloads and rate limits
 >
-> Every hash in `iconHashes` is exported and metered **individually**: a request for 40 hashes counts as 40 downloads against your plan's download allowance (see <Anchor href="https://docs.streamlinehq.com/reference/mcp">Overview</Anchor> and <Anchor href="https://docs.streamlinehq.com/reference/rate-limit">Rate Limit</Anchor>), not as a single download.
+> Every hash in `iconHashes` is exported and metered **individually**: a request for 50 hashes counts as 50 downloads against your plan's download allowance (see <Anchor href="https://docs.streamlinehq.com/reference/mcp">Overview</Anchor> and <Anchor href="https://docs.streamlinehq.com/reference/rate-limit">Rate Limit</Anchor>), not as a single download.
 >
 > All signed URLs are returned up front, but your allowance is only spent when each `downloadUrl` is fetched. On a large pull that crosses your remaining allowance, the earlier fetches succeed while later ones return `429 Too Many Requests` with the date your limit resets.
 >
