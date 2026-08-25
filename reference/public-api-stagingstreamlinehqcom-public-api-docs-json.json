@@ -23,9 +23,9 @@
                   "$ref": "#/components/schemas/CategoryResponse"
                 },
                 "example": {
-                  "hash": "ico_KzODLAesCcyAzN",
-                  "slug": "adversus",
-                  "name": "decision"
+                  "hash": "ico_ZbPtHmZVNOTQCS",
+                  "slug": "administratio",
+                  "name": "scorpion"
                 }
               }
             }
@@ -97,64 +97,64 @@
                 "example": {
                   "icons": [
                     {
-                      "hash": "ico_yxECRWnYhcgVKl",
-                      "name": "grandson",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/consequatur-cotidie-tui.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/itaque-crudelis-admiratio--70528",
+                      "hash": "ico_XEzqalzdaePEMv",
+                      "name": "bourgeoisie",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/tunc-coniecto-comis.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/velociter-utroque-officiis--75895",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "abscido",
-                      "familyName": "scarification",
+                      "familySlug": "adsuesco",
+                      "familyName": "luck",
                       "familyProductType": "icons",
-                      "categorySlug": "dicta",
-                      "categoryName": "tabletop",
-                      "subcategorySlug": "cauda",
-                      "subcategoryName": "phrase"
+                      "categorySlug": "victus",
+                      "categoryName": "patroller",
+                      "subcategorySlug": "beneficium",
+                      "subcategoryName": "rule"
                     },
                     {
-                      "hash": "ico_blWuBldVtIqOEL",
-                      "name": "archaeology",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/demonstro-ipsum-nihil.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/provident-commemoro-adsum--33698",
+                      "hash": "ico_TdKUVpWfYBzKnG",
+                      "name": "comestible",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/nostrum-advenio-vulticulus.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/earum-vespillo-cernuus--90672",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "conqueror",
-                      "familyName": "tuxedo",
+                      "familySlug": "acer",
+                      "familyName": "venom",
                       "familyProductType": "icons",
-                      "categorySlug": "verbera",
-                      "categoryName": "giggle",
-                      "subcategorySlug": "urbanus",
-                      "subcategoryName": "molasses"
+                      "categorySlug": "unus",
+                      "categoryName": "meatloaf",
+                      "subcategorySlug": "terreo",
+                      "subcategoryName": "tarragon"
                     },
                     {
-                      "hash": "ico_kbyzTlkvOUCwYu",
-                      "name": "skyline",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/derideo-abstergo-summisse.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/debitis-tondeo-armarium--33433",
+                      "hash": "ico_dyjKqzZtVpmHSh",
+                      "name": "embarrassment",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/conitor-utpote-aveho.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/deleniti-decretum-cito--33513",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "adhuc",
-                      "familyName": "rule",
+                      "familySlug": "temeritas",
+                      "familyName": "operating",
                       "familyProductType": "icons",
-                      "categorySlug": "cena",
-                      "categoryName": "scholarship",
-                      "subcategorySlug": "cubo",
-                      "subcategoryName": "depot"
+                      "categorySlug": "curvo",
+                      "categoryName": "catalyst",
+                      "subcategorySlug": "conatus",
+                      "subcategoryName": "warming"
                     },
                     {
-                      "hash": "ico_BvvDiBVFFesrFq",
-                      "name": "birdcage",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/communis-impedit-stultus.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/suppellex-aggredior-sit--49702",
+                      "hash": "ico_PxoHbFzDJkAnMc",
+                      "name": "advertisement",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/defleo-desidero-speculum.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/currus-amo-vinum--81159",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "mollitia",
-                      "familyName": "behest",
+                      "familySlug": "stipes",
+                      "familyName": "dredger",
                       "familyProductType": "icons",
-                      "categorySlug": "crustulum",
-                      "categoryName": "honesty",
-                      "subcategorySlug": "aduro",
-                      "subcategoryName": "translation"
+                      "categorySlug": "desolo",
+                      "categoryName": "jazz",
+                      "subcategorySlug": "auctus",
+                      "subcategoryName": "adaptation"
                     }
                   ],
                   "pagination": {
@@ -213,9 +213,9 @@
                   "$ref": "#/components/schemas/SubcategoryResponse"
                 },
                 "example": {
-                  "hash": "ico_teafItjLHwNWfN",
-                  "slug": "aspicio",
-                  "name": "knuckle"
+                  "hash": "ico_RTyksdsjhBkDed",
+                  "slug": "conculco",
+                  "name": "disposer"
                 }
               }
             }
@@ -287,64 +287,64 @@
                 "example": {
                   "icons": [
                     {
-                      "hash": "ico_UQxqKyORvPYXAd",
-                      "name": "begonia",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/custodia-capto-coniecto.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/torqueo-vester-curis--41219",
+                      "hash": "ico_LxoDzYQPjFnyXk",
+                      "name": "instructor",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/amor-conicio-aduro.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/animi-alii-verbera--1001",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "natus",
-                      "familyName": "warming",
+                      "familySlug": "cultura",
+                      "familyName": "nephew",
                       "familyProductType": "icons",
-                      "categorySlug": "minus",
-                      "categoryName": "orchid",
-                      "subcategorySlug": "traho",
-                      "subcategoryName": "horst"
+                      "categorySlug": "tergiversatio",
+                      "categoryName": "patroller",
+                      "subcategorySlug": "talis",
+                      "subcategoryName": "pants"
                     },
                     {
-                      "hash": "ico_SYeQzEUOdpRGpN",
-                      "name": "foodstuffs",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/doloribus-theologus-suggero.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/utilis-doloribus-statua--27800",
+                      "hash": "ico_IgPapcnITPFmlZ",
+                      "name": "lender",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/benigne-statim-aliquid.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/amplitudo-verecundia-absque--50675",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "tergeo",
-                      "familyName": "caption",
+                      "familySlug": "annus",
+                      "familyName": "giggle",
                       "familyProductType": "icons",
-                      "categorySlug": "soluta",
-                      "categoryName": "thyme",
-                      "subcategorySlug": "vis",
-                      "subcategoryName": "monster"
+                      "categorySlug": "cultellus",
+                      "categoryName": "conversation",
+                      "subcategorySlug": "ambulo",
+                      "subcategoryName": "sonnet"
                     },
                     {
-                      "hash": "ico_nrIYazPSqtXmbV",
-                      "name": "brace",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/agnosco-umerus-illum.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/alias-crudelis-cinis--56113",
+                      "hash": "ico_XRsxOnWpSMXCNy",
+                      "name": "fort",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/spes-ullam-communis.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/ars-vulpes-defluo--92507",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "curriculum",
-                      "familyName": "exploration",
+                      "familySlug": "demoror",
+                      "familyName": "cafe",
                       "familyProductType": "icons",
-                      "categorySlug": "turba",
-                      "categoryName": "alb",
-                      "subcategorySlug": "totam",
-                      "subcategoryName": "marten"
+                      "categorySlug": "vulticulus",
+                      "categoryName": "mainstream",
+                      "subcategorySlug": "dedico",
+                      "subcategoryName": "embarrassment"
                     },
                     {
-                      "hash": "ico_JWsxbEcvJBDWuo",
-                      "name": "intellect",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/denique-dolorum-ver.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/tum-adipiscor-vesper--57879",
+                      "hash": "ico_oKjnwpnTcmVexC",
+                      "name": "bump",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/usque-urbs-taedium.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/desparatus-vallum-crinis--18420",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "depraedor",
-                      "familyName": "puritan",
+                      "familySlug": "somniculosus",
+                      "familyName": "thongs",
                       "familyProductType": "icons",
-                      "categorySlug": "truculenter",
-                      "categoryName": "yeast",
-                      "subcategorySlug": "apto",
-                      "subcategoryName": "accompanist"
+                      "categorySlug": "super",
+                      "categoryName": "relative",
+                      "subcategorySlug": "coruscus",
+                      "subcategoryName": "department"
                     }
                   ],
                   "pagination": {
@@ -424,64 +424,64 @@
                 "example": {
                   "icons": [
                     {
-                      "hash": "ico_fNfFwuNKjtMuba",
-                      "name": "conversation",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/cotidie-cribro-degero.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/adfectus-cohors-tempus--92889",
+                      "hash": "ico_dnuhQdAtjUlaaI",
+                      "name": "translation",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/carcer-verecundia-adaugeo.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/ascisco-venia-super--88203",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "aestus",
-                      "familyName": "marten",
+                      "familySlug": "carcer",
+                      "familyName": "settler",
                       "familyProductType": "icons",
-                      "categorySlug": "tondeo",
-                      "categoryName": "whack",
-                      "subcategorySlug": "spero",
-                      "subcategoryName": "roadway"
+                      "categorySlug": "tamquam",
+                      "categoryName": "makeover",
+                      "subcategorySlug": "adficio",
+                      "subcategoryName": "following"
                     },
                     {
-                      "hash": "ico_roJkwJwfhMaUvr",
-                      "name": "makeover",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/vel-dedecor-suus.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/spargo-clarus-universe--49482",
+                      "hash": "ico_OVAEoCXLrAvGJz",
+                      "name": "excess",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/verbera-coerceo-colo.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/unus-comparo-umbra--25508",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "arguo",
-                      "familyName": "hexagon",
+                      "familySlug": "color",
+                      "familyName": "bowling",
                       "familyProductType": "icons",
-                      "categorySlug": "rerum",
-                      "categoryName": "providence",
-                      "subcategorySlug": "quam",
-                      "subcategoryName": "pop"
+                      "categorySlug": "crapula",
+                      "categoryName": "passport",
+                      "subcategorySlug": "admoneo",
+                      "subcategoryName": "conversation"
                     },
                     {
-                      "hash": "ico_MjnDHNBqVZHCoN",
-                      "name": "goat",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/bene-statim-perspiciatis.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/laborum-maiores-deorsum--79281",
+                      "hash": "ico_zQwwwllcJOYFIp",
+                      "name": "editor",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/odit-ratione-torrens.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/depereo-vulgus-careo--6396",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "suffoco",
-                      "familyName": "statue",
+                      "familySlug": "adsuesco",
+                      "familyName": "event",
                       "familyProductType": "icons",
-                      "categorySlug": "cibo",
-                      "categoryName": "stump",
-                      "subcategorySlug": "pecco",
-                      "subcategoryName": "reasoning"
+                      "categorySlug": "textus",
+                      "categoryName": "formamide",
+                      "subcategorySlug": "toties",
+                      "subcategoryName": "release"
                     },
                     {
-                      "hash": "ico_HZDgCaWPmfpPky",
-                      "name": "council",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/cohibeo-cunabula-adficio.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/solvo-sordeo-solio--73697",
+                      "hash": "ico_dWmQMWoXDMZNWY",
+                      "name": "laughter",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/administratio-benevolentia-tubineus.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/adsum-provident-alioqui--87559",
                       "colors": [],
                       "isFree": false,
-                      "familySlug": "deduco",
-                      "familyName": "plugin",
+                      "familySlug": "succedo",
+                      "familyName": "editor",
                       "familyProductType": "icons",
-                      "categorySlug": "vester",
-                      "categoryName": "coordination",
-                      "subcategorySlug": "vesco",
-                      "subcategoryName": "chiffonier"
+                      "categorySlug": "ipsam",
+                      "categoryName": "harp",
+                      "subcategorySlug": "compello",
+                      "subcategoryName": "technologist"
                     }
                   ],
                   "pagination": {
@@ -543,19 +543,19 @@
                   "$ref": "#/components/schemas/IconResponse"
                 },
                 "example": {
-                  "hash": "ico_cGGdGyJhsVoehO",
-                  "name": "heartbeat",
-                  "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/blanditiis-curriculum-causa.png?_a=DATAiZiuZAA0",
-                  "webUrl": "https://www.streamlinehq.com/icons/download/vicinus-vobis-caelum--38151",
+                  "hash": "ico_exooyaBtHapnFR",
+                  "name": "developmental",
+                  "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/audio-laudantium-civis.png?_a=DATAiZiuZAA0",
+                  "webUrl": "https://www.streamlinehq.com/icons/download/strenuus-sollicito-quam--46103",
                   "colors": [],
                   "isFree": false,
-                  "familySlug": "ver",
-                  "familyName": "information",
+                  "familySlug": "voluptatibus",
+                  "familyName": "hyphenation",
                   "familyProductType": "icons",
-                  "categorySlug": "spiritus",
-                  "categoryName": "loyalty",
-                  "subcategorySlug": "sub",
-                  "subcategoryName": "secrecy"
+                  "categorySlug": "corrigo",
+                  "categoryName": "king",
+                  "subcategorySlug": "trans",
+                  "subcategoryName": "hubris"
                 }
               }
             }
@@ -967,6 +967,27 @@
                 "filled"
               ]
             }
+          },
+          {
+            "name": "language",
+            "required": false,
+            "in": "query",
+            "description": "Optional source language of `query`. Options: `en` (English), `fr` (French), `de` (German), `es` (Spanish Spain), `es-MX` (Spanish Latin America), `pt` (Portuguese Brazil).",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "en",
+                "fr",
+                "de",
+                "es",
+                "es-MX",
+                "pt",
+                "pt-PT",
+                "hi",
+                "ko",
+                "ja"
+              ]
+            }
           }
         ],
         "responses": {
@@ -978,33 +999,35 @@
                   "$ref": "#/components/schemas/SearchResponse"
                 },
                 "example": {
-                  "query": "outset",
+                  "query": "mortise",
                   "results": [
                     {
-                      "hash": "ico_OXJpvJBXbLyHVk",
-                      "name": "outset",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/cribro-terror-creo.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/audax-beneficium-defendo--47001",
+                      "hash": "ico_EKcwaIzWkazzlH",
+                      "name": "mortise",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/aggero-suus-crastinus.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/attero-quo-vilicus--22247",
                       "isFree": false,
-                      "familySlug": "bellum",
-                      "familyName": "devil",
-                      "categorySlug": "abduco",
-                      "categoryName": "cantaloupe",
-                      "subcategorySlug": "urbs",
-                      "subcategoryName": "cross-contamination"
+                      "hasPremiumAccess": false,
+                      "familySlug": "charisma",
+                      "familyName": "reorganisation",
+                      "categorySlug": "thesaurus",
+                      "categoryName": "baritone",
+                      "subcategorySlug": "talis",
+                      "subcategoryName": "schnitzel"
                     },
                     {
-                      "hash": "ico_PpgyYytpUfdHkE",
-                      "name": "outset",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/corona-derideo-vinculum.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/sopor-amet-repellat--52329",
+                      "hash": "ico_YqRSKqWzYmBcUW",
+                      "name": "mortise",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/depraedor-usus-asper.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/clibanus-dolorem-antepono--25374",
                       "isFree": false,
-                      "familySlug": "clibanus",
-                      "familyName": "bidet",
-                      "categorySlug": "aut",
-                      "categoryName": "fund",
-                      "subcategorySlug": "creptio",
-                      "subcategoryName": "cope"
+                      "hasPremiumAccess": false,
+                      "familySlug": "tremo",
+                      "familyName": "statue",
+                      "categorySlug": "centum",
+                      "categoryName": "mom",
+                      "subcategorySlug": "audio",
+                      "subcategoryName": "chiffonier"
                     }
                   ],
                   "pagination": {
@@ -1098,6 +1121,27 @@
               "default": 50,
               "type": "number"
             }
+          },
+          {
+            "name": "language",
+            "required": false,
+            "in": "query",
+            "description": "Optional source language of `query`. Options: `en` (English), `fr` (French), `de` (German), `es` (Spanish Spain), `es-MX` (Spanish Latin America), `pt` (Portuguese Brazil).",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "en",
+                "fr",
+                "de",
+                "es",
+                "es-MX",
+                "pt",
+                "pt-PT",
+                "hi",
+                "ko",
+                "ja"
+              ]
+            }
           }
         ],
         "responses": {
@@ -1109,33 +1153,35 @@
                   "$ref": "#/components/schemas/SearchResponse"
                 },
                 "example": {
-                  "query": "graffiti",
+                  "query": "hutch",
                   "results": [
                     {
-                      "hash": "ico_fzkLMgPvazVKku",
-                      "name": "graffiti",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/annus-somnus-sophismata.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/aperio-patria-desolo--32054",
+                      "hash": "ico_ePBVtlMYJCHvZP",
+                      "name": "hutch",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/denique-desidero-curso.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/certe-ipsum-coaegresco--51482",
                       "isFree": false,
-                      "familySlug": "tarragon",
-                      "familyName": "habit",
-                      "categorySlug": "vilicus",
-                      "categoryName": "shadowbox",
-                      "subcategorySlug": "vix",
-                      "subcategoryName": "individual"
+                      "hasPremiumAccess": false,
+                      "familySlug": "whale",
+                      "familyName": "inspection",
+                      "categorySlug": "avarus",
+                      "categoryName": "icebreaker",
+                      "subcategorySlug": "commemoro",
+                      "subcategoryName": "restaurant"
                     },
                     {
-                      "hash": "ico_PNCqwoIEzHITsW",
-                      "name": "graffiti",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/venia-perferendis-rem.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/volva-depraedor-blandior--92172",
+                      "hash": "ico_emUbeOYQJDUIeC",
+                      "name": "hutch",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/inflammatio-canto-adfectus.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/vespillo-depereo-apto--59520",
                       "isFree": false,
-                      "familySlug": "tarragon",
-                      "familyName": "habit",
-                      "categorySlug": "commemoro",
-                      "categoryName": "parsnip",
-                      "subcategorySlug": "alo",
-                      "subcategoryName": "kettledrum"
+                      "hasPremiumAccess": false,
+                      "familySlug": "whale",
+                      "familyName": "inspection",
+                      "categorySlug": "quibusdam",
+                      "categoryName": "obedience",
+                      "subcategorySlug": "temeritas",
+                      "subcategoryName": "fledgling"
                     }
                   ],
                   "pagination": {
@@ -1229,6 +1275,27 @@
               "default": 50,
               "type": "number"
             }
+          },
+          {
+            "name": "language",
+            "required": false,
+            "in": "query",
+            "description": "Optional source language of `query`. Options: `en` (English), `fr` (French), `de` (German), `es` (Spanish Spain), `es-MX` (Spanish Latin America), `pt` (Portuguese Brazil).",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "en",
+                "fr",
+                "de",
+                "es",
+                "es-MX",
+                "pt",
+                "pt-PT",
+                "hi",
+                "ko",
+                "ja"
+              ]
+            }
           }
         ],
         "responses": {
@@ -1240,33 +1307,35 @@
                   "$ref": "#/components/schemas/SearchResponse"
                 },
                 "example": {
-                  "query": "solution",
+                  "query": "completion",
                   "results": [
                     {
-                      "hash": "ico_oHEZuNcIpVRsMN",
-                      "name": "solution",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/vir-veritas-stips.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/uxor-tunc-conscendo--53992",
+                      "hash": "ico_qVWrlieGDMQBxy",
+                      "name": "completion",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/compono-eaque-ars.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/sufficio-certe-apud--18913",
                       "isFree": false,
-                      "familySlug": "tenuis",
-                      "familyName": "advertisement",
-                      "categorySlug": "strenuus",
-                      "categoryName": "expansion",
-                      "subcategorySlug": "omnis",
-                      "subcategoryName": "bonnet"
+                      "hasPremiumAccess": false,
+                      "familySlug": "cursus",
+                      "familyName": "jacket",
+                      "categorySlug": "usque",
+                      "categoryName": "retrospectivity",
+                      "subcategorySlug": "cuius",
+                      "subcategoryName": "skeleton"
                     },
                     {
-                      "hash": "ico_zPQcXitkqmcCGI",
-                      "name": "solution",
-                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/contigo-virgo-vesco.png?_a=DATAiZiuZAA0",
-                      "webUrl": "https://www.streamlinehq.com/icons/download/textilis-atrocitas-socius--41647",
+                      "hash": "ico_UAmttuKyqtTEIA",
+                      "name": "completion",
+                      "imagePreviewUrl": "https://assets.streamlinehq.com/image/private/w_128,h_128,ar_1/f_auto/totidem-adhaero-atavus.png?_a=DATAiZiuZAA0",
+                      "webUrl": "https://www.streamlinehq.com/icons/download/caecus-certe-pecus--85440",
                       "isFree": false,
-                      "familySlug": "placeat",
-                      "familyName": "lid",
-                      "categorySlug": "basium",
-                      "categoryName": "drive",
-                      "subcategorySlug": "convoco",
-                      "subcategoryName": "release"
+                      "hasPremiumAccess": false,
+                      "familySlug": "repudiandae",
+                      "familyName": "baritone",
+                      "categorySlug": "hic",
+                      "categoryName": "anticodon",
+                      "subcategorySlug": "subseco",
+                      "subcategoryName": "ownership"
                     }
                   ],
                   "pagination": {
@@ -1648,10 +1717,10 @@
                   "$ref": "#/components/schemas/FamilyGroupResponse"
                 },
                 "example": {
-                  "hash": "ico_QlUDVHcwHcbYpf",
-                  "slug": "altus",
-                  "name": "cornet",
-                  "description": "Audeo amoveo vilitas vetus cursim. Utrum talio cubo ultio eum ipsam vilis eligendi civis vulnus. Demonstro quasi quam id cetera. Deorsum provident asper. Volup depulso ubi accusantium odit vobis triduana.",
+                  "hash": "ico_ohCHrylKHTpkDe",
+                  "slug": "valetudo",
+                  "name": "jet",
+                  "description": "Tergum charisma amoveo. Sono universe cursim delego color.",
                   "productType": "icons"
                 }
               }
@@ -1725,14 +1794,14 @@
                   "$ref": "#/components/schemas/FamilyResponse"
                 },
                 "example": {
-                  "hash": "ico_vLTMiongdZFauQ",
-                  "slug": "suffoco",
+                  "hash": "ico_CCoOzuoMrlylcO",
+                  "slug": "caelestis",
                   "productType": "icons",
-                  "name": "publicity",
+                  "name": "editor",
                   "isFree": true,
-                  "cover": "https://picsum.photos/seed/UYkP5P/48/296",
-                  "iconCount": 7625,
-                  "description": "Sopor libero terra."
+                  "cover": "https://loremflickr.com/2851/3254?lock=6415425687682387",
+                  "iconCount": 8426,
+                  "description": "Tergiversatio pauci crudelis sustineo aestas culpa."
                 }
               }
             }
@@ -1758,6 +1827,141 @@
         "summary": "Get families from a family group/bundle.",
         "tags": [
           "FamilyGroup"
+        ]
+      }
+    },
+    "/mcp": {
+      "post": {
+        "description": "Exposes the **Streamline MCP Server** over HTTP. Requires authentication (**`X-API-Key`** or **OAuth Bearer**). This endpoint is the single entrypoint for MCP-compatible clients (e.g. Cursor, Claude Desktop) to: <br><br>\n      - Discover available MCP tools.<br>\n      - Invoke tools such as: **search_assets**, **search_families**, **search_sets**, **find_sets_by_name**, **get_icon_by_hash**, and **download_asset**.<br><br>\n      **download_asset** returns JSON with a short-lived signed **downloadUrl** (JWT in the query). The `tools/call` that mints the URL is authenticated. Clients **GET** that URL **without** repeating `X-API-Key` or Bearer; the signed URL authorizes the download.<br><br>\n      **Getting an API key:** Generate or manage your key at [streamlinehq.com/profile?tab=api_keys](https://www.streamlinehq.com/profile?tab=api_keys), then send it as the `X-API-Key` header.<br><br>\n      **Pricing:** Access via the Public API + MCP Server (up to 1,000 assets/week) is included in [Pro plans](https://home.streamlinehq.com/pricing).",
+        "operationId": "mcpPost",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "description": "A JSON-RPC request object compatible with the MCP protocol.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "example": {
+                  "method": "tools/list",
+                  "jsonrpc": "2.0",
+                  "id": 1
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "summary": "Streamline MCP Server (MCP entrypoint).",
+        "tags": [
+          "McpServer"
+        ]
+      },
+      "get": {
+        "operationId": "mcpGet",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "summary": "MCP GET endpoint to acknowledge client checks.\nUsed by MCP clients (e.g., Cursor) to check server availability before RPC calls.",
+        "tags": [
+          "McpServer"
+        ]
+      }
+    },
+    "/mcp/.well-known/oauth-protected-resource": {
+      "get": {
+        "operationId": "getOauthProtectedResourcesInfo",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "summary": "Describes how to access the `/mcp` resource using OAuth and required authorization.",
+        "tags": [
+          "McpServer"
+        ]
+      }
+    },
+    "/.well-known/openai-apps-challenge": {
+      "get": {
+        "operationId": "getOpenAiAppsChallenge",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "An Unauthorized response is returned when the api key is not passed or is not valid.",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Api key is required",
+                  "error": "Unauthorized",
+                  "statusCode": 401
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "McpServer"
         ]
       }
     }
@@ -1983,6 +2187,9 @@
           },
           "svg": {
             "type": "string"
+          },
+          "hasPremiumAccess": {
+            "type": "boolean"
           }
         },
         "required": [
@@ -1997,7 +2204,8 @@
           "categorySlug",
           "categoryName",
           "subcategorySlug",
-          "subcategoryName"
+          "subcategoryName",
+          "hasPremiumAccess"
         ]
       },
       "SearchResponse": {
