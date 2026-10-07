@@ -41,13 +41,28 @@ An empty or blank slug counts as "not passed".
 | `query` _(required)_       | string                                 | Search term, 1–100 characters. Translate abstract concepts into concrete visual nouns when searching globally. Never mix different concepts in the same query.                                                                                                                       |
 | `language`                 | enum                                   | Source language of `query`. When set, the query is machine-translated to English before searching. One of: `en`, `fr`, `de`, `es` (Spain), `es-MX` (Latin America), `pt` (Brazil), `pt-PT`, `hi`, `ko`, `ja`. Omit for English. Default: unset.                                      |
 | `setSlug`                  | string                                 | Set slug from `search_sets`, `find_sets_by_name`, or `get_all_sets_from_family`. When provided, search is scoped to this Set (takes precedence over `familySlug`).                                                                                                                   |
-| `familySlug`               | string                                 | Family slug from `get_all_families`. When provided and `setSlug` is omitted, search is scoped to this Family.                                                                                                                                                                        |
+| `familySlug`               | string                                 | Family slug from `search_families` or `get_all_families`. When provided and `setSlug` is omitted, search is scoped to this Family.                                                                                                                                                   |
 | `productType`              | `icons` / `illustrations` / `elements` | Required for global search only (when both `setSlug` and `familySlug` are omitted). Asset type to search.                                                                                                                                                                            |
 | `offset`                   | number                                 | Number of items to skip before returning results. Default: `0`.                                                                                                                                                                                                                      |
 | `limit`                    | number                                 | Maximum number of items to return. Default: `20` (max `100`).                                                                                                                                                                                                                        |
-| `productTier`              | `all` / `free` / `premium`             | Filter by price tier of Sets (e.g. `free` limits results to free Sets). Used for global search only. Default: `all`. On ChatGPT this is forced to `free` for accounts without a premium entitlement (see note below).                                                                |
+| `productTier`              | `all` / `free` / `premium`             | Filter by price tier of Sets (e.g. `free` limits results to free Sets). Used for global and Family search. Default: `all`. On ChatGPT, global search is forced to `free` for accounts without a premium entitlement.                                                                 |
 | `style`                    | enum                                   | Filter by Set style. Global search only; applies when `productType` is `icons`. One of: `line`, `solid`, `flat`, `duo`, `hand-drawn`, `creative`, `gradient`, `remix`, `neon`, `pop`, `light`, `glyph`, `minimal`, `outlined`, `geometric`, `bold`, `stroke`, `wireframe`, `filled`. |
 | `userContext` _(required)_ | string                                 | The `userContext` string returned by `get_user_context`. Call that tool first — do not invent or guess this value.                                                                                                                                                                   |
+
+Each result includes the asset `hash` (pass it to `get_icon_by_hash` or the download tools), `name`, `imagePreviewUrl`, `webUrl`, its Set, category and subcategory, plus `isFree` and `hasPremiumAccess` (whether the signed-in account can export it). A `pagination` object (`total`, `hasMore`, `offset`, `nextOffset`) tells you how to fetch the next page.
+
+</Accordion>
+
+<Accordion title="search_families" icon="fa-layer-group">
+
+Semantic search for **Families** by meaning. Use it for any "which icons should I use" question: pairing icons with a font or typeface, matching a visual style, tone or brand, or picking between packs. It's the Family-level counterpart to `search_sets` — use this to choose a Family, then `get_all_sets_from_family` or `search_sets` to pick a Set within it.
+
+| Parameter            | Type   | Description                                                                                                                                                                           |
+| -------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `query` _(required)_ | string | Plain-language intent. Prefer the full question or sentence (use case, audience, tone, exclusions), e.g. "Which families should I avoid for a B2B SaaS product?". Minimum 1 character. |
+| `limit`              | number | Maximum number of Families to return. Default: `2` (min `1`, max `10`).                                                                                                               |
+
+Each result includes the Family `slug`, `name`, `subtitle`, `webUrl`, the `reasons` it matched, `totalSets`, and a few `sampleSets` with preview images.
 
 </Accordion>
 
@@ -58,7 +73,7 @@ Semantic search for **Sets** by meaning (not substring on stored names). For par
 | Parameter            | Type   | Description                                                                                                                                            |
 | -------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `query` _(required)_ | string | Natural-language search term, 1–100 characters. Preserve the full intent (questions, negatives); don't compress it into a keyword stack.               |
-| `familySlug`         | string | When set, only return Sets belonging to this Family. Use the Family `slug` from `get_all_families`. Minimum 1 character when provided. Default: unset. |
+| `familySlug`         | string | When set, only return Sets belonging to this Family. Use the Family slug from `search_families` or `get_all_families`. Minimum 1 character when provided. Default: unset. |
 | `limit`              | number | Maximum number of Sets to return. Default: `20` (min `1`, max `100`).                                                                                  |
 
 </Accordion>
@@ -83,23 +98,26 @@ _No parameters._
 
 <Accordion title="get_all_sets_from_family" icon="fa-list-ul">
 
-Returns all Sets in a Family, with pagination. Use when you already know the Family and want a full list (no search).
+Returns all Sets in a Family, with pagination. Call it after choosing a Family with `search_families` so the user can see the Family's actual Sets, or when browsing a Family with no search query.
 
-| Parameter                 | Type   | Description                                                                                                                 |
-| ------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------- |
-| `familyHash` _(required)_ | string | Family hash. Use `hash` from `get_all_families` or `familyHash` from `find_sets_by_name` when available. Max 80 characters. |
-| `offset`                  | number | Number of items to skip. Default: `0`.                                                                                      |
-| `limit`                   | number | Maximum number of Sets to return. Default: `100` (min `1`, max `100`).                                                      |
+Pass either `familySlug` (preferred) or `familyHash` — one of the two is required.
+
+| Parameter    | Type   | Description                                                                                                                         |
+| ------------ | ------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `familySlug` | string | Family slug from `search_families` or `get_all_families`. Preferred over `familyHash`. Max 80 characters.                           |
+| `familyHash` | string | Family hash. Legacy alternative to `familySlug`; use `familyHash` from `find_sets_by_name` when that is all you have. Max 80 characters. |
+| `offset`     | number | Number of items to skip. Default: `0`.                                                                                              |
+| `limit`      | number | Maximum number of Sets to return. Default: `100` (min `1`, max `100`).                                                              |
 
 </Accordion>
 
 <Accordion title="get_family_extra_details" icon="fa-circle-info">
 
-Returns full semantic text for a Family in four sections: fit & recommendations, brand & cultural identity, visual & technical specs, and pairing & compatibility. Use when you need richer metadata to choose between Families after `search_sets` or `get_all_families`. Pass the exact `familySlug` from those results — do not invent slugs.
+Returns full semantic text for a Family in four sections: fit & recommendations, brand & cultural identity, visual & technical specs, and pairing & compatibility. Also returns the Family's `license`. Use when you need richer metadata to choose between or compare Families after `search_families` or `get_all_families`. Pass the exact `familySlug` from those results — do not invent slugs.
 
-| Parameter                 | Type   | Description                          |
-| ------------------------- | ------ | ------------------------------------ |
-| `familySlug` _(required)_ | string | Family slug from `get_all_families`. |
+| Parameter                 | Type   | Description                                                 |
+| ------------------------- | ------ | ----------------------------------------------------------- |
+| `familySlug` _(required)_ | string | Family slug from `search_families` or `get_all_families`.   |
 
 </Accordion>
 

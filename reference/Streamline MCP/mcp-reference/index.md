@@ -9,7 +9,7 @@ metadata:
 
 ## How to Use
 
-Once connected, you can access tools like `search_assets`, `search_sets`, `get_icon_by_hash`, `download_asset` and others directly through your client's AI chat. See the <Anchor href="https://docs.streamlinehq.com/reference/tools">Tools</Anchor> page for the full list and their parameters.
+Once connected, you can access tools like `search_assets`, `search_families`, `search_sets`, `get_icon_by_hash`, `download_asset` and others directly through your client's AI chat. See the <Anchor href="https://docs.streamlinehq.com/reference/tools">Tools</Anchor> page for the full list and their parameters.
 
 **Example:** ask the AI chat in your client to **search for dog icons**. The client will handle calling the appropriate MCP tool and returning the results.
 
