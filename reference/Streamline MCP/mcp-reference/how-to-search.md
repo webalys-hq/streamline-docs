@@ -7,17 +7,18 @@ metadata:
   robots: index
 ---
 
-Streamline exposes two complementary search tools. Picking the right one — and scoping it correctly — makes results dramatically better.
+Streamline exposes three complementary search tools. Picking the right one — and scoping it correctly — makes results dramatically better.
 
 ## Terminology
 
 - **Family** — a top-level bundle (e.g. "Ultimate").
 - **Set** — a style variant within a Family (e.g. "Ultimate Regular").
 
-## Assets vs. Sets
+## Assets vs. Sets vs. Families
 
 - Use `search_assets` to find individual **icons, illustrations, or elements**.
 - Use `search_sets` to find a **Set** (a style) by meaning, then search assets scoped to it.
+- Use `search_families` to choose a **Family** — for style or recommendation questions such as "which icons pair well with Inter?". Follow it with `get_all_sets_from_family` to see that Family's Sets.
 
 ## Scope your `search_assets` call
 
@@ -29,7 +30,7 @@ Streamline exposes two complementary search tools. Picking the right one — and
 | Family      | `familySlug` provided, `setSlug` omitted     | Searches within one Family.                                                         |
 | Set         | `setSlug` provided                           | Narrowest — takes precedence over `familySlug`.                                     |
 
-> 📘 Only pass a `setSlug` or `familySlug` you obtained from a tool result (`search_sets`, `find_sets_by_name`, `get_all_sets_from_family`, or `get_all_families`). Never invent slugs.
+> 📘 Only pass a `setSlug` or `familySlug` you obtained from a tool result (`search_families`, `search_sets`, `find_sets_by_name`, `get_all_sets_from_family`, or `get_all_families`). Never invent slugs.
 
 ## Write better queries
 
@@ -41,11 +42,12 @@ Streamline exposes two complementary search tools. Picking the right one — and
 
 When searching globally (`productType` set), you can narrow results:
 
-- `productTier` — `all`, `free`, or `premium`.
+- `productTier` — `all`, `free`, or `premium` (also applies to Family-scoped searches).
 - `style` — for `icons`, restrict to a Set style such as `line`, `solid`, `flat`, `duo`, `gradient`, and more.
 
 ## Finding a Set or Family first
 
+- `search_families` — semantic search for a Family by meaning; best for style, font-pairing, and brand questions.
 - `search_sets` — semantic search for a Set by meaning.
 - `find_sets_by_name` — case-insensitive **substring** match on stored Set names (minimum 3 characters).
 - `get_all_families` — browse the full catalog of Families.
