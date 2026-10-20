@@ -150,7 +150,7 @@ Returns **JSON** with a short-lived signed `downloadUrl`, `expiresAt`, `expiresI
 
 <Accordion title="download_multiple_assets" icon="fa-download">
 
-Batch version of `download_asset`: export **up to 50 icons** in a single call, all sharing the same `format`, `size`, and render options. Returns **JSON** with a `downloads` array — one entry per requested hash, each with its `iconHash`, a short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType`, and `fileName`. The MCP `tools/call` is authenticated; perform a plain **GET** on each `downloadUrl` without `X-API-Key` or Bearer (the URL carries the signed token) to download bytes. SVG-only params: `responsive`, `strokeToFill`.
+Batch version of `download_asset`: export **up to 50 icons** in a single call, all sharing the same `format`, `size`, and render options, bundled into **one .zip file**. Returns **JSON** with a single short-lived signed `downloadUrl`, `expiresAt`, `expiresInSeconds`, `mimeType` (`application/zip`), `fileName`, and the `iconHashes` the archive contains. The MCP `tools/call` is authenticated; perform a plain **GET** on `downloadUrl` without `X-API-Key` or Bearer (the URL carries the signed token) to download the archive. In chat clients such as ChatGPT, the assistant shares `downloadUrl` with you as a link instead of fetching it. SVG-only params: `responsive`, `strokeToFill`.
 
 | Parameter                 | Type          | Description                                                                                                |
 | ------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -167,7 +167,7 @@ Batch version of `download_asset`: export **up to 50 icons** in a single call, a
 >
 > Every hash in `iconHashes` is exported and metered **individually**: a request for 50 hashes counts as 50 downloads against your plan's download allowance (see <Anchor href="https://docs.streamlinehq.com/reference/mcp">Overview</Anchor> and <Anchor href="https://docs.streamlinehq.com/reference/rate-limit">Rate Limit</Anchor>), not as a single download.
 >
-> All signed URLs are returned up front, but your allowance is only spent when each `downloadUrl` is fetched. On a large pull that crosses your remaining allowance, the earlier fetches succeed while later ones return `429 Too Many Requests` with the date your limit resets.
+> Your allowance is only spent when `downloadUrl` is fetched, not when the tool is called. The archive is all or nothing: if any icon is missing or not downloadable on your plan, or the batch crosses your remaining allowance, the GET fails and no .zip is returned. An allowance failure returns `429 Too Many Requests` with the date your limit resets.
 >
 > A separate per-hour request limit applies to the MCP tool calls themselves, so a single `download_multiple_assets` call is far more efficient for bulk exports than many `download_asset` calls.
 
